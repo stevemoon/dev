@@ -1,0 +1,3 @@
+to boost performance/paralellize the run:
+set GOMAXPROCS = 8
+then run the exe.

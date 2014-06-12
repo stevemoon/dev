@@ -1,0 +1,13 @@
+Done in erl directly...
+
+The list: 
+People = [{"Federico", $M, 22}, {"Kim", $F, 45}, {"Hansa", $F, 30},
+{"Tran", $M, 47}, {"Cathy", $F, 32}, {"Elias", $M, 50}].
+
+part 1:
+[Name || {Name, Gender, Age} <- People, Gender == $M, Age > 40 ].
+["Tran","Elias"]
+
+part 2:
+ [Name || {Name, Gender, Age} <- People, (Gender == $M) or (Age > 40) ].
+["Federico","Kim","Tran","Elias"]

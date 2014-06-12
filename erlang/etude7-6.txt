@@ -1,0 +1,6 @@
+Shuffle is called recursively with the list of cards that haven't been shuffled yet and the accumulator being the list of cards that are shuffled.
+
+When the list of cards that hasn't been shuffled is empty, the shuffled list (accumulator) is returned.
+
+Otherwise the list is split into random sized-chunks, the first of those chunks is concatenated with the tail, while the head of the 2nd chunk is appended to the accumulator. In effect one card is pulled out at random and moved to the accumulator.
+
