@@ -10,9 +10,13 @@ cycle(X, Accum) ->
     1.
 
 trim(X) ->
-    Y = lists:reverse(X),
-    Z = list_to_integer(Y),
-    lists:reverse(Z).
+    W = hd(X),
+    Y = integer_to_list(W),
+    Z = lists:reverse(Y),
+    A = list_to_integer(Z), %dispose of trailing (leading) zeros
+    B = integer_to_list(A), %convert back to string for reverse
+    C = lists:reverse(B),
+    list_to_integer(C).
 	    
 %Found C++ divide algorithm I've ported poorly from here:
 %http://www.thecrazyprogrammer.com/2013/10/cpp-high-precision-division-program.html
