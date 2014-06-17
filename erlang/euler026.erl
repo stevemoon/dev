@@ -1,31 +1,46 @@
 -module(euler026).
 -export([go/2,divide/3,detect_single_repeat/2,cycle/2]).
 
-go(Max,Precision) ->
-    A = divide(1, Max, Precision),
-    io:format("~s~n", [A]),
-    B = detect_single_repeat(A, length(A)),
-    io:format("~w~n", [B]),
-    cycle(A, Precision).
+% euler026:go(1000,10000).
+% {983,982} == 983 has a 982 digit cycle. Whoo!
 
-cycle(X, Precision) ->
-    cycle(X, 1, Precision, []).
-cycle(X, Current, Size, Accum) when (Current < (1 + (Size div 2))) ->
-    Y = lists:sublist(X, 1, Current),    
-    Z = lists:sublist(X, length(Y) + 1, length(Y)),
+go(Max,Precision) ->
+    A = find(Max, Precision, []),
+    interpret(A, 0, 0).
+
+interpret([A | B], Max, MaxCount) ->
+    {Num, List} = A,
+    Count = length(List),
+    case Count > MaxCount of
+	true ->  interpret(B, Num, Count);
+	false -> interpret(B, Max, MaxCount)
+    end;
+interpret([], Max, MaxCount) -> 
+    {Max, MaxCount}.
+
+find(Cur, Precision, Accum) when Cur > 1 ->
+    A = divide(1, Cur, Precision),
+    B = cycle(A, length(A)),
+    C = {Cur, B},
+    find(Cur - 1, Precision, Accum ++ [C]);
+find(1, _, Accum) ->
+    Accum.
+
+% cycle returns the longest repeating pattern as a list
+cycle(List, Length) ->
+    cycle(List, 1, Length).
+cycle(List, Current, Size) when (Current < (1 + (Size div 2))) ->
+    Y = lists:sublist(List, 1, Current),    
+    Z = lists:sublist(List, length(Y) + 1, length(Y)),
     %io:format("~w~n~w~n", [Y, Z]),
     case (Y =:= Z) of
 	true -> 
-	    %cycle(X, Current + 1, Size, Accum ++ [{Current, Y, Z}]);
-	    {Current, Y};
+	    Y;
 	false ->
-	    cycle(X, Current + 1, Size, Accum)
+	    cycle(List, Current + 1, Size)
     end;
-cycle(_, Current, Size, Accum) when Current =:= ((Size div 2) + 1) ->
-    Accum.
-
-
-
+cycle(_, Current, Size) when (Current >= (1 + (Size div 2))) ->
+    [].
 
 %Found C++ divide algorithm I've ported poorly from here:
 %http://www.thecrazyprogrammer.com/2013/10/cpp-high-precision-division-program.html
