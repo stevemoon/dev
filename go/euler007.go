@@ -1,3 +1,5 @@
+// Euler007: Answer is 104743
+
 // A concurrent prime sieve
 
 package main
