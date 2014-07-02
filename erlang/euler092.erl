@@ -11,7 +11,15 @@
 %% How many starting numbers below ten million will arrive at 89?
 
 go(X) ->
-    digit_split(X).
+    A= digit_split(X),
+    io:format("~w~n", [A]).
+
+square_digits(X) ->
+    A = digit_split(X),
+    B = 
+    square_digits(digit_split(X), 0).
+square_digits(X, Accum) ->
+    
 
 digit_split(X) ->
     digit_split(X, []).
