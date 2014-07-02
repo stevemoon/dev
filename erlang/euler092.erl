@@ -9,21 +9,33 @@
 %% What is most amazing is that EVERY starting number will eventually arrive at 1 or 89.
 %%
 %% How many starting numbers below ten million will arrive at 89?
+%%
+%% Answer is: euler092:go(10000000).
+%% 8581146
 
 go(X) ->
-    A= digit_split(X),
+    A = test(1, X, 0),
     io:format("~w~n", [A]).
 
+test(Cur, Max, Count89s) when Cur > Max -> Count89s;
+test(Cur, Max, Count89s) -> 
+    case chain_to_89(Cur) of
+	true -> test(Cur + 1, Max, Count89s + 1);
+	false -> test(Cur + 1, Max, Count89s)
+    end.
+	    
+chain_to_89(X) when X =:= 89 -> true;
+chain_to_89(X) when X =:= 1 -> false;
+chain_to_89(X) -> chain_to_89(square_digits(X)).
+
 square_digits(X) ->
-    A = digit_split(X),
-    B = 
-    square_digits(digit_split(X), 0).
-square_digits(X, Accum) ->
-    
+%    A = digit_split(X),
+%    B = [C * C || C <- A],
+    lists:foldl(fun(D, Sum) -> D * D + Sum end, 0, digit_split(X)).
 
 digit_split(X) ->
     digit_split(X, []).
 digit_split(X, Accum) when X > 9 ->
-    digit_split(X div 10, Accum ++ [X rem 10]);
+    digit_split(X div 10, [X rem 10] ++ Accum);
 digit_split(X, Accum) when X =< 9 ->
-    lists:reverse(Accum ++ [X]).
+    [X] ++ Accum.
