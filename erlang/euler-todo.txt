@@ -1,0 +1,135 @@
+31:
+
+
+In England the currency is made up of pound, £, and pence, p, and there are eight coins in general circulation:
+
+    1p, 2p, 5p, 10p, 20p, 50p, £1 (100p) and £2 (200p).
+
+It is possible to make £2 in the following way:
+
+    1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p
+
+How many different ways can £2 be made using any number of coins?
+
+-----------------------------------------------------
+
+54:
+
+
+In the card game poker, a hand consists of five cards and are ranked, from lowest to highest, in the following way:
+
+    High Card: Highest value card.
+    One Pair: Two cards of the same value.
+    Two Pairs: Two different pairs.
+    Three of a Kind: Three cards of the same value.
+    Straight: All cards are consecutive values.
+    Flush: All cards of the same suit.
+    Full House: Three of a kind and a pair.
+    Four of a Kind: Four cards of the same value.
+    Straight Flush: All cards are consecutive values of same suit.
+    Royal Flush: Ten, Jack, Queen, King, Ace, in same suit.
+
+The cards are valued in the order:
+2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King, Ace.
+
+If two players have the same ranked hands then the rank made up of the highest value wins; for example, a pair of eights beats a pair of fives (see example 1 below). But if two ranks tie, for example, both players have a pair of queens, then highest cards in each hand are compared (see example 4 below); if the highest cards tie then the next highest cards are compared, and so on.
+
+Consider the following five hands dealt to two players:
+Hand	 	Player 1	 	Player 2	 	Winner
+1	 	5H 5C 6S 7S KD
+Pair of Fives
+	 	2C 3S 8S 8D TD
+Pair of Eights
+	 	Player 2
+2	 	5D 8C 9S JS AC
+Highest card Ace
+	 	2C 5C 7D 8S QH
+Highest card Queen
+	 	Player 1
+3	 	2D 9C AS AH AC
+Three Aces
+	 	3D 6D 7D TD QD
+Flush with Diamonds
+	 	Player 2
+4	 	4D 6S 9H QH QC
+Pair of Queens
+Highest card Nine
+	 	3D 6D 7H QD QS
+Pair of Queens
+Highest card Seven
+	 	Player 1
+5	 	2H 2D 4C 4D 4S
+Full House
+With Three Fours
+	 	3C 3D 3S 9S 9D
+Full House
+with Three Threes
+	 	Player 1
+
+The file, poker.txt, contains one-thousand random hands dealt to two players. Each line of the file contains ten cards (separated by a single space): the first five are Player 1's cards and the last five are Player 2's cards. You can assume that all hands are valid (no invalid characters or repeated cards), each player's hand is in no specific order, and in each hand there is a clear winner.
+
+How many hands does Player 1 win?
+
+-----------------------------------------------------
+
+81: 
+
+
+In the 5 by 5 matrix below, the minimal path sum from the top left to the bottom right, by only moving to the right and down, is indicated in bold red and is equal to 2427.
+
+	
+131	673	234	103	18
+201	96	342	965	150
+630	803	746	422	111
+537	699	497	121	956
+805	732	524	37	331
+	
+
+Find the minimal path sum, in matrix.txt (right click and 'Save Link/Target As...'), a 31K text file containing a 80 by 80 matrix, from the top left to the bottom right by only moving right and down.
+
+-----------------------------------------------
+
+82:
+
+
+NOTE: This problem is a more challenging version of Problem 81.
+
+The minimal path sum in the 5 by 5 matrix below, by starting in any cell in the left column and finishing in any cell in the right column, and only moving up, down, and right, is indicated in red and bold; the sum is equal to 994.
+
+	
+131	673	234	103	18
+201	96	342	965	150
+630	803	746	422	111
+537	699	497	121	956
+805	732	524	37	331
+	
+
+Find the minimal path sum, in matrix.txt (right click and 'Save Link/Target As...'), a 31K text file containing a 80 by 80 matrix, from the left column to the right column.
+
+----------------------------------------------
+83:
+
+
+NOTE: This problem is a significantly more challenging version of Problem 81.
+
+In the 5 by 5 matrix below, the minimal path sum from the top left to the bottom right, by moving left, right, up, and down, is indicated in bold red and is equal to 2297.
+
+	
+131	673	234	103	18
+201	96	342	965	150
+630	803	746	422	111
+537	699	497	121	956
+805	732	524	37	331
+	
+
+Find the minimal path sum, in matrix.txt (right click and 'Save Link/Target As...'), a 31K text file containing a 80 by 80 matrix, from the top left to the bottom right by moving left, right, up, and down.
+
+-------------------------------------------------------
+145:
+
+
+Some positive integers n have the property that the sum [ n + reverse(n) ] consists entirely of odd (decimal) digits. For instance, 36 + 63 = 99 and 409 + 904 = 1313. We will call such numbers reversible; so 36, 63, 409, and 904 are reversible. Leading zeroes are not allowed in either n or reverse(n).
+
+There are 120 reversible numbers below one-thousand.
+
+How many reversible numbers are there below one-billion (109)?
