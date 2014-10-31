@@ -23,25 +23,21 @@ solve(Board, Moves) ->
     end.
 
 move(Board, From, Takes, To) ->
-    %% [{"A", A}, {"B", B}, {"C", C}, {"D", D},{"E", E}, {"F", F}, {"G", G}, 
-    %%  {"H", H}, {"I", I}, {"J", J}, {"K", K}, {"L", L}, {"M", M}, {"N", N}, 
-    %%  {"O", O}] 
-    [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O] = Board,
-    pretty_print(Board),
-    X = hd(From) - 64,
-    Y = hd(Takes) - 64,
-    Z = hd(To) - 64,
-    io:format("~w~w~w~n", [X,Y,Z]).
+    MovedBoard = move2(Board, [], hd(From) - 64, hd(Takes) - 64, hd(To) - 64, 1).
     
-
-%%  when From < Takes && Takes < To ->
-%%     true;
-%% move(Board, From, Takes, To) when From < Takes && Takes > To ->
-%%     false;
-%% move(Board, From, Takes, To) when From > Takes && Takes < To ->
-%%     goober;
-%% move(Board, From, Takes, To) when From > Takes && Takes > To ->
-
+move2([Cur | OrigBoard], ResultBoard, FromInt, TakesInt, ToInt, Counter) when Counter < 16 ->
+   case Counter of
+       FromInt ->
+	   move2(OrigBoard, [0] ++ ResultBoard, FromInt, TakesInt, ToInt, Counter + 1);
+       TakesInt ->
+	   move2(OrigBoard, [0] ++ ResultBoard, FromInt, TakesInt, ToInt, Counter + 1);
+       ToInt ->
+	   move2(OrigBoard, [1] ++ ResultBoard, FromInt, TakesInt, ToInt, Counter + 1);
+       _ ->
+	   move2(OrigBoard, [Cur] ++ ResultBoard, FromInt, TakesInt, ToInt, Counter + 1)
+   end;
+move2(_, ResultBoard, _, _, _, Counter) when Counter == 16 ->
+    lists:reverse(ResultBoard).
 
 
 find_moves([1, B, C, D, E, F, G, H, I, J, K, L, M, N, O], Moves) ->
