@@ -1,5 +1,5 @@
 -module(iq).
--export([go/1, find_moves/2, solve/2, move/4]).
+-export([go/1, find_moves/2, solve/3, move/4, define_moves/0]).
 -compile([debug_info]).
 %
 %     A
@@ -10,17 +10,23 @@
 
 go(Board) ->
     pretty_print(Board),
-    solve(Board, []).
+    MoveList = define_moves(),
+    solve(Board, MoveList, []).
    % pretty_print(rotate_left(Board)),
    % pretty_print(rotate_right(Board)).
 
-solve(Board, Moves) ->
+solve(Board, MoveList, Moves) ->
     Peg_Count = count_pegs(Board),
     case Peg_Count of 
         1 -> io:format("Solution found: ~s~n", [Moves]);
-	_ -> try spawn(iq, find_moves, [Board, Moves])
+	_ -> try spawn(iq, try_moves, [Board, MoveList, Moves])
 	     catch error -> ok end
     end.
+
+try_moves(Board, MoveList, Moves) ->
+    ok.
+%%% TODO: recursive function to take the board, and the move list, then go through each move on the list. If the Move works with the board then spawn a process (solve) to do it.
+%%% Alternatively, find a way to write a macro that will generate the erlang code to do regular pattern matching and then execute it. Building the lists of patterns to match against would be trivial.
 
 move(Board, From, Takes, To) ->
     MovedBoard = move2(Board, [], hd(From) - 64, hd(Takes) - 64, hd(To) - 64, 1).
@@ -38,6 +44,33 @@ move2([Cur | OrigBoard], ResultBoard, FromInt, TakesInt, ToInt, Counter) when Co
    end;
 move2(_, ResultBoard, _, _, _, Counter) when Counter == 16 ->
     lists:reverse(ResultBoard).
+
+
+define_moves() ->
+    TextMoves = [{$A,$B,$D},{$A,$C,$F},
+		 {$B,$D,$G},{$B,$E,$I},
+		 {$C,$E,$H},{$C,$F,$J},
+		 {$D,$B,$A},{$D,$E,$F},{$D,$H,$M},{$D,$G,$K},
+		 {$E,$H,$L},{$E,$I,$N},
+		 {$F,$C,$A},{$F,$E,$D},{$F,$I,$M},{$F,$J,$O},
+		 {$G,$D,$B},{$G,$H,$I},
+		 {$H,$E,$C},{$H,$I,$J},
+		 {$I,$H,$G},{$I,$E,$B},
+		 {$J,$I,$H},{$J,$F,$C},
+		 {$K,$G,$D},{$K,$L,$M},
+		 {$L,$H,$E},{$L,$M,$N},
+		 {$M,$L,$K},{$M,$H,$D},{$M,$I,$F},{$M,$N,$O},
+		 {$N,$M,$L},{$N,$I,$E},
+		 {$O,$N,$M},{$O,$J,$F}],
+    numeric_moves(TextMoves, []).
+
+numeric_moves([{X, Y, Z} | Tail], NumericMoves) ->
+    numeric_moves(Tail, NumericMoves ++ [{X - 64, Y - 64, Z - 64}]);
+numeric_moves([], NumericMoves) ->
+    NumericMoves.
+
+    
+
 
 
 find_moves([1, B, C, D, E, F, G, H, I, J, K, L, M, N, O], Moves) ->
