@@ -1,0 +1,723 @@
+-file("iq.erl", 1).
+
+-module(iq).
+
+-export([go/1,find_moves/2,solve/3,move/4,define_moves/0]).
+
+-compile([debug_info]).
+
+go(Board) ->
+    pretty_print(Board),
+    find_moves(Board, []).
+
+solve(Board, MoveList, Moves) ->
+    Peg_Count = count_pegs(Board),
+    case Peg_Count of
+        1 ->
+            io:format("Solution found: ~s~n", [Moves]);
+        _ ->
+            try
+                spawn(iq, try_moves, [Board,MoveList,Moves])
+            catch
+                error ->
+                    ok
+            end
+    end.
+
+try_moves(Board, MoveList, Moves) ->
+    ok.
+
+dyn_match(Pattern, Board) ->
+    io:format("~w~n", [Pattern]).
+
+move(Board, From, Takes, To) ->
+    MovedBoard =
+        move2(Board, [], hd(From) - 64, hd(Takes) - 64, hd(To) - 64, 1).
+
+move2([Cur|OrigBoard], ResultBoard, FromInt, TakesInt, ToInt, Counter)
+    when Counter < 16 ->
+    case Counter of
+        FromInt ->
+            move2(OrigBoard,
+                  [0] ++ ResultBoard,
+                  FromInt,
+                  TakesInt,
+                  ToInt,
+                  Counter + 1);
+        TakesInt ->
+            move2(OrigBoard,
+                  [0] ++ ResultBoard,
+                  FromInt,
+                  TakesInt,
+                  ToInt,
+                  Counter + 1);
+        ToInt ->
+            move2(OrigBoard,
+                  [1] ++ ResultBoard,
+                  FromInt,
+                  TakesInt,
+                  ToInt,
+                  Counter + 1);
+        _ ->
+            move2(OrigBoard,
+                  [Cur] ++ ResultBoard,
+                  FromInt,
+                  TakesInt,
+                  ToInt,
+                  Counter + 1)
+    end;
+move2(_, ResultBoard, _, _, _, Counter) when Counter == 16 ->
+    lists:reverse(ResultBoard).
+
+define_moves() ->
+    TextMoves =
+        [{$A,$B,$D},
+         {$A,$C,$F},
+         {$B,$D,$G},
+         {$B,$E,$I},
+         {$C,$E,$H},
+         {$C,$F,$J},
+         {$D,$B,$A},
+         {$D,$E,$F},
+         {$D,$H,$M},
+         {$D,$G,$K},
+         {$E,$H,$L},
+         {$E,$I,$N},
+         {$F,$C,$A},
+         {$F,$E,$D},
+         {$F,$I,$M},
+         {$F,$J,$O},
+         {$G,$D,$B},
+         {$G,$H,$I},
+         {$H,$E,$C},
+         {$H,$I,$J},
+         {$I,$H,$G},
+         {$I,$E,$B},
+         {$J,$I,$H},
+         {$J,$F,$C},
+         {$K,$G,$D},
+         {$K,$L,$M},
+         {$L,$H,$E},
+         {$L,$M,$N},
+         {$M,$L,$K},
+         {$M,$H,$D},
+         {$M,$I,$F},
+         {$M,$N,$O},
+         {$N,$M,$L},
+         {$N,$I,$E},
+         {$O,$N,$M},
+         {$O,$J,$F}],
+    numeric_moves(TextMoves, []).
+
+numeric_moves([{X,Y,Z}|Tail], NumericMoves) ->
+    numeric_moves(Tail, NumericMoves ++ [{X - 64,Y - 64,Z - 64}]);
+numeric_moves([], NumericMoves) ->
+    NumericMoves.
+
+move_patterns([Head|Tail], PatternList) ->
+    move_patterns(Tail, PatternList ++ [move_pattern(Head)]);
+move_patterns([], PatternList) ->
+    PatternList.
+
+move_pattern(NumericMove) ->
+    move_pattern2([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                  NumericMove,
+                  {[],[],[]},
+                  1).
+
+move_pattern2(Board,
+              {FromInt,TakesInt,ToInt},
+              {MovePattern,MovedBoardState,MoveText},
+              Counter)
+    when Counter < 16 ->
+    case Counter of
+        FromInt ->
+            MovePatternChar = 49,
+            MovedBoardStateChar = 48,
+            MovedPattern =
+                {MovePattern ++ [MovePatternChar],
+                 MovedBoardState ++ [MovedBoardStateChar],
+                 MoveText},
+            move_pattern2(Board,
+                          {FromInt,TakesInt,ToInt},
+                          MovedPattern,
+                          Counter + 1);
+        TakesInt ->
+            MovePatternChar = 49,
+            MovedBoardStateChar = 48,
+            MovedPattern =
+                {MovePattern ++ [MovePatternChar],
+                 MovedBoardState ++ [MovedBoardStateChar],
+                 MoveText},
+            move_pattern2(Board,
+                          {FromInt,TakesInt,ToInt},
+                          MovedPattern,
+                          Counter + 1);
+        ToInt ->
+            MovePatternChar = 48,
+            MovedBoardStateChar = 49,
+            MovedPattern =
+                {MovePattern ++ [MovePatternChar],
+                 MovedBoardState ++ [MovedBoardStateChar],
+                 MoveText},
+            move_pattern2(Board,
+                          {FromInt,TakesInt,ToInt},
+                          MovedPattern,
+                          Counter + 1);
+        _ ->
+            MovePatternChar = 95,
+            MovedBoardStateChar = Counter + 64,
+            MovedPattern =
+                {MovePattern ++ [MovePatternChar],
+                 MovedBoardState ++ [MovedBoardStateChar],
+                 MoveText},
+            move_pattern2(Board,
+                          {FromInt,TakesInt,ToInt},
+                          MovedPattern,
+                          Counter + 1)
+    end;
+move_pattern2(_,
+              {FromInt,TakesInt,ToInt},
+              {MovePattern,MovedBoardState,MoveText},
+              Counter)
+    when Counter == 16 ->
+    Pattern =
+        {MovePattern,
+         MovedBoardState,
+         [FromInt + 64]
+         ++
+         [120]
+         ++
+         [TakesInt + 64] ++ [45] ++ [62] ++ [ToInt + 64] ++ [32]},
+    Pattern.
+
+find_moves(Initial_Board, Moves) ->
+    case Initial_Board of
+        [49,49,95,48,95,95,95,95,95,95,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [48,48,67,49,69,70,71,72,73,74,75,76,77,78,79],
+                      Moves ++ [65,120,66,45,62,68,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [49,95,49,95,95,48,95,95,95,95,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [48,66,48,68,69,49,71,72,73,74,75,76,77,78,79],
+                      Moves ++ [65,120,67,45,62,70,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,49,95,49,95,95,48,95,95,95,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,48,67,48,69,70,49,72,73,74,75,76,77,78,79],
+                      Moves ++ [66,120,68,45,62,71,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,49,95,95,49,95,95,95,48,95,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,48,67,68,48,70,71,72,49,74,75,76,77,78,79],
+                      Moves ++ [66,120,69,45,62,73,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,49,95,49,95,95,48,95,95,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,48,68,48,70,71,49,73,74,75,76,77,78,79],
+                      Moves ++ [67,120,69,45,62,72,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,49,95,95,49,95,95,95,48,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,48,68,69,48,71,72,73,49,75,76,77,78,79],
+                      Moves ++ [67,120,70,45,62,74,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [48,49,95,49,95,95,95,95,95,95,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [49,48,67,48,69,70,71,72,73,74,75,76,77,78,79],
+                      Moves ++ [68,120,66,45,62,65,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,49,49,48,95,95,95,95,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,48,48,49,71,72,73,74,75,76,77,78,79],
+                      Moves ++ [68,120,69,45,62,70,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,49,95,95,95,49,95,95,95,95,48,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,48,69,70,71,48,73,74,75,76,49,78,79],
+                      Moves ++ [68,120,72,45,62,77,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,49,95,95,49,95,95,95,48,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,48,69,70,48,72,73,74,49,76,77,78,79],
+                      Moves ++ [68,120,71,45,62,75,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,49,95,95,49,95,95,95,48,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,48,70,71,48,73,74,75,49,77,78,79],
+                      Moves ++ [69,120,72,45,62,76,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,49,95,95,95,49,95,95,95,95,48,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,48,70,71,72,48,74,75,76,77,49,79],
+                      Moves ++ [69,120,73,45,62,78,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [48,95,49,95,95,49,95,95,95,95,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [49,66,48,68,69,48,71,72,73,74,75,76,77,78,79],
+                      Moves ++ [70,120,67,45,62,65,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,48,49,49,95,95,95,95,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,49,48,48,71,72,73,74,75,76,77,78,79],
+                      Moves ++ [70,120,69,45,62,68,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,95,49,95,95,49,95,95,95,48,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,69,48,71,72,48,74,75,76,49,78,79],
+                      Moves ++ [70,120,73,45,62,77,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,95,49,95,95,95,49,95,95,95,95,48] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,69,48,71,72,73,48,75,76,77,78,49],
+                      Moves ++ [70,120,74,45,62,79,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,48,95,49,95,95,49,95,95,95,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,49,67,48,69,70,48,72,73,74,75,76,77,78,79],
+                      Moves ++ [71,120,68,45,62,66,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,95,95,49,49,48,95,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,69,70,48,48,49,74,75,76,77,78,79],
+                      Moves ++ [71,120,72,45,62,73,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,48,95,49,95,95,49,95,95,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,49,68,48,70,71,48,73,74,75,76,77,78,79],
+                      Moves ++ [72,120,69,45,62,67,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,95,95,95,49,49,48,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,69,70,71,48,48,49,75,76,77,78,79],
+                      Moves ++ [72,120,73,45,62,74,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,95,95,48,49,49,95,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,69,70,49,48,48,74,75,76,77,78,79],
+                      Moves ++ [73,120,72,45,62,71,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,48,95,95,49,95,95,95,49,95,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,49,67,68,48,70,71,72,48,74,75,76,77,78,79],
+                      Moves ++ [73,120,69,45,62,66,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,95,95,95,48,49,49,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,69,70,71,49,48,48,75,76,77,78,79],
+                      Moves ++ [74,120,73,45,62,72,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,48,95,95,49,95,95,95,49,95,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,49,68,69,48,71,72,73,48,75,76,77,78,79],
+                      Moves ++ [74,120,70,45,62,67,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,48,95,95,49,95,95,95,49,95,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,49,69,70,48,72,73,74,48,76,77,78,79],
+                      Moves ++ [75,120,71,45,62,68,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,95,95,95,95,95,95,49,49,48,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,69,70,71,72,73,74,48,48,49,78,79],
+                      Moves ++ [75,120,76,45,62,77,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,48,95,95,49,95,95,95,49,95,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,49,70,71,48,73,74,75,48,77,78,79],
+                      Moves ++ [76,120,72,45,62,69,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,95,95,95,95,95,95,95,49,49,48,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,69,70,71,72,73,74,75,48,48,49,79],
+                      Moves ++ [76,120,77,45,62,78,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,95,95,95,95,95,95,48,49,49,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,69,70,71,72,73,74,49,48,48,78,79],
+                      Moves ++ [77,120,76,45,62,75,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,48,95,95,95,49,95,95,95,95,49,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,49,69,70,71,48,73,74,75,76,48,78,79],
+                      Moves ++ [77,120,72,45,62,68,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,95,48,95,95,49,95,95,95,49,95,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,69,49,71,72,48,74,75,76,48,78,79],
+                      Moves ++ [77,120,73,45,62,70,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,95,95,95,95,95,95,95,95,49,49,48] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,69,70,71,72,73,74,75,76,48,48,49],
+                      Moves ++ [77,120,78,45,62,79,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,95,95,95,95,95,95,95,48,49,49,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,69,70,71,72,73,74,75,49,48,48,79],
+                      Moves ++ [78,120,77,45,62,76,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,48,95,95,95,49,95,95,95,95,49,95] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,49,70,71,72,48,74,75,76,77,48,79],
+                      Moves ++ [78,120,73,45,62,69,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,95,95,95,95,95,95,95,95,48,49,49] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,69,70,71,72,73,74,75,76,49,48,48],
+                      Moves ++ [79,120,78,45,62,77,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end,
+    case Initial_Board of
+        [95,95,95,95,95,48,95,95,95,49,95,95,95,95,49] ->
+            try
+                spawn(iq,
+                      solve,
+                      [65,66,67,68,69,49,71,72,73,48,75,76,77,78,48],
+                      Moves ++ [79,120,74,45,62,70,32])
+            catch
+                error ->
+                    ok
+            end;
+        _ ->
+            false
+    end.
+
+pretty_print([A,B,C,D,E,F,G,H,I,J,K,L,M,N,O]) ->
+    io:format("    ~B~n", [A]),
+    io:format("   ~B ~B~n", [B,C]),
+    io:format("  ~B ~B ~B~n", [D,E,F]),
+    io:format(" ~B ~B ~B ~B~n", [G,H,I,J]),
+    io:format("~B ~B ~B ~B ~B~n", [K,L,M,N,O]),
+    io:format("Total Pegs: ~B~n~n",
+              [count_pegs([A,B,C,D,E,F,G,H,I,J,K,L,M,N,O])]).
+
+rotate_left([A,B,C,D,E,F,G,H,I,J,K,L,M,N,O]) ->
+    [O,J,N,F,I,M,C,E,H,L,A,B,D,G,K].
+
+rotate_right(Board) ->
+    rotate_left(rotate_left(Board)).
+
+count_pegs(Board) ->
+    lists:foldl(fun(X, Sum) ->
+                       X + Sum
+                end,
+                0,
+                Board).
+
+
+
