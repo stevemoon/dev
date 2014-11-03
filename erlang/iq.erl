@@ -11,7 +11,9 @@
 go(Board) ->
     pretty_print(Board),
     MoveList = define_moves(),
-    solve(Board, MoveList, []).
+    PatternList = move_patterns(MoveList, []),
+    dyn_match(hd(PatternList), Board).
+   % solve(Board, MoveList, []).
    % pretty_print(rotate_left(Board)),
    % pretty_print(rotate_right(Board)).
 
@@ -25,8 +27,33 @@ solve(Board, MoveList, Moves) ->
 
 try_moves(Board, MoveList, Moves) ->
     ok.
+
+dyn_match(Pattern, Board) ->
+    io:format("~w~n", [Pattern]).
+    %% {ok, T, _} = erl_scan:string(lists:flatten(Pattern)),
+    %% {ok, [A]} = erl_parse:parse_exprs(T),
+    %% {value, V, _} = erl_eval:expr(A, []),
+    %% V.
+
 %%% TODO: recursive function to take the board, and the move list, then go through each move on the list. If the Move works with the board then spawn a process (solve) to do it.
 %%% Alternatively, find a way to write a macro that will generate the erlang code to do regular pattern matching and then execute it. Building the lists of patterns to match against would be trivial.
+
+%dyn_match(
+% Dynamic match -- compile move pattern into a native pattern-match
+%% Eval = fun(S) ->
+%% 	       {ok, T, _} = erl_scan:string(S),
+%% 	       {ok, [A]} = erl_parse:parse_exprs(T),
+%% 	       {value, V, _} = erl_eval:expr(A, []),
+%% 	       V end,
+%% FilterGen = fun(X) ->
+%% 		    Eval(lists:flatten(["fun(",X,")->true;(_)->false end."])) end,
+%% filter(FilterGen(MovePattern)).
+
+%% Eval = fun(S) -> {ok, T, _} = erl_scan:string(S), {ok,[A]} = erl_parse:parse_exprs(T), {value, V, _} = erl_eval:expr(A,[]), V end,
+%% FilterGen = fun(X) -> Eval(lists:flatten(["fun(",X,")->true;(_)->false end."])) end,
+%% filter(FilterGen("{book, _}"), [{dvd, "The Godfather" } , {book, "The Hitchhiker's Guide to the Galaxy" }, {dvd, "The Lord of Rings"}]).
+%% [{book,"The Hitchhiker's Guide to the Galaxy"}]
+
 
 move(Board, From, Takes, To) ->
     MovedBoard = move2(Board, [], hd(From) - 64, hd(Takes) - 64, hd(To) - 64, 1).
@@ -67,7 +94,31 @@ define_moves() ->
 numeric_moves([{X, Y, Z} | Tail], NumericMoves) ->
     numeric_moves(Tail, NumericMoves ++ [{X - 64, Y - 64, Z - 64}]);
 numeric_moves([], NumericMoves) ->
+    %move_patterns(NumericMoves, []),
     NumericMoves.
+
+move_patterns([Head | Tail], PatternList) ->
+    move_patterns(Tail, [PatternList ++ move_pattern(Head)]);
+move_patterns([], PatternList) ->
+    PatternList.
+    
+move_pattern(NumericMove) ->
+    move_pattern2([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], NumericMove, [], 1).
+
+move_pattern2(Board, {FromInt, TakesInt, ToInt}, Pattern, Counter) when Counter < 16 ->    
+    case Counter of
+       FromInt ->
+	    move_pattern2(Board, {FromInt, TakesInt, ToInt}, Pattern ++ [1], Counter + 1);
+       TakesInt ->
+	    move_pattern2(Board, {FromInt, TakesInt, ToInt}, Pattern ++ [1], Counter + 1);
+       ToInt ->
+	    move_pattern2(Board, {FromInt, TakesInt, ToInt}, Pattern ++ [0], Counter + 1);
+       _ ->
+	    move_pattern2(Board, {FromInt, TakesInt, ToInt}, Pattern ++ [Counter + 64], Counter + 1)
+   end;
+move_pattern2(_, _, Pattern, Counter) when Counter == 16 ->
+    %io:format("~p~n", [Pattern]),
+    Pattern.
 
     
 
