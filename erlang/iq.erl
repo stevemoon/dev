@@ -1,5 +1,5 @@
 -module(iq).
--export([go/1, find_moves/2, solve/2]).
+-export([go/1, find_moves/3, solve/3]).
 -compile([debug_info]).
 %
 %     A
@@ -10,30 +10,38 @@
 
 go(Board) ->
     pretty_print(Board),
-    case ets:info(visited) of
-	undefined -> ok;
-	_ ->
-	    ets:delete(visited)
-    end,
-    ets:new(visited, [set, public, named_table]),
-    solve(Board, []).
+    %% case ets:info(visited) of
+    %% 	undefined -> ok;
+    %% 	_ ->
+    %% 	    ets:delete(visited)
+    %% end,
+    %% ets:new(visited, [set, public, named_table]),
+    solve(Board, [], 0).
 
-solve(Board, Moves) ->
-    Visited = ets:member(visited, Board),
-    case Visited of
-	true -> 
-	    exit({ok});
-	false -> 
-	    ets:insert(visited, {Board, true}),
-	    ets:insert(visited, {rotate_left(Board), true}),
-	    ets:insert(visited, {rotate_left(rotate_left(Board)), true})
-    end,
-    Peg_Count = count_pegs(Board),
-    case Peg_Count of 
-        1 -> io:format("Solution found: ~s~n", [Moves]);
-	_ -> try spawn(iq, find_moves, [Board, Moves])
-	     catch error -> ok end
-    end.
+solve(Board, Moves, Count) when Count =< 13 ->
+    %% Visited = ets:member(visited, Board),
+    %% case Visited of
+    %% 	true -> 
+    %% 	    exit({ok});
+    %% 	false -> 
+    %% 	    ets:insert(visited, {Board, true}),
+    %% 	    ets:insert(visited, {rotate_left(Board), true}),
+    %% 	    ets:insert(visited, {rotate_left(rotate_left(Board)), true})
+    %% end,
+    %% Peg_Count = count_pegs(Board),
+    %% case Peg_Count of 
+    %%     1 -> io:format("Solution found: ~s~n", [Moves]),
+    %% 	     exit({ok});
+    %% 	_ -> try spawn(iq, find_moves, [Board, Moves, Count + 1])
+    %% 	     catch error -> ok end
+    %% end
+    try spawn(iq, find_moves, [Board, Moves, Count])
+    catch error -> ok end	;
+solve(_, _, Count) when Count > 13 ->
+    exit({ok});
+solve(_, Moves, Count) when Count == 13 ->
+    io:format("Solution found: ~s~n", [Moves]).
+
 
 
 % Board_State (with letter variables, 1's and 0 to match to)
@@ -48,12 +56,12 @@ solve(Board, Moves) ->
 -define(CASE_BODY(MOVE_PATTERN, MOVED_BOARD_STATE, MOVE_TEXT), 
 	case Initial_Board of
 	    MOVE_PATTERN ->
-		try spawn(iq, solve, [MOVED_BOARD_STATE, Moves ++ MOVE_TEXT])
+		try spawn(iq, solve, [MOVED_BOARD_STATE, Moves ++ MOVE_TEXT, Count + 1])
 		catch error -> ok end;
 	    _  -> false
 	end).
 
-find_moves([A, B, C, D, E, F, G, H, I, J, K, L, M, N, O], Moves) ->
+find_moves([A, B, C, D, E, F, G, H, I, J, K, L, M, N, O], Moves, Count) when Count =< 13 ->
     Initial_Board = [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O],
     ?CASE_BODY([1,1,_,0,_,_,_,_,_,_,_,_,_,_,_],[0,0,C,1,E,F,G,H,I,J,K,L,M,N,O],["AxB->D "]),
     ?CASE_BODY([1,_,1,_,_,0,_,_,_,_,_,_,_,_,_],[0,B,0,D,E,1,G,H,I,J,K,L,M,N,O],["AxC->F "]),
@@ -90,7 +98,11 @@ find_moves([A, B, C, D, E, F, G, H, I, J, K, L, M, N, O], Moves) ->
     ?CASE_BODY([_,_,_,_,_,_,_,_,_,_,_,0,1,1,_],[A,B,C,D,E,F,G,H,I,J,K,1,0,0,O],["NxM->L "]),
     ?CASE_BODY([_,_,_,_,0,_,_,_,1,_,_,_,_,1,_],[A,B,C,D,1,F,G,H,0,J,K,L,M,0,O],["NxI->E "]),
     ?CASE_BODY([_,_,_,_,_,_,_,_,_,_,_,_,0,1,1],[A,B,C,D,E,F,G,H,I,J,K,L,1,0,0],["OxN->M "]),
-    ?CASE_BODY([_,_,_,_,_,0,_,_,_,1,_,_,_,_,1],[A,B,C,D,E,1,G,H,I,0,K,L,M,N,0],["OxJ->F "]).
+    ?CASE_BODY([_,_,_,_,_,0,_,_,_,1,_,_,_,_,1],[A,B,C,D,E,1,G,H,I,0,K,L,M,N,0],["OxJ->F "]),
+    exit({0});
+find_moves(_, _, Count) when Count > 13 ->
+    exit({0}).
+
     
 pretty_print([A, B, C, D, E, F, G, H, I, J, K, L, M, N, O]) ->
     io:format("    ~B~n", [A]),
