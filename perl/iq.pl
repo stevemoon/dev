@@ -16,11 +16,9 @@ $adjc{"11"}=[2,7,4,12,13];
 $adjc{"12"}=[4,7,3,8,5,11,10,13,14];
 $adjc{"13"}=[2,8,4,12,11];
 $adjc{"14"}=[2,9,5,13,12];
-<<<<<<< HEAD
 @names=qw(A B C D E F G H I J K L M N O);
-=======
-@names=qw(A1 B1 B2 C1 C2 C3 D1 D2 D3 D4 E1 E2 E3 E4 E5);
->>>>>>> origin/master
+#@names=qw(A1 B1 B2 C1 C2 C3 D1 D2 D3 D4 E1 E2 E3 E4 E5);
+
 
 my @n_board=@initial_board;
 my @moves_so_far_base = ();
@@ -83,11 +81,8 @@ sub solve {
 			move (\@new_board, $peg, $take, $moveto);
 			my @new_moves = ();
 			@new_moves = @$moves_so_far;
-<<<<<<< HEAD
 			push @new_moves, $names[$peg] . "x" . $names[$take] . "->" . $names[$moveto] . " ";
-=======
-			push @new_moves, $names[$peg] . "x" . $names[$take] . " ";
->>>>>>> origin/master
+#			push @new_moves, $names[$peg] . "x" . $names[$take] . " ";
 			solve (\@new_board, \@new_moves);
 		}
 	}
@@ -95,18 +90,10 @@ sub solve {
 
 sub print_board {
 	my @board = @_;
-<<<<<<< HEAD
 	print "    @board[0]\n";
 	print "   @board[1] @board[2]\n";
 	print "  @board[3] @board[4] @board[5]\n";
 	print " @board[6] @board[7] @board[8] @board[9]\n";
 	print "@board[10] @board[11] @board[12] @board[13] @board[14]\n";
-=======
-	print "\t\t\t\t@board[0]\n";
-	print "\t\t\t@board[1]\t@board[2]\n";
-	print "\t\t@board[3]\t@board[4]\t@board[5]\n";
-	print "\t@board[6]\t@board[7]\t@board[8]\t@board[9]\n";
-	print "@board[10]\t@board[11]\t@board[12]\t@board[13]\t@board[14]\n";
->>>>>>> origin/master
 	print "\n";
 }
