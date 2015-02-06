@@ -19,11 +19,6 @@ go2([],Accum) ->
     length(Accum).
 
 
-
-<<<<<<< HEAD
-% test(Num) ->
-    
-=======
 test(Num) ->
     Fwd = integer_to_list(Num),
     Bwd = lists:reverse(Fwd),
@@ -38,4 +33,4 @@ test(Num) ->
 	     %io:format("Sum: ~w  SumList: ~w   EvenDigits: ~w~n", [Sum, SumList, EvenDigits]);
 	_ -> false
         end.
->>>>>>> FETCH_HEAD
+
