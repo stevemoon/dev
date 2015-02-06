@@ -1,0 +1,11 @@
+item	page(s)	book
+Security templates (INF)	8	505.1
+INF	8	
+Local policies described	10	
+Security templates from others	13	
+SCM	14	
+Security Compliance Manager	14	
+localgpo.wsf	14	
+SCA database	17	
+Audit against template (SCA tool)	19	
+Analyze your computer (audit against template - SCA)	19	

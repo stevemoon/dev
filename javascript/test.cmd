@@ -1,0 +1,1 @@
+"c:\Program Files (x86)\GnuWin32\bin\grep.exe" %1 welder_wordlist.txt
