@@ -1,0 +1,56 @@
+item	page(s)	book
+Security templates (INF)	8	505.1
+INF	8	
+Local policies described	10	
+Security templates from others	13	
+SCM	14	
+Security Compliance Manager	14	
+localgpo.wsf	14	
+SCA database	17	
+Audit against template (SCA tool)	19	
+Analyze your computer (audit against template - SCA)	19	
+secedit.exe	22	
+sca command line (secedit.exe)	22	
+group policy tools	24-31	
+gpupdate.exe	28	
+gpotool.exe	29	
+secedit.exe	29	
+gpresult.exe	29	
+addiag.exe	29	
+dcgopfix.exe	29	
+admx migrator	29	
+3rd party gpo enhancements	29-30	
+create gpo	33	
+gpo - computer vs. user	34	
+group policy links	35	
+gpo - order of precedence (LSD OU)	37-39	
+gpo - block inheritance	38	
+gpo - enforced	39	
+gpo - access lists	40	
+gpo - delegation of control	41	
+gpo - refresh interval	43	
+gpo - slow link detection	42	
+gpo - loopback processing mode	44-45	
+gpo - WMI filtering	46	
+gpo - disabling	46-47	
+Enterprise scale registry editor	48	
+Administrative templates - explained	48	
+Administrative templates - importing	50-51	
+tattoos	51	
+gpo -- tattoos	51	
+admx templates / central store	51	
+gpo - admx templates / central store	51-53	
+gpo - classic ADM templates	53	
+admx migrator	54	
+admx - convert from adm (admx migrator)	54	
+admx - create your own	54	
+gpo - preferences (see also gpp)	56-61	
+gpp	56-61	
+gpp - capabilities	57	
+"gpp - manage users, groups, passwords"	57	
+gpp - remote command execution	57	
+gpp - manage scheduled tasks	57	
+gpp - manage files & folders	57	
+gpp - manage ini file settings	58	
+gpp - manage registry keys and values	58	
+gpp - configure service settings	58	
