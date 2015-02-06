@@ -12,5 +12,5 @@ go2([Next | Sequence], Accum) ->
 	false ->
 	    go2(Sequence, Accum).
 
-test(Num) ->
+% test(Num) ->
     
