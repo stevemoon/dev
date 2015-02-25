@@ -9,6 +9,7 @@ erl_crash.dump
 SyncToy*
 *.exe
 Erlang-and-OTP-in-Action/
+javascript-koans/
 # =========================
 # Operating System Files
 # =========================
