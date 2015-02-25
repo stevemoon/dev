@@ -39,10 +39,37 @@ score_hand(Cards) ->
     Is_Straight = find_straight(SortedCards),
     Is_4kind = find_4kind(SortedCards),
     Is_3kind = find_3kind(SortedCards),
-    Is_3kind.
+    Is_2pair = find_2pair(SortedCards),
+    Is_2pair.
+    %Is_Pair = find_pair(SortedCards),
+    %Is_Pair.
     %Is-full-house == 3 kind + pair true
     % 2 pair == pair true + that pair subtracted and pair there
     % High card is tl(SortedCards).
+
+find_2pair(SortedCards) ->
+    % {true, pair, Pair1} = find_pair(SortedCards),
+    % {true, pair, Pair2} = find_pair(lists:nthtail(2, SortedCards)),
+    % {true, two_pair, (Pair1 + Pair2 * 2)}.
+    true.
+    
+find_pair([First, Second, Third, Fourth, Fifth]) ->
+%22345, 23345, 23445, 23455
+    % First = hd(SortedCards),
+    % Second = lists:nth(2, SortedCards),
+    % Third = lists:nth(3, SortedCards),
+    % Fourth = lists:nth(4, SortedCards),
+    % Fifth = lists:nth(5, SortedCards),
+    Result = if (First =:= Second) or (Second =:= Third) -> {true, pair, Second};
+                (Third =:= Fourth) or (Fourth =:= Fifth) -> {true, pair, Fourth};
+                true -> {false, not_pair, 0}
+            end,
+    Result;
+find_pair([First, Second, Third]) ->
+    Result = if (First =:= Second) or (Second =:= Third) -> {true, pair, Second};
+                true -> {false, not_pair, 0}
+            end,
+    Result.
 
 find_3kind(SortedCards) ->
     % 3-kind could be 3 patterns: 22233, 22333, 23334
