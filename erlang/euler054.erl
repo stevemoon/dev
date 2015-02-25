@@ -30,43 +30,41 @@ process_hand({P1Hand, _P2Hand}) ->
     P1Score = score_hand(P1Hand),
     P1Score.
 
+sort_cards(Cards) ->
+    {ValCards, _} = lists:unzip(Cards),
+    lists:sort(ValCards).
+
 score_hand(Cards) ->
     % Strategy: Create a list pushing the result of each possible score
     %           Return the list. This will result in duplication of effort
-    {ValCards, _} = lists:unzip(Cards),
-    SortedCards = lists:sort(ValCards),
-    Is_Flush = find_flush(Cards),
-    Is_Straight = find_straight(SortedCards),
+    SortedCards = sort_cards(Cards), %strips out suit
+    Is_Flush = element(3,find_flush(Cards)) * 100000,
+    case Is_Straight of
+        {true, royal_straight, _} -> 
+    Is_Straight = element(3,find_straight(SortedCards)) * 10000,
+    Is_Royal_Straight = element(3, find_straight(SortedCards)) * 
     Is_4kind = find_4kind(SortedCards),
     Is_3kind = find_3kind(SortedCards),
     Is_2pair = find_2pair(SortedCards),
-    Is_2pair.
-    %Is_Pair = find_pair(SortedCards),
-    %Is_Pair.
+    Is_Pair = find_pair(SortedCards),
     %Is-full-house == 3 kind + pair true
     % 2 pair == pair true + that pair subtracted and pair there
     % High card is tl(SortedCards).
+    Is_Flush.
 
-find_2pair(SortedCards) ->
-    % {true, pair, Pair1} = find_pair(SortedCards),
-    % {true, pair, Pair2} = find_pair(lists:nthtail(2, SortedCards)),
-    % {true, two_pair, (Pair1 + Pair2 * 2)}.
-    true.
+find_2pair([First, Second, Third, Fourth, Fifth]) ->
+    %22334, 23344,22344
+    Result = if (First =:= Second) and (Third =:= Fourth) -> {true, two_pair, (Second + Fourth) * 2};
+                (Second =:= Third) and (Fourth =:= Fifth) -> {true, two_pair, (Second + Fourth) * 2};
+                (First =:= Second) and (Fourth =:= Fifth) -> {true, two_pair, (Second + Fourth) * 2};
+                true -> {false, not_two_pair, 0}
+            end,
+    Result.
     
 find_pair([First, Second, Third, Fourth, Fifth]) ->
-%22345, 23345, 23445, 23455
-    % First = hd(SortedCards),
-    % Second = lists:nth(2, SortedCards),
-    % Third = lists:nth(3, SortedCards),
-    % Fourth = lists:nth(4, SortedCards),
-    % Fifth = lists:nth(5, SortedCards),
-    Result = if (First =:= Second) or (Second =:= Third) -> {true, pair, Second};
-                (Third =:= Fourth) or (Fourth =:= Fifth) -> {true, pair, Fourth};
-                true -> {false, not_pair, 0}
-            end,
-    Result;
-find_pair([First, Second, Third]) ->
-    Result = if (First =:= Second) or (Second =:= Third) -> {true, pair, Second};
+    %22345, 23345, 23445, 23455
+    Result = if (First =:= Second) or (Second =:= Third) -> {true, pair, Second * 2};
+                (Third =:= Fourth) or (Fourth =:= Fifth) -> {true, pair, Fourth * 2};
                 true -> {false, not_pair, 0}
             end,
     Result.
@@ -86,7 +84,7 @@ find_3kind2(SortedCards) ->
     Third = lists:nth(3, SortedCards),
     Last = hd(lists:reverse(SortedCards)),
     case(First =:= Third) or (Third =:= Last) of
-        true -> {true, three_kind, Third};
+        true -> {true, three_kind, Third * 3};
         _ ->    {false, not_three_kind, 0}
     end.
 
@@ -95,7 +93,7 @@ find_4kind(SortedCards) ->
     Second = lists:nth(2, SortedCards),
     Last = hd(lists:reverse(SortedCards)),
     case(First =:= Second) or (Second =:= Last) of
-        true -> {true, four_kind, Second};
+        true -> {true, four_kind, Second * 4};
         _ ->    {false, not_four_kind, 0}
     end.
 
@@ -105,14 +103,19 @@ find_straight([Current, Next | _]) when (Next - Current) =/= 1 ->
     {false, not_a_straight};
 find_straight(Last) when length(Last) =:= 1 ->
     case Last of
-        [14] -> {true, royal_straight};
-        _  -> {true, standard_straight}
+        [14] -> {true, royal_straight, Last};
+        _  -> {true, standard_straight, Last}
     end.
 
 find_flush(Cards) ->
     {_, Suit} = hd(Cards),
     SameSuit = [X || {X, XSuit} <- Cards, XSuit == Suit],
-    length(SameSuit) == 5.
+    case length(SameSuit) == 5 of 
+        true -> 
+            Val = hd(lists:reverse(sort_cards(Cards))),
+            {true, flush, Val};
+        false -> {false, not_flush, 0}
+    end.
 
 readlines(FileName) ->
     {ok, Device} = file:open(FileName, [read]),
