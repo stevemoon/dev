@@ -1,6 +1,6 @@
 var http = require('http');
 var server = http.createServer();
-var port = 22;
+var port = 2222;
 server.on('request', function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.end('Hello World\n');
