@@ -1,1 +1,308 @@
-item	page(s)	bookSecurity templates (INF)	8	505.1 (OS / App Hardening)INF	8	505.1 (OS / App Hardening)Local policies described	10	505.1 (OS / App Hardening)Security templates from others	13	505.1 (OS / App Hardening)SCM	14	505.1 (OS / App Hardening)Security Compliance Manager	14	505.1 (OS / App Hardening)localgpo.wsf	14	505.1 (OS / App Hardening)SCA database	17	505.1 (OS / App Hardening)Audit against template (SCA tool)	19	505.1 (OS / App Hardening)Analyze your computer (audit against template - SCA)	19	505.1 (OS / App Hardening)secedit.exe	22	505.1 (OS / App Hardening)sca command line (secedit.exe)	22	505.1 (OS / App Hardening)group policy tools	24-31	505.1 (OS / App Hardening)gpupdate.exe	28	505.1 (OS / App Hardening)gpotool.exe	29	505.1 (OS / App Hardening)secedit.exe	29	505.1 (OS / App Hardening)gpresult.exe	29	505.1 (OS / App Hardening)addiag.exe	29	505.1 (OS / App Hardening)dcgopfix.exe	29	505.1 (OS / App Hardening)admx migrator	29	505.1 (OS / App Hardening)3rd party gpo enhancements	29-30	505.1 (OS / App Hardening)create gpo	33	505.1 (OS / App Hardening)gpo - computer vs. user	34	505.1 (OS / App Hardening)group policy links	35	505.1 (OS / App Hardening)gpo - order of precedence (LSD OU)	37-39	505.1 (OS / App Hardening)gpo - block inheritance	38	505.1 (OS / App Hardening)gpo - enforced	39	505.1 (OS / App Hardening)gpo - access lists	40	505.1 (OS / App Hardening)gpo - delegation of control	41	505.1 (OS / App Hardening)gpo - refresh interval	43	505.1 (OS / App Hardening)gpo - slow link detection	42	505.1 (OS / App Hardening)gpo - loopback processing mode	44-45	505.1 (OS / App Hardening)gpo - WMI filtering	46	505.1 (OS / App Hardening)gpo - disabling	46-47	505.1 (OS / App Hardening)Enterprise scale registry editor	48	505.1 (OS / App Hardening)Administrative templates - explained	48	505.1 (OS / App Hardening)Administrative templates - importing	50-51	505.1 (OS / App Hardening)tattoos	51	505.1 (OS / App Hardening)gpo -- tattoos	51	505.1 (OS / App Hardening)admx templates / central store	51	505.1 (OS / App Hardening)gpo - admx templates / central store	51-53	505.1 (OS / App Hardening)gpo - classic ADM templates	53	505.1 (OS / App Hardening)admx migrator	54	505.1 (OS / App Hardening)admx - convert from adm (admx migrator)	54	505.1 (OS / App Hardening)admx - create your own	54	505.1 (OS / App Hardening)gpo - preferences (see also gpp)	56-61	505.1 (OS / App Hardening)gpp	56-61	505.1 (OS / App Hardening)gpp - capabilities	57	505.1 (OS / App Hardening)"gpp - manage users, groups, passwords"	57	505.1 (OS / App Hardening)gpp - remote command execution	57	505.1 (OS / App Hardening)gpp - manage scheduled tasks	57	505.1 (OS / App Hardening)gpp - manage files & folders	57	505.1 (OS / App Hardening)gpp - manage ini file settings	58	505.1 (OS / App Hardening)gpp - manage registry keys and values	58	505.1 (OS / App Hardening)gpp - configure service settings	58	505.1 (OS / App Hardening)gpp - password management	58	505.1 (OS / App Hardening)password management via gpp	58	505.1 (OS / App Hardening)gpp - red & green lines	59	505.1 (OS / App Hardening)gpp - item-level targeting	59-61	505.1 (OS / App Hardening)gpo - push out scripts	62-64	505.1 (OS / App Hardening)gpo - logon/logoff script	63	505.1 (OS / App Hardening)gpo - startup/shutdown script	63	505.1 (OS / App Hardening)gpo - scripts	63	505.1 (OS / App Hardening)gpo - scripts - userver vs. system context	64	505.1 (OS / App Hardening)gpo - scripts - visible vs. hidden	64	505.1 (OS / App Hardening)cscript.exe	65	505.1 (OS / App Hardening)PopUp method	64	505.1 (OS / App Hardening)Synchronous vs. Async Execution - logon/logoff scripts	65	505.1 (OS / App Hardening)Synchronous vs. Async Execution - startup/shutdown scripts	66	505.1 (OS / App Hardening)script timeout	66	505.1 (OS / App Hardening)scripts - best practices	66-67	505.1 (OS / App Hardening)malware	69-71	505.1 (OS / App Hardening)antivirus can fail you	72-74	505.1 (OS / App Hardening)application whitelisting (generic)	75	505.1 (OS / App Hardening)whitelisting	75	505.1 (OS / App Hardening)desktops like appliances	76-81	505.1 (OS / App Hardening)local administrators	76	505.1 (OS / App Hardening)applocker	82	505.1 (OS / App Hardening)application whitelisting - applocker	82	505.1 (OS / App Hardening)whitelisting - applocker	82	505.1 (OS / App Hardening)application identity service	82	505.1 (OS / App Hardening)applocker rules	84-86	505.1 (OS / App Hardening)applocker path rules	87	505.1 (OS / App Hardening)applocker environment variables	87	505.1 (OS / App Hardening)environment variables - applocker / whitelisting	87	505.1 (OS / App Hardening)applocker - powershell	88	505.1 (OS / App Hardening)block unsigned scripts	89-91	505.1 (OS / App Hardening)bit9 parity	92	505.1 (OS / App Hardening)autoplay	94	505.1 (OS / App Hardening)autorun	94	505.1 (OS / App Hardening)anti-malware training	95	505.1 (OS / App Hardening)malware training	95	505.1 (OS / App Hardening)training - anti-malware	95	505.1 (OS / App Hardening)gpo - removable devices	97	505.1 (OS / App Hardening)gpo - usb drives	97	505.1 (OS / App Hardening)removable drives - bitlocker	99	505.1 (OS / App Hardening)usb drives - bitlocker	99	505.1 (OS / App Hardening)hardware identifier strings	98	505.1 (OS / App Hardening)removable drives / devices - 3rd party control	100	505.1 (OS / App Hardening)usb drives / devices - 3rd party control	100	505.1 (OS / App Hardening)restore pristine drive	102	505.1 (OS / App Hardening)reverse changes at logoff	103	505.1 (OS / App Hardening)PC Reset	103	505.1 (OS / App Hardening)PC Refresh	103	505.1 (OS / App Hardening)Windows 8 reset/refresh features	103	505.1 (OS / App Hardening)Apply drive image at reboot or logoff	102	505.1 (OS / App Hardening)Recimg.exe	104	505.1 (OS / App Hardening)customize PC refresh image (recimg.exe)	104	505.1 (OS / App Hardening)windows to go	104	505.1 (OS / App Hardening)boot from usb flash drive	104	505.1 (OS / App Hardening)steadystate and App-V	105	505.1 (OS / App Hardening)App-V and steadystate	105	505.1 (OS / App Hardening)Softgrid	105	505.1 (OS / App Hardening)VDI	107	505.1 (OS / App Hardening)thin client	107	505.1 (OS / App Hardening)ICA/RDP	107	505.1 (OS / App Hardening)VDI - not a panacea	108	505.1 (OS / App Hardening)VDI - Advantages	110	505.1 (OS / App Hardening)VDI on windows 2012	111	505.1 (OS / App Hardening)Personal VM vs. Pooled VM	111	505.1 (OS / App Hardening)Pooled VM vs. Personal VM	111	505.1 (OS / App Hardening)User profile disks	111-112	505.1 (OS / App Hardening)inventory	114	505.1 (OS / App Hardening)high-risk applications	115	505.1 (OS / App Hardening)Data execution prevension (DEP)	116	505.1 (OS / App Hardening)DEP - Data execution prevention	116	505.1 (OS / App Hardening)Address space layout randomization (ASLR)	118	505.1 (OS / App Hardening)ASLR - Address space layout randomization 	118	505.1 (OS / App Hardening)EMET	"117,119,121"	505.1 (OS / App Hardening)DisableNXShowUI	117	505.1 (OS / App Hardening)SEHOP - Structured Exception Handler Overwrite Protection	120	505.1 (OS / App Hardening)Structured Exception Handler Overwrite Protection - SEHOP	120	505.1 (OS / App Hardening)EMET Toolkit	122-126	505.1 (OS / App Hardening)EMET_GUI.EXE	124	505.1 (OS / App Hardening)gpo - EMET	125	505.1 (OS / App Hardening)Internet Explorer (Hardening)	127	505.1 (OS / App Hardening)Internet Explorer - Desktop vs. Metro	129	505.1 (OS / App Hardening)IE - Enhanced protected mode	129	505.1 (OS / App Hardening)Enhanced protected mode (Internet Explorer)	129	505.1 (OS / App Hardening)EPM (Enhanced protected mode - IE)	130	505.1 (OS / App Hardening)Enhanced protected mode (EPM)	130	505.1 (OS / App Hardening)IE - protected mode	131	505.1 (OS / App Hardening)Protected mode (IE)	131	505.1 (OS / App Hardening)Zones - Internet Zone (IE)	133-134	505.1 (OS / App Hardening)Internet Zone (IE)	133-134	505.1 (OS / App Hardening)Zones Trusted sites & Restricted sites	136-137	505.1 (OS / App Hardening)Trusted sites zone (IE)	136-137	505.1 (OS / App Hardening)Restricted sites zone (IE)	136-137	505.1 (OS / App Hardening)IE - filters	138	505.1 (OS / App Hardening)IE - SmartScreen Filter	138	505.1 (OS / App Hardening)IE - XSS Filter	139	505.1 (OS / App Hardening)IE - InPrivate Filter	139	505.1 (OS / App Hardening)IE - ActiveX Kill-Bits	140	505.1 (OS / App Hardening)Filters (IE)	138	505.1 (OS / App Hardening)SmartScreen Filter (IE)	138	505.1 (OS / App Hardening)XSS Filter (IE)	139	505.1 (OS / App Hardening)InPrivate Filter (IE)	139	505.1 (OS / App Hardening)ActiveX Kill-Bits (IE)	140	505.1 (OS / App Hardening)Web proxy auto-discovery	142	505.1 (OS / App Hardening)WPAD	142	505.1 (OS / App Hardening)IE - Web proxy auto-discovery (WPAD)	142	505.1 (OS / App Hardening)IE - WPAD	142	505.1 (OS / App Hardening)WPAD - DHCP method	143	505.1 (OS / App Hardening)WPAD - DNS method	143	505.1 (OS / App Hardening)WPAD - NetBIOS method	143	505.1 (OS / App Hardening)WPAD - Vulnerabilities	144	505.1 (OS / App Hardening)WPAD - Hardening	145	505.1 (OS / App Hardening)WPAD - Blocking	145-146	505.1 (OS / App Hardening)WPAD - Allowing	147	505.1 (OS / App Hardening)Chrome Browser	148	505.1 (OS / App Hardening)Google Chrome Browser	148	505.1 (OS / App Hardening)GPO - chrome browser	150	505.1 (OS / App Hardening)Chrome browser - GPO	150	505.1 (OS / App Hardening)Chrome sandbox processes	151	505.1 (OS / App Hardening)Adobe reader & Acrobat	152	505.1 (OS / App Hardening)Acrobat / Adobe reader	152	505.1 (OS / App Hardening)Adobe customization wizard	152	505.1 (OS / App Hardening)Adobe hardening	154-155	505.1 (OS / App Hardening)Adobe reader protected mode	156	505.1 (OS / App Hardening)Adobe reader alternatives	157	505.1 (OS / App Hardening)Java	159	505.1 (OS / App Hardening)Java platform editions	160	505.1 (OS / App Hardening)Java SE applications - standalone	160	505.1 (OS / App Hardening)Java SE applications - browser plugin	160	505.1 (OS / App Hardening)javaws.exe	160	505.1 (OS / App Hardening)jnlp files	160	505.1 (OS / App Hardening)Java - jnlp files	160	505.1 (OS / App Hardening)Java control panel (javacpl.exe)	161	505.1 (OS / App Hardening)Java version	161	505.1 (OS / App Hardening)IE - Metro - Java	162	505.1 (OS / App Hardening)IE - disable <APPLET> element support (JAVA)	162	505.1 (OS / App Hardening)Java - disable in any browser	163	505.1 (OS / App Hardening)Java - config files	164	505.1 (OS / App Hardening)Java - centrally manage config files	165	505.1 (OS / App Hardening)Java - deployment rule sets (whitelists)	166	505.1 (OS / App Hardening)Java - whitelists - deployment rule sets	166	505.1 (OS / App Hardening)Java - security recommendations	166-167	505.1 (OS / App Hardening)Office - Hardening	168	505.1 (OS / App Hardening)Office - XML format	168	505.1 (OS / App Hardening)Office - Protected view	168	505.1 (OS / App Hardening)Office - File blocking	169	505.1 (OS / App Hardening)"Office - Macros, ActiveX, Add-Ins"	169	505.1 (OS / App Hardening)Office - Trusted Locations	169	505.1 (OS / App Hardening)Office - Social network / skype integration	169	505.1 (OS / App Hardening)Skype	170	505.1 (OS / App Hardening)Appendix - Becoming a domain controller	173-180	505.1 (OS / App Hardening)Appendix - Social engineering	181-186	505.1 (OS / App Hardening)Appenxix  - Edit security templates by hand	187-192	505.1 (OS / App Hardening)SIDS - Well known	191-192	505.1 (OS / App Hardening)Well known SIDS	191-192	505.1 (OS / App Hardening)Appendix - Custom ADM/ADMX Templates	193-198	505.1 (OS / App Hardening)Appendix - Start with malware resistant software	199-209	505.1 (OS / App Hardening)				High value - definition	8	505.2 (High Value Targets / Admin Compromise)ultimate goals of attacker	"8, 9"	initial soft target	"8, 10-11"	soft target	"8, 10-11"	target	"8, 10-11"	power to achieve goals	12	power in windows kernel	14	gpo - manage user rights	15	rights vs. privileges vs. permissions	14	privileges vs. rights vs. permissions	14	permissions vs. rights vs. privileges	14	Local logon allow/deny	15	access from network allow/deny	15	remote logon allow/deny	15	gpo - user rights assignment	16	logon restrictions - radius policy	18	logon restrictions - ipsec port permissions	18	logon restrictions - workstation permissions	18	logon restrictions - logon hours	19	logon restrictions - require smartcard	20	gpo - manage privileges	21	whoami.exe /priv	21	see what privileges a process has	21	security access token (SAT)	21	SAT - security access token	21	privileges - complete list of	22	debug programs	22	act as part of operating system	22	create a token object	22	impersonate a client after authentication	22	load and unload device drivers	22	modify an object label	22	restore files and directories	22	take ownership of files or other objects	22	maleficent seven	24	SeTcbPrivilege - act as part of operating system	24	act as part of operating system - SeTcbPrivilege	24	create a token object - SeCreateTokenPrivilege	24	SeCreateTokenPrivilege - create a token object	24	debug programs - SeDebugPrivilege	"24, 30"	SeDebugPrivilege - debug programs	"24, 30"	load and unload device drivers - SeLoadDriverPrivilege	25	SeLoadDriverPrivilege - load and unload device drivers	25	restore files and directories - SeRestorePrivilege	"25, 40"	SeRestorePrivilege - restore files and directories	25	take ownership - SeTakeOwnershipPrivilege	"25, 39"	SeTakeOwnershipPrivilege - take ownership	25	impersonate a client after authentication - SeImpersonatePrivilege	"25, 28"	SeImpersonatePrivilege - impersonate a client after authentication	"25, 28"	impersonation tokens	26	SAT - primary security access token	26	primary security access token (SAT)	26	impersonation SAT	27	SAT impersonation	27	delegation SAT	27	SAT delegation	27	token stealing	28	malware - waiting for admin logon for token steal	29	pass-the-hash attack	31	token abuse - mitigating	32	mitigating token abuse	32	pass-the-hash attack - mitigating	32	mitigating pass-the-hash attack	32	"avoid login with remote protocols (rdp, vnc, ilo, kvm, etc.)"	34	rdp restricted mode (mstsc.exe /restrictedadmin)	35	schtasks.exe (schedule tasks)	34	schedule tasks (schtasks.exe)	34	account is sensitive and cannot be delegated	35	kerbtray.exe (kerberos info)	36	tgt - ticket granting ticket (kerberos)	35	kerberos - tgt	35	previous logons to cache	37	backup/restore privilege 	40	gpo - manage group membership	42	gpo - restricted groups	42	gpo - manage global groups	42	gpo - manage local groups	42	gpp - manage local groups	42	local admin group	46	analyze application failures	47	application compatibility toolkit - ACT	47	ACT - application compatibility toolkit	47	two account strategy	48	admin users should have two user accounts	48	runas.exe	49	psexec.exe	49	cpau.exe	49	
+item	page(s)	book
+Security templates (INF)	8	505.1 (OS / App Hardening)
+INF	8	505.1 (OS / App Hardening)
+Local policies described	10	505.1 (OS / App Hardening)
+Security templates from others	13	505.1 (OS / App Hardening)
+SCM	14	505.1 (OS / App Hardening)
+Security Compliance Manager	14	505.1 (OS / App Hardening)
+localgpo.wsf	14	505.1 (OS / App Hardening)
+SCA database	17	505.1 (OS / App Hardening)
+Audit against template (SCA tool)	19	505.1 (OS / App Hardening)
+Analyze your computer (audit against template - SCA)	19	505.1 (OS / App Hardening)
+secedit.exe	22	505.1 (OS / App Hardening)
+sca command line (secedit.exe)	22	505.1 (OS / App Hardening)
+group policy tools	24-31	505.1 (OS / App Hardening)
+gpupdate.exe	28	505.1 (OS / App Hardening)
+gpotool.exe	29	505.1 (OS / App Hardening)
+secedit.exe	29	505.1 (OS / App Hardening)
+gpresult.exe	29	505.1 (OS / App Hardening)
+addiag.exe	29	505.1 (OS / App Hardening)
+dcgopfix.exe	29	505.1 (OS / App Hardening)
+admx migrator	29	505.1 (OS / App Hardening)
+3rd party gpo enhancements	29-30	505.1 (OS / App Hardening)
+create gpo	33	505.1 (OS / App Hardening)
+gpo - computer vs. user	34	505.1 (OS / App Hardening)
+group policy links	35	505.1 (OS / App Hardening)
+gpo - order of precedence (LSD OU)	37-39	505.1 (OS / App Hardening)
+gpo - block inheritance	38	505.1 (OS / App Hardening)
+gpo - enforced	39	505.1 (OS / App Hardening)
+gpo - access lists	40	505.1 (OS / App Hardening)
+gpo - delegation of control	41	505.1 (OS / App Hardening)
+gpo - refresh interval	43	505.1 (OS / App Hardening)
+gpo - slow link detection	42	505.1 (OS / App Hardening)
+gpo - loopback processing mode	44-45	505.1 (OS / App Hardening)
+gpo - WMI filtering	46	505.1 (OS / App Hardening)
+gpo - disabling	46-47	505.1 (OS / App Hardening)
+Enterprise scale registry editor	48	505.1 (OS / App Hardening)
+Administrative templates - explained	48	505.1 (OS / App Hardening)
+Administrative templates - importing	50-51	505.1 (OS / App Hardening)
+tattoos	51	505.1 (OS / App Hardening)
+gpo -- tattoos	51	505.1 (OS / App Hardening)
+admx templates / central store	51	505.1 (OS / App Hardening)
+gpo - admx templates / central store	51-53	505.1 (OS / App Hardening)
+gpo - classic ADM templates	53	505.1 (OS / App Hardening)
+admx migrator	54	505.1 (OS / App Hardening)
+admx - convert from adm (admx migrator)	54	505.1 (OS / App Hardening)
+admx - create your own	54	505.1 (OS / App Hardening)
+gpo - preferences (see also gpp)	56-61	505.1 (OS / App Hardening)
+gpp	56-61	505.1 (OS / App Hardening)
+gpp - capabilities	57	505.1 (OS / App Hardening)
+"gpp - manage users, groups, passwords"	57	505.1 (OS / App Hardening)
+gpp - remote command execution	57	505.1 (OS / App Hardening)
+gpp - manage scheduled tasks	57	505.1 (OS / App Hardening)
+gpp - manage files & folders	57	505.1 (OS / App Hardening)
+gpp - manage ini file settings	58	505.1 (OS / App Hardening)
+gpp - manage registry keys and values	58	505.1 (OS / App Hardening)
+gpp - configure service settings	58	505.1 (OS / App Hardening)
+gpp - password management	58	505.1 (OS / App Hardening)
+password management via gpp	58	505.1 (OS / App Hardening)
+gpp - red & green lines	59	505.1 (OS / App Hardening)
+gpp - item-level targeting	59-61	505.1 (OS / App Hardening)
+gpo - push out scripts	62-64	505.1 (OS / App Hardening)
+gpo - logon/logoff script	63	505.1 (OS / App Hardening)
+gpo - startup/shutdown script	63	505.1 (OS / App Hardening)
+gpo - scripts	63	505.1 (OS / App Hardening)
+gpo - scripts - userver vs. system context	64	505.1 (OS / App Hardening)
+gpo - scripts - visible vs. hidden	64	505.1 (OS / App Hardening)
+cscript.exe	65	505.1 (OS / App Hardening)
+PopUp method	64	505.1 (OS / App Hardening)
+Synchronous vs. Async Execution - logon/logoff scripts	65	505.1 (OS / App Hardening)
+Synchronous vs. Async Execution - startup/shutdown scripts	66	505.1 (OS / App Hardening)
+script timeout	66	505.1 (OS / App Hardening)
+scripts - best practices	66-67	505.1 (OS / App Hardening)
+malware	69-71	505.1 (OS / App Hardening)
+antivirus can fail you	72-74	505.1 (OS / App Hardening)
+application whitelisting (generic)	75	505.1 (OS / App Hardening)
+whitelisting	75	505.1 (OS / App Hardening)
+desktops like appliances	76-81	505.1 (OS / App Hardening)
+local administrators	76	505.1 (OS / App Hardening)
+applocker	82	505.1 (OS / App Hardening)
+application whitelisting - applocker	82	505.1 (OS / App Hardening)
+whitelisting - applocker	82	505.1 (OS / App Hardening)
+application identity service	82	505.1 (OS / App Hardening)
+applocker rules	84-86	505.1 (OS / App Hardening)
+applocker path rules	87	505.1 (OS / App Hardening)
+applocker environment variables	87	505.1 (OS / App Hardening)
+environment variables - applocker / whitelisting	87	505.1 (OS / App Hardening)
+applocker - powershell	88	505.1 (OS / App Hardening)
+block unsigned scripts	89-91	505.1 (OS / App Hardening)
+bit9 parity	92	505.1 (OS / App Hardening)
+autoplay	94	505.1 (OS / App Hardening)
+autorun	94	505.1 (OS / App Hardening)
+anti-malware training	95	505.1 (OS / App Hardening)
+malware training	95	505.1 (OS / App Hardening)
+training - anti-malware	95	505.1 (OS / App Hardening)
+gpo - removable devices	97	505.1 (OS / App Hardening)
+gpo - usb drives	97	505.1 (OS / App Hardening)
+removable drives - bitlocker	99	505.1 (OS / App Hardening)
+usb drives - bitlocker	99	505.1 (OS / App Hardening)
+hardware identifier strings	98	505.1 (OS / App Hardening)
+removable drives / devices - 3rd party control	100	505.1 (OS / App Hardening)
+usb drives / devices - 3rd party control	100	505.1 (OS / App Hardening)
+restore pristine drive	102	505.1 (OS / App Hardening)
+reverse changes at logoff	103	505.1 (OS / App Hardening)
+PC Reset	103	505.1 (OS / App Hardening)
+PC Refresh	103	505.1 (OS / App Hardening)
+Windows 8 reset/refresh features	103	505.1 (OS / App Hardening)
+Apply drive image at reboot or logoff	102	505.1 (OS / App Hardening)
+Recimg.exe	104	505.1 (OS / App Hardening)
+customize PC refresh image (recimg.exe)	104	505.1 (OS / App Hardening)
+windows to go	104	505.1 (OS / App Hardening)
+boot from usb flash drive	104	505.1 (OS / App Hardening)
+steadystate and App-V	105	505.1 (OS / App Hardening)
+App-V and steadystate	105	505.1 (OS / App Hardening)
+Softgrid	105	505.1 (OS / App Hardening)
+VDI	107	505.1 (OS / App Hardening)
+thin client	107	505.1 (OS / App Hardening)
+ICA/RDP	107	505.1 (OS / App Hardening)
+VDI - not a panacea	108	505.1 (OS / App Hardening)
+VDI - Advantages	110	505.1 (OS / App Hardening)
+VDI on windows 2012	111	505.1 (OS / App Hardening)
+Personal VM vs. Pooled VM	111	505.1 (OS / App Hardening)
+Pooled VM vs. Personal VM	111	505.1 (OS / App Hardening)
+User profile disks	111-112	505.1 (OS / App Hardening)
+inventory	114	505.1 (OS / App Hardening)
+high-risk applications	115	505.1 (OS / App Hardening)
+Data execution prevension (DEP)	116	505.1 (OS / App Hardening)
+DEP - Data execution prevention	116	505.1 (OS / App Hardening)
+Address space layout randomization (ASLR)	118	505.1 (OS / App Hardening)
+ASLR - Address space layout randomization 	118	505.1 (OS / App Hardening)
+EMET	"117,119,121"	505.1 (OS / App Hardening)
+DisableNXShowUI	117	505.1 (OS / App Hardening)
+SEHOP - Structured Exception Handler Overwrite Protection	120	505.1 (OS / App Hardening)
+Structured Exception Handler Overwrite Protection - SEHOP	120	505.1 (OS / App Hardening)
+EMET Toolkit	122-126	505.1 (OS / App Hardening)
+EMET_GUI.EXE	124	505.1 (OS / App Hardening)
+gpo - EMET	125	505.1 (OS / App Hardening)
+Internet Explorer (Hardening)	127	505.1 (OS / App Hardening)
+Internet Explorer - Desktop vs. Metro	129	505.1 (OS / App Hardening)
+IE - Enhanced protected mode	129	505.1 (OS / App Hardening)
+Enhanced protected mode (Internet Explorer)	129	505.1 (OS / App Hardening)
+EPM (Enhanced protected mode - IE)	130	505.1 (OS / App Hardening)
+Enhanced protected mode (EPM)	130	505.1 (OS / App Hardening)
+IE - protected mode	131	505.1 (OS / App Hardening)
+Protected mode (IE)	131	505.1 (OS / App Hardening)
+Zones - Internet Zone (IE)	133-134	505.1 (OS / App Hardening)
+Internet Zone (IE)	133-134	505.1 (OS / App Hardening)
+Zones Trusted sites & Restricted sites	136-137	505.1 (OS / App Hardening)
+Trusted sites zone (IE)	136-137	505.1 (OS / App Hardening)
+Restricted sites zone (IE)	136-137	505.1 (OS / App Hardening)
+IE - filters	138	505.1 (OS / App Hardening)
+IE - SmartScreen Filter	138	505.1 (OS / App Hardening)
+IE - XSS Filter	139	505.1 (OS / App Hardening)
+IE - InPrivate Filter	139	505.1 (OS / App Hardening)
+IE - ActiveX Kill-Bits	140	505.1 (OS / App Hardening)
+Filters (IE)	138	505.1 (OS / App Hardening)
+SmartScreen Filter (IE)	138	505.1 (OS / App Hardening)
+XSS Filter (IE)	139	505.1 (OS / App Hardening)
+InPrivate Filter (IE)	139	505.1 (OS / App Hardening)
+ActiveX Kill-Bits (IE)	140	505.1 (OS / App Hardening)
+Web proxy auto-discovery	142	505.1 (OS / App Hardening)
+WPAD	142	505.1 (OS / App Hardening)
+IE - Web proxy auto-discovery (WPAD)	142	505.1 (OS / App Hardening)
+IE - WPAD	142	505.1 (OS / App Hardening)
+WPAD - DHCP method	143	505.1 (OS / App Hardening)
+WPAD - DNS method	143	505.1 (OS / App Hardening)
+WPAD - NetBIOS method	143	505.1 (OS / App Hardening)
+WPAD - Vulnerabilities	144	505.1 (OS / App Hardening)
+WPAD - Hardening	145	505.1 (OS / App Hardening)
+WPAD - Blocking	145-146	505.1 (OS / App Hardening)
+WPAD - Allowing	147	505.1 (OS / App Hardening)
+Chrome Browser	148	505.1 (OS / App Hardening)
+Google Chrome Browser	148	505.1 (OS / App Hardening)
+GPO - chrome browser	150	505.1 (OS / App Hardening)
+Chrome browser - GPO	150	505.1 (OS / App Hardening)
+Chrome sandbox processes	151	505.1 (OS / App Hardening)
+Adobe reader & Acrobat	152	505.1 (OS / App Hardening)
+Acrobat / Adobe reader	152	505.1 (OS / App Hardening)
+Adobe customization wizard	152	505.1 (OS / App Hardening)
+Adobe hardening	154-155	505.1 (OS / App Hardening)
+Adobe reader protected mode	156	505.1 (OS / App Hardening)
+Adobe reader alternatives	157	505.1 (OS / App Hardening)
+Java	159	505.1 (OS / App Hardening)
+Java platform editions	160	505.1 (OS / App Hardening)
+Java SE applications - standalone	160	505.1 (OS / App Hardening)
+Java SE applications - browser plugin	160	505.1 (OS / App Hardening)
+javaws.exe	160	505.1 (OS / App Hardening)
+jnlp files	160	505.1 (OS / App Hardening)
+Java - jnlp files	160	505.1 (OS / App Hardening)
+Java control panel (javacpl.exe)	161	505.1 (OS / App Hardening)
+Java version	161	505.1 (OS / App Hardening)
+IE - Metro - Java	162	505.1 (OS / App Hardening)
+IE - disable <APPLET> element support (JAVA)	162	505.1 (OS / App Hardening)
+Java - disable in any browser	163	505.1 (OS / App Hardening)
+Java - config files	164	505.1 (OS / App Hardening)
+Java - centrally manage config files	165	505.1 (OS / App Hardening)
+Java - deployment rule sets (whitelists)	166	505.1 (OS / App Hardening)
+Java - whitelists - deployment rule sets	166	505.1 (OS / App Hardening)
+Java - security recommendations	166-167	505.1 (OS / App Hardening)
+Office - Hardening	168	505.1 (OS / App Hardening)
+Office - XML format	168	505.1 (OS / App Hardening)
+Office - Protected view	168	505.1 (OS / App Hardening)
+Office - File blocking	169	505.1 (OS / App Hardening)
+"Office - Macros, ActiveX, Add-Ins"	169	505.1 (OS / App Hardening)
+Office - Trusted Locations	169	505.1 (OS / App Hardening)
+Office - Social network / skype integration	169	505.1 (OS / App Hardening)
+Skype	170	505.1 (OS / App Hardening)
+Appendix - Becoming a domain controller	173-180	505.1 (OS / App Hardening)
+Appendix - Social engineering	181-186	505.1 (OS / App Hardening)
+Appenxix  - Edit security templates by hand	187-192	505.1 (OS / App Hardening)
+SIDS - Well known	191-192	505.1 (OS / App Hardening)
+Well known SIDS	191-192	505.1 (OS / App Hardening)
+Appendix - Custom ADM/ADMX Templates	193-198	505.1 (OS / App Hardening)
+Appendix - Start with malware resistant software	199-209	505.1 (OS / App Hardening)
+		
+		
+High value - definition	8	505.2 (High Value Targets / Admin Compromise)
+ultimate goals of attacker	"8, 9"	
+initial soft target	"8, 10-11"	
+soft target	"8, 10-11"	
+target	"8, 10-11"	
+power to achieve goals	12	
+power in windows kernel	14	
+gpo - manage user rights	15	
+rights vs. privileges vs. permissions	14	
+privileges vs. rights vs. permissions	14	
+permissions vs. rights vs. privileges	14	
+Local logon allow/deny	15	
+access from network allow/deny	15	
+remote logon allow/deny	15	
+gpo - user rights assignment	16	
+logon restrictions - radius policy	18	
+logon restrictions - ipsec port permissions	18	
+logon restrictions - workstation permissions	18	
+logon restrictions - logon hours	19	
+logon restrictions - require smartcard	20	
+gpo - manage privileges	21	
+whoami.exe /priv	21	
+see what privileges a process has	21	
+security access token (SAT)	21	
+SAT - security access token	21	
+privileges - complete list of	22	
+debug programs	22	
+act as part of operating system	22	
+create a token object	22	
+impersonate a client after authentication	22	
+load and unload device drivers	22	
+modify an object label	22	
+restore files and directories	22	
+take ownership of files or other objects	22	
+maleficent seven	24	
+SeTcbPrivilege - act as part of operating system	24	
+act as part of operating system - SeTcbPrivilege	24	
+create a token object - SeCreateTokenPrivilege	24	
+SeCreateTokenPrivilege - create a token object	24	
+debug programs - SeDebugPrivilege	"24, 30"	
+SeDebugPrivilege - debug programs	"24, 30"	
+load and unload device drivers - SeLoadDriverPrivilege	25	
+SeLoadDriverPrivilege - load and unload device drivers	25	
+restore files and directories - SeRestorePrivilege	"25, 40"	
+SeRestorePrivilege - restore files and directories	25	
+take ownership - SeTakeOwnershipPrivilege	"25, 39"	
+SeTakeOwnershipPrivilege - take ownership	25	
+impersonate a client after authentication - SeImpersonatePrivilege	"25, 28"	
+SeImpersonatePrivilege - impersonate a client after authentication	"25, 28"	
+impersonation tokens	26	
+SAT - primary security access token	26	
+primary security access token (SAT)	26	
+impersonation SAT	27	
+SAT impersonation	27	
+delegation SAT	27	
+SAT delegation	27	
+token stealing	28	
+malware - waiting for admin logon for token steal	29	
+pass-the-hash attack	31	
+token abuse - mitigating	32	
+mitigating token abuse	32	
+pass-the-hash attack - mitigating	32	
+mitigating pass-the-hash attack	32	
+"avoid login with remote protocols (rdp, vnc, ilo, kvm, etc.)"	34	
+rdp restricted mode (mstsc.exe /restrictedadmin)	35	
+schtasks.exe (schedule tasks)	34	
+schedule tasks (schtasks.exe)	34	
+account is sensitive and cannot be delegated	35	
+kerbtray.exe (kerberos info)	36	
+tgt - ticket granting ticket (kerberos)	35	
+kerberos - tgt	35	
+previous logons to cache	37	
+backup/restore privilege 	40	
+gpo - manage group membership	42	
+gpo - restricted groups	42	
+gpo - manage global groups	42	
+gpo - manage local groups	42	
+gpp - manage local groups	42	
+local admin group	46	
+analyze application failures	47	
+application compatibility toolkit - ACT	47	
+ACT - application compatibility toolkit	47	
+two account strategy	48	
+admin users should have two user accounts	48	
+runas.exe	49	
+psexec.exe	49	
+cpau.exe	49	
+autoit.exe	49	
+aut2exe.exe	49	
+epal.exe	49	
+tqrunas.exe	49	
+UAC as sudo	49	
+admin users should have two computer accounts	50	
