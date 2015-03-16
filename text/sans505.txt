@@ -306,3 +306,219 @@ epal.exe	49
 tqrunas.exe	49	
 UAC as sudo	49	
 admin users should have two computer accounts	50	
+UAC  	51	
+UAC stripped privileges	52	
+UAC - used for deny only	52	
+UAC - MIC level	52	
+UAC group policy	53	
+gpo - UAC	53	
+mandatory integrity control levels (MIC)	55	
+MIC - mandatory integrity control levels	55	
+"MIC labels (Installer, system, high, medium, low, untrusted)"	55	
+SAT labels - viewing	56	
+MIC tools	57	
+integrity control tools	57	
+icacls.exe (MIC)	57	
+chml.exe (MIC)	57	
+regil.exe (MIC)	57	
+runasil.exe (MIC)	57	
+process hacker (MIC)	57	
+change MIC labels	57	
+MIC - change labels	57	
+integrity levels vs. NTFS permissions	57	
+MIC - integrity levels vs. NTFS permissions	57	
+NTFS permissions vs. MIC integrity levels	57	
+user interface privilege isolation (UIPI)	58	
+UIPI - user interface privilege isolation	58	
+MIC lab experiment (shows some commands)	59-61	
+password policy	62-64	
+MIC authentication	62	
+SAT groups and claims	62	
+disable guest account	64	
+guest account - disable	64	
+password policy - reversible encryption	64	
+password policy - complexity requirements	63-64	
+password policy - limit blank passwords to local only	64	
+account lockout policy	65	
+banner -- display logon banner	66	
+screensaver with password	67	
+lock workstation	67	
+proximity device to lock workstation	67	
+smart card removal behavior	67	
+account pruning	67	
+social engineering - education	67	
+password policy - no passwords	68	
+password length vs. complexity	69	
+"complexity, password vs. length"	69	
+passphrase advantages	70	
+passfilt.dll	71	
+password filters	71	
+password filter registry key	71	
+password filter - trojans	72	
+password lockout policies	73	
+passwords - custom policy management	74	
+msDS-PasswordSettings	76	
+ldf file - password settings	76	
+password settings - ldf file	76	
+ldifde.exe	76	
+password policy - adsi edit to change	78	
+picture password	"79, 82-84"	
+pin logins	79-81	
+credential manager	84	
+password managers	84	
+keepass	88	
+chml.exe - MIC label for keepass files	89	
+local admin accounts for helpdesk/it	90	
+gpo scripts - startup/shutdown/scheduled tasks	90	
+local admin accounts - inventory	91	
+local admin accounts - delete/disable	92	
+local admin group - remove members	92	
+local accounts - block login with blank password	92	
+gpo - manage local passwords	92-93	
+scheduled tasks - manage local passwords	93-94	
+password management - 3rd party tools	94-95	
+ad - metro tools	97	
+schema management add in (regsrvr32.exe schmmgmt.dll)	97	
+ad - desktop tools	98	
+ad - powershell cmdlets	99	
+ad - rsat (remote server admin tools)	99	
+acldiag.exe	99	
+dsacls.exe	99	
+dsrevoke.exe	99	
+enumprop.exe	99	
+sdcheck.exe	99	
+netdom.exe	99	
+nltest.exe	99	
+csvde.exe	100	
+ldifde.exe	100	
+movetree.exe	100	
+dsadd.exe	100	
+dsget.exe	100	
+dsmod.exe	100	
+dsmove.exe	100	
+dsquery.exe	100	
+dsrm.exe	100	
+ad - import/export & bulk mgt (CLI tools)	100	
+ad - replication & troubleshooting (CLI tools)	100	
+ad - permissions & trusts (CLI tools)	99	
+dcdiag.exe	100	
+dnscmd.exe	100	
+dsastat.exe	100	
+dsmgmt.exe	100	
+netdiag.exe	100	
+ntdsutil.exe	100	
+repadmin.exe	100	
+ad - joeware tools	100-101	
+adfind.exe	101	
+admod.exe	101	
+atsn.exe	101	
+oldcmdp.exe	101	
+secdata.exe	101	
+unlock.exe	101	
+adrestore.exe	101	
+ad - adsi scripting support	101	
+"ad - powershell ""System.DirectoryServices"" .NET classes"	101	
+ldap	102	
+ldap - secure traffic	102	
+tcp/ip ports - ad traffic	102	
+ad traffic - tcp/ip ports	102	
+ad - permissions  	103	
+ad - inheritance of dacl and sacl ace's	105	
+access control entries (ACE)	105	
+discretionary access control lists (dacl)	105	
+system access control lists (sacl)	105	
+ACE -  access control entries 	105	
+dacl - discretionary access control lists	105	
+sacl - system access control lists	105	
+permissions - conflicts - inherited vs. explicit	106	
+conflicts - inherited vs. explicit permissions	106	
+inherited permissions vs. explicit - conflicts	106	
+explicit permissions vs. inherited - conflicts	106	
+ad - object ownership	107	
+dssec.dat (%systemroot%\system32\) [snap-in view control]	107	
+ad snap-in view control - see dssec.dat	107	
+ad - default permission source	108	
+ad - change schema to affect default permissions	108-109	
+ad - acl tools	110	
+dsacls.exe	110	
+acldiag.exe	111	
+sdcheck.exe	112	
+dsrevoke.exe	112	
+adsi 2.5 scripting ad permissions	113	
+delegation of control	114	
+delegation of authority over shared folder	115	
+delegation of authority - best practices	116	
+delgation of authority - reset password example	118-120	
+delgation of authority - edit selected properties example	121-123	
+delegation of authority - prevent edits in one OU only	124	
+delegation of auhtority - join computers to domain	125	
+join computer to domain	125	
+delegation of auhtority - full control over an OU	129	
+delegation of authority - IT authority via Ous	131	
+high value targets - separate OU	131	
+OU - separate for high value targets	131	
+OU admins group	131-132	
+high value targets - separate OU -- audit all access	132	
+ad - audit access	133	
+ad - enable sacl auditing	133	
+ad - customizing ad object and container sacl's	134	
+ad - enable generic ad auditing	134	
+audit account logon events	135	
+audit account management	135	
+audit directory service access	135	
+audit logon events	135	
+audit object access	135	
+audit policy change	135	
+audit privilege use	136	
+audit process tracking	136	
+audit system events	136	
+ad - directory service change auditing	137	
+auditpol.exe /get /category:*	137	
+auditing best practices	139	
+patching - critical importance of	142	
+patching - update cycle	143	
+test lab	145	
+bulletins - e-mail & newsfeed	147	
+alets / news / email / etc.	147	
+patching - before OS is installed	149	
+hardware selection	149	
+flashing the BIOS	149	
+BIOS updates / flashing	149	
+firmware updates	149	
+"updates - firmware, BIOS, etc."	149	
+"updating binary install disk images (ghost, acronis, wds, etc.)"	150	
+MDT (microsoft deployment toolkit)	150	
+Windows automated installation (AIK)	150	
+aik - windows automated installation	150	
+windows deployment services	150	
+wds - windows deployment services	150	
+deployment services - wds	150	
+wsus - windws server update services	152-157	
+windows server update services - wsus	152-157	
+wsus console	158-159	
+wsus - client admin	160	
+"wsus tools - client & server side (wuauclt, wsusutil, etc.)"	161	
+wuauclt.exe	161	
+wsusutil.exe	161	
+wsus - scripting admin	161	
+wsus - disappointments	163	
+wsus - custom msi packages	164-165	
+patching -- offsite computers	167	
+updates - patching offsite computers	167	
+secunia psi	169	
+psi - secunia personal software inspector	169	
+patching - scan for missing updates	171	
+updates - scan for missing patches	171	
+msba - ms baseline security analyzer	171	
+mbsacli.exe	171	
+msba - xml and powershell	172	
+msba - wsus integration	173	
+wsus - msba integration	173	
+wsus - patching 3rd party software 	173	
+scanning for rogue computers	175	
+rogue computers - scanning for	175	
+nac	177-178	
+network access control	177-178	
+802.1x	177-178	
+radius	177-178	
+nap	177-178	
