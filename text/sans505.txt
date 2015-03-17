@@ -214,311 +214,311 @@ Appendix - Start with malware resistant software	199-209	505.1 (OS / App Hardeni
 		
 		
 High value - definition	8	505.2 (High Value Targets / Admin Compromise)
-ultimate goals of attacker	"8, 9"	
-initial soft target	"8, 10-11"	
-soft target	"8, 10-11"	
-target	"8, 10-11"	
-power to achieve goals	12	
-power in windows kernel	14	
-gpo - manage user rights	15	
-rights vs. privileges vs. permissions	14	
-privileges vs. rights vs. permissions	14	
-permissions vs. rights vs. privileges	14	
-Local logon allow/deny	15	
-access from network allow/deny	15	
-remote logon allow/deny	15	
-gpo - user rights assignment	16	
-logon restrictions - radius policy	18	
-logon restrictions - ipsec port permissions	18	
-logon restrictions - workstation permissions	18	
-logon restrictions - logon hours	19	
-logon restrictions - require smartcard	20	
-gpo - manage privileges	21	
-whoami.exe /priv	21	
-see what privileges a process has	21	
-security access token (SAT)	21	
-SAT - security access token	21	
-privileges - complete list of	22	
-debug programs	22	
-act as part of operating system	22	
-create a token object	22	
-impersonate a client after authentication	22	
-load and unload device drivers	22	
-modify an object label	22	
-restore files and directories	22	
-take ownership of files or other objects	22	
-maleficent seven	24	
-SeTcbPrivilege - act as part of operating system	24	
-act as part of operating system - SeTcbPrivilege	24	
-create a token object - SeCreateTokenPrivilege	24	
-SeCreateTokenPrivilege - create a token object	24	
-debug programs - SeDebugPrivilege	"24, 30"	
-SeDebugPrivilege - debug programs	"24, 30"	
-load and unload device drivers - SeLoadDriverPrivilege	25	
-SeLoadDriverPrivilege - load and unload device drivers	25	
-restore files and directories - SeRestorePrivilege	"25, 40"	
-SeRestorePrivilege - restore files and directories	25	
-take ownership - SeTakeOwnershipPrivilege	"25, 39"	
-SeTakeOwnershipPrivilege - take ownership	25	
-impersonate a client after authentication - SeImpersonatePrivilege	"25, 28"	
-SeImpersonatePrivilege - impersonate a client after authentication	"25, 28"	
-impersonation tokens	26	
-SAT - primary security access token	26	
-primary security access token (SAT)	26	
-impersonation SAT	27	
-SAT impersonation	27	
-delegation SAT	27	
-SAT delegation	27	
-token stealing	28	
-malware - waiting for admin logon for token steal	29	
-pass-the-hash attack	31	
-token abuse - mitigating	32	
-mitigating token abuse	32	
-pass-the-hash attack - mitigating	32	
-mitigating pass-the-hash attack	32	
-"avoid login with remote protocols (rdp, vnc, ilo, kvm, etc.)"	34	
-rdp restricted mode (mstsc.exe /restrictedadmin)	35	
-schtasks.exe (schedule tasks)	34	
-schedule tasks (schtasks.exe)	34	
-account is sensitive and cannot be delegated	35	
-kerbtray.exe (kerberos info)	36	
-tgt - ticket granting ticket (kerberos)	35	
-kerberos - tgt	35	
-previous logons to cache	37	
-backup/restore privilege 	40	
-gpo - manage group membership	42	
-gpo - restricted groups	42	
-gpo - manage global groups	42	
-gpo - manage local groups	42	
-gpp - manage local groups	42	
-local admin group	46	
-analyze application failures	47	
-application compatibility toolkit - ACT	47	
-ACT - application compatibility toolkit	47	
-two account strategy	48	
-admin users should have two user accounts	48	
-runas.exe	49	
-psexec.exe	49	
-cpau.exe	49	
-autoit.exe	49	
-aut2exe.exe	49	
-epal.exe	49	
-tqrunas.exe	49	
-UAC as sudo	49	
-admin users should have two computer accounts	50	
-UAC  	51	
-UAC stripped privileges	52	
-UAC - used for deny only	52	
-UAC - MIC level	52	
-UAC group policy	53	
-gpo - UAC	53	
-mandatory integrity control levels (MIC)	55	
-MIC - mandatory integrity control levels	55	
-"MIC labels (Installer, system, high, medium, low, untrusted)"	55	
-SAT labels - viewing	56	
-MIC tools	57	
-integrity control tools	57	
-icacls.exe (MIC)	57	
-chml.exe (MIC)	57	
-regil.exe (MIC)	57	
-runasil.exe (MIC)	57	
-process hacker (MIC)	57	
-change MIC labels	57	
-MIC - change labels	57	
-integrity levels vs. NTFS permissions	57	
-MIC - integrity levels vs. NTFS permissions	57	
-NTFS permissions vs. MIC integrity levels	57	
-user interface privilege isolation (UIPI)	58	
-UIPI - user interface privilege isolation	58	
-MIC lab experiment (shows some commands)	59-61	
-password policy	62-64	
-MIC authentication	62	
-SAT groups and claims	62	
-disable guest account	64	
-guest account - disable	64	
-password policy - reversible encryption	64	
-password policy - complexity requirements	63-64	
-password policy - limit blank passwords to local only	64	
-account lockout policy	65	
-banner -- display logon banner	66	
-screensaver with password	67	
-lock workstation	67	
-proximity device to lock workstation	67	
-smart card removal behavior	67	
-account pruning	67	
-social engineering - education	67	
-password policy - no passwords	68	
-password length vs. complexity	69	
-"complexity, password vs. length"	69	
-passphrase advantages	70	
-passfilt.dll	71	
-password filters	71	
-password filter registry key	71	
-password filter - trojans	72	
-password lockout policies	73	
-passwords - custom policy management	74	
-msDS-PasswordSettings	76	
-ldf file - password settings	76	
-password settings - ldf file	76	
-ldifde.exe	76	
-password policy - adsi edit to change	78	
-picture password	"79, 82-84"	
-pin logins	79-81	
-credential manager	84	
-password managers	84	
-keepass	88	
-chml.exe - MIC label for keepass files	89	
-local admin accounts for helpdesk/it	90	
-gpo scripts - startup/shutdown/scheduled tasks	90	
-local admin accounts - inventory	91	
-local admin accounts - delete/disable	92	
-local admin group - remove members	92	
-local accounts - block login with blank password	92	
-gpo - manage local passwords	92-93	
-scheduled tasks - manage local passwords	93-94	
-password management - 3rd party tools	94-95	
-ad - metro tools	97	
-schema management add in (regsrvr32.exe schmmgmt.dll)	97	
-ad - desktop tools	98	
-ad - powershell cmdlets	99	
-ad - rsat (remote server admin tools)	99	
-acldiag.exe	99	
-dsacls.exe	99	
-dsrevoke.exe	99	
-enumprop.exe	99	
-sdcheck.exe	99	
-netdom.exe	99	
-nltest.exe	99	
-csvde.exe	100	
-ldifde.exe	100	
-movetree.exe	100	
-dsadd.exe	100	
-dsget.exe	100	
-dsmod.exe	100	
-dsmove.exe	100	
-dsquery.exe	100	
-dsrm.exe	100	
-ad - import/export & bulk mgt (CLI tools)	100	
-ad - replication & troubleshooting (CLI tools)	100	
-ad - permissions & trusts (CLI tools)	99	
-dcdiag.exe	100	
-dnscmd.exe	100	
-dsastat.exe	100	
-dsmgmt.exe	100	
-netdiag.exe	100	
-ntdsutil.exe	100	
-repadmin.exe	100	
-ad - joeware tools	100-101	
-adfind.exe	101	
-admod.exe	101	
-atsn.exe	101	
-oldcmdp.exe	101	
-secdata.exe	101	
-unlock.exe	101	
-adrestore.exe	101	
-ad - adsi scripting support	101	
-"ad - powershell ""System.DirectoryServices"" .NET classes"	101	
-ldap	102	
-ldap - secure traffic	102	
-tcp/ip ports - ad traffic	102	
-ad traffic - tcp/ip ports	102	
-ad - permissions  	103	
-ad - inheritance of dacl and sacl ace's	105	
-access control entries (ACE)	105	
-discretionary access control lists (dacl)	105	
-system access control lists (sacl)	105	
-ACE -  access control entries 	105	
-dacl - discretionary access control lists	105	
-sacl - system access control lists	105	
-permissions - conflicts - inherited vs. explicit	106	
-conflicts - inherited vs. explicit permissions	106	
-inherited permissions vs. explicit - conflicts	106	
-explicit permissions vs. inherited - conflicts	106	
-ad - object ownership	107	
-dssec.dat (%systemroot%\system32\) [snap-in view control]	107	
-ad snap-in view control - see dssec.dat	107	
-ad - default permission source	108	
-ad - change schema to affect default permissions	108-109	
-ad - acl tools	110	
-dsacls.exe	110	
-acldiag.exe	111	
-sdcheck.exe	112	
-dsrevoke.exe	112	
-adsi 2.5 scripting ad permissions	113	
-delegation of control	114	
-delegation of authority over shared folder	115	
-delegation of authority - best practices	116	
-delgation of authority - reset password example	118-120	
-delgation of authority - edit selected properties example	121-123	
-delegation of authority - prevent edits in one OU only	124	
-delegation of auhtority - join computers to domain	125	
-join computer to domain	125	
-delegation of auhtority - full control over an OU	129	
-delegation of authority - IT authority via Ous	131	
-high value targets - separate OU	131	
-OU - separate for high value targets	131	
-OU admins group	131-132	
-high value targets - separate OU -- audit all access	132	
-ad - audit access	133	
-ad - enable sacl auditing	133	
-ad - customizing ad object and container sacl's	134	
-ad - enable generic ad auditing	134	
-audit account logon events	135	
-audit account management	135	
-audit directory service access	135	
-audit logon events	135	
-audit object access	135	
-audit policy change	135	
-audit privilege use	136	
-audit process tracking	136	
-audit system events	136	
-ad - directory service change auditing	137	
-auditpol.exe /get /category:*	137	
-auditing best practices	139	
-patching - critical importance of	142	
-patching - update cycle	143	
-test lab	145	
-bulletins - e-mail & newsfeed	147	
-alets / news / email / etc.	147	
-patching - before OS is installed	149	
-hardware selection	149	
-flashing the BIOS	149	
-BIOS updates / flashing	149	
-firmware updates	149	
-"updates - firmware, BIOS, etc."	149	
-"updating binary install disk images (ghost, acronis, wds, etc.)"	150	
-MDT (microsoft deployment toolkit)	150	
-Windows automated installation (AIK)	150	
-aik - windows automated installation	150	
-windows deployment services	150	
-wds - windows deployment services	150	
-deployment services - wds	150	
-wsus - windws server update services	152-157	
-windows server update services - wsus	152-157	
-wsus console	158-159	
-wsus - client admin	160	
-"wsus tools - client & server side (wuauclt, wsusutil, etc.)"	161	
-wuauclt.exe	161	
-wsusutil.exe	161	
-wsus - scripting admin	161	
-wsus - disappointments	163	
-wsus - custom msi packages	164-165	
-patching -- offsite computers	167	
-updates - patching offsite computers	167	
-secunia psi	169	
-psi - secunia personal software inspector	169	
-patching - scan for missing updates	171	
-updates - scan for missing patches	171	
-msba - ms baseline security analyzer	171	
-mbsacli.exe	171	
-msba - xml and powershell	172	
-msba - wsus integration	173	
-wsus - msba integration	173	
-wsus - patching 3rd party software 	173	
-scanning for rogue computers	175	
-rogue computers - scanning for	175	
-nac	177-178	
-network access control	177-178	
-802.1x	177-178	
-radius	177-178	
-nap	177-178	
+ultimate goals of attacker	"8, 9"	505.2 (High Value Targets / Admin Compromise)
+initial soft target	"8, 10-11"	505.2 (High Value Targets / Admin Compromise)
+soft target	"8, 10-11"	505.2 (High Value Targets / Admin Compromise)
+target	"8, 10-11"	505.2 (High Value Targets / Admin Compromise)
+power to achieve goals	12	505.2 (High Value Targets / Admin Compromise)
+power in windows kernel	14	505.2 (High Value Targets / Admin Compromise)
+gpo - manage user rights	15	505.2 (High Value Targets / Admin Compromise)
+rights vs. privileges vs. permissions	14	505.2 (High Value Targets / Admin Compromise)
+privileges vs. rights vs. permissions	14	505.2 (High Value Targets / Admin Compromise)
+permissions vs. rights vs. privileges	14	505.2 (High Value Targets / Admin Compromise)
+Local logon allow/deny	15	505.2 (High Value Targets / Admin Compromise)
+access from network allow/deny	15	505.2 (High Value Targets / Admin Compromise)
+remote logon allow/deny	15	505.2 (High Value Targets / Admin Compromise)
+gpo - user rights assignment	16	505.2 (High Value Targets / Admin Compromise)
+logon restrictions - radius policy	18	505.2 (High Value Targets / Admin Compromise)
+logon restrictions - ipsec port permissions	18	505.2 (High Value Targets / Admin Compromise)
+logon restrictions - workstation permissions	18	505.2 (High Value Targets / Admin Compromise)
+logon restrictions - logon hours	19	505.2 (High Value Targets / Admin Compromise)
+logon restrictions - require smartcard	20	505.2 (High Value Targets / Admin Compromise)
+gpo - manage privileges	21	505.2 (High Value Targets / Admin Compromise)
+whoami.exe /priv	21	505.2 (High Value Targets / Admin Compromise)
+see what privileges a process has	21	505.2 (High Value Targets / Admin Compromise)
+security access token (SAT)	21	505.2 (High Value Targets / Admin Compromise)
+SAT - security access token	21	505.2 (High Value Targets / Admin Compromise)
+privileges - complete list of	22	505.2 (High Value Targets / Admin Compromise)
+debug programs	22	505.2 (High Value Targets / Admin Compromise)
+act as part of operating system	22	505.2 (High Value Targets / Admin Compromise)
+create a token object	22	505.2 (High Value Targets / Admin Compromise)
+impersonate a client after authentication	22	505.2 (High Value Targets / Admin Compromise)
+load and unload device drivers	22	505.2 (High Value Targets / Admin Compromise)
+modify an object label	22	505.2 (High Value Targets / Admin Compromise)
+restore files and directories	22	505.2 (High Value Targets / Admin Compromise)
+take ownership of files or other objects	22	505.2 (High Value Targets / Admin Compromise)
+maleficent seven	24	505.2 (High Value Targets / Admin Compromise)
+SeTcbPrivilege - act as part of operating system	24	505.2 (High Value Targets / Admin Compromise)
+act as part of operating system - SeTcbPrivilege	24	505.2 (High Value Targets / Admin Compromise)
+create a token object - SeCreateTokenPrivilege	24	505.2 (High Value Targets / Admin Compromise)
+SeCreateTokenPrivilege - create a token object	24	505.2 (High Value Targets / Admin Compromise)
+debug programs - SeDebugPrivilege	"24, 30"	505.2 (High Value Targets / Admin Compromise)
+SeDebugPrivilege - debug programs	"24, 30"	505.2 (High Value Targets / Admin Compromise)
+load and unload device drivers - SeLoadDriverPrivilege	25	505.2 (High Value Targets / Admin Compromise)
+SeLoadDriverPrivilege - load and unload device drivers	25	505.2 (High Value Targets / Admin Compromise)
+restore files and directories - SeRestorePrivilege	"25, 40"	505.2 (High Value Targets / Admin Compromise)
+SeRestorePrivilege - restore files and directories	25	505.2 (High Value Targets / Admin Compromise)
+take ownership - SeTakeOwnershipPrivilege	"25, 39"	505.2 (High Value Targets / Admin Compromise)
+SeTakeOwnershipPrivilege - take ownership	25	505.2 (High Value Targets / Admin Compromise)
+impersonate a client after authentication - SeImpersonatePrivilege	"25, 28"	505.2 (High Value Targets / Admin Compromise)
+SeImpersonatePrivilege - impersonate a client after authentication	"25, 28"	505.2 (High Value Targets / Admin Compromise)
+impersonation tokens	26	505.2 (High Value Targets / Admin Compromise)
+SAT - primary security access token	26	505.2 (High Value Targets / Admin Compromise)
+primary security access token (SAT)	26	505.2 (High Value Targets / Admin Compromise)
+impersonation SAT	27	505.2 (High Value Targets / Admin Compromise)
+SAT impersonation	27	505.2 (High Value Targets / Admin Compromise)
+delegation SAT	27	505.2 (High Value Targets / Admin Compromise)
+SAT delegation	27	505.2 (High Value Targets / Admin Compromise)
+token stealing	28	505.2 (High Value Targets / Admin Compromise)
+malware - waiting for admin logon for token steal	29	505.2 (High Value Targets / Admin Compromise)
+pass-the-hash attack	31	505.2 (High Value Targets / Admin Compromise)
+token abuse - mitigating	32	505.2 (High Value Targets / Admin Compromise)
+mitigating token abuse	32	505.2 (High Value Targets / Admin Compromise)
+pass-the-hash attack - mitigating	32	505.2 (High Value Targets / Admin Compromise)
+mitigating pass-the-hash attack	32	505.2 (High Value Targets / Admin Compromise)
+"avoid login with remote protocols (rdp, vnc, ilo, kvm, etc.)"	34	505.2 (High Value Targets / Admin Compromise)
+rdp restricted mode (mstsc.exe /restrictedadmin)	35	505.2 (High Value Targets / Admin Compromise)
+schtasks.exe (schedule tasks)	34	505.2 (High Value Targets / Admin Compromise)
+schedule tasks (schtasks.exe)	34	505.2 (High Value Targets / Admin Compromise)
+account is sensitive and cannot be delegated	35	505.2 (High Value Targets / Admin Compromise)
+kerbtray.exe (kerberos info)	36	505.2 (High Value Targets / Admin Compromise)
+tgt - ticket granting ticket (kerberos)	35	505.2 (High Value Targets / Admin Compromise)
+kerberos - tgt	35	505.2 (High Value Targets / Admin Compromise)
+previous logons to cache	37	505.2 (High Value Targets / Admin Compromise)
+backup/restore privilege 	40	505.2 (High Value Targets / Admin Compromise)
+gpo - manage group membership	42	505.2 (High Value Targets / Admin Compromise)
+gpo - restricted groups	42	505.2 (High Value Targets / Admin Compromise)
+gpo - manage global groups	42	505.2 (High Value Targets / Admin Compromise)
+gpo - manage local groups	42	505.2 (High Value Targets / Admin Compromise)
+gpp - manage local groups	42	505.2 (High Value Targets / Admin Compromise)
+local admin group	46	505.2 (High Value Targets / Admin Compromise)
+analyze application failures	47	505.2 (High Value Targets / Admin Compromise)
+application compatibility toolkit - ACT	47	505.2 (High Value Targets / Admin Compromise)
+ACT - application compatibility toolkit	47	505.2 (High Value Targets / Admin Compromise)
+two account strategy	48	505.2 (High Value Targets / Admin Compromise)
+admin users should have two user accounts	48	505.2 (High Value Targets / Admin Compromise)
+runas.exe	49	505.2 (High Value Targets / Admin Compromise)
+psexec.exe	49	505.2 (High Value Targets / Admin Compromise)
+cpau.exe	49	505.2 (High Value Targets / Admin Compromise)
+autoit.exe	49	505.2 (High Value Targets / Admin Compromise)
+aut2exe.exe	49	505.2 (High Value Targets / Admin Compromise)
+epal.exe	49	505.2 (High Value Targets / Admin Compromise)
+tqrunas.exe	49	505.2 (High Value Targets / Admin Compromise)
+UAC as sudo	49	505.2 (High Value Targets / Admin Compromise)
+admin users should have two computer accounts	50	505.2 (High Value Targets / Admin Compromise)
+UAC  	51	505.2 (High Value Targets / Admin Compromise)
+UAC stripped privileges	52	505.2 (High Value Targets / Admin Compromise)
+UAC - used for deny only	52	505.2 (High Value Targets / Admin Compromise)
+UAC - MIC level	52	505.2 (High Value Targets / Admin Compromise)
+UAC group policy	53	505.2 (High Value Targets / Admin Compromise)
+gpo - UAC	53	505.2 (High Value Targets / Admin Compromise)
+mandatory integrity control levels (MIC)	55	505.2 (High Value Targets / Admin Compromise)
+MIC - mandatory integrity control levels	55	505.2 (High Value Targets / Admin Compromise)
+"MIC labels (Installer, system, high, medium, low, untrusted)"	55	505.2 (High Value Targets / Admin Compromise)
+SAT labels - viewing	56	505.2 (High Value Targets / Admin Compromise)
+MIC tools	57	505.2 (High Value Targets / Admin Compromise)
+integrity control tools	57	505.2 (High Value Targets / Admin Compromise)
+icacls.exe (MIC)	57	505.2 (High Value Targets / Admin Compromise)
+chml.exe (MIC)	57	505.2 (High Value Targets / Admin Compromise)
+regil.exe (MIC)	57	505.2 (High Value Targets / Admin Compromise)
+runasil.exe (MIC)	57	505.2 (High Value Targets / Admin Compromise)
+process hacker (MIC)	57	505.2 (High Value Targets / Admin Compromise)
+change MIC labels	57	505.2 (High Value Targets / Admin Compromise)
+MIC - change labels	57	505.2 (High Value Targets / Admin Compromise)
+integrity levels vs. NTFS permissions	57	505.2 (High Value Targets / Admin Compromise)
+MIC - integrity levels vs. NTFS permissions	57	505.2 (High Value Targets / Admin Compromise)
+NTFS permissions vs. MIC integrity levels	57	505.2 (High Value Targets / Admin Compromise)
+user interface privilege isolation (UIPI)	58	505.2 (High Value Targets / Admin Compromise)
+UIPI - user interface privilege isolation	58	505.2 (High Value Targets / Admin Compromise)
+MIC lab experiment (shows some commands)	59-61	505.2 (High Value Targets / Admin Compromise)
+password policy	62-64	505.2 (High Value Targets / Admin Compromise)
+MIC authentication	62	505.2 (High Value Targets / Admin Compromise)
+SAT groups and claims	62	505.2 (High Value Targets / Admin Compromise)
+disable guest account	64	505.2 (High Value Targets / Admin Compromise)
+guest account - disable	64	505.2 (High Value Targets / Admin Compromise)
+password policy - reversible encryption	64	505.2 (High Value Targets / Admin Compromise)
+password policy - complexity requirements	63-64	505.2 (High Value Targets / Admin Compromise)
+password policy - limit blank passwords to local only	64	505.2 (High Value Targets / Admin Compromise)
+account lockout policy	65	505.2 (High Value Targets / Admin Compromise)
+banner -- display logon banner	66	505.2 (High Value Targets / Admin Compromise)
+screensaver with password	67	505.2 (High Value Targets / Admin Compromise)
+lock workstation	67	505.2 (High Value Targets / Admin Compromise)
+proximity device to lock workstation	67	505.2 (High Value Targets / Admin Compromise)
+smart card removal behavior	67	505.2 (High Value Targets / Admin Compromise)
+account pruning	67	505.2 (High Value Targets / Admin Compromise)
+social engineering - education	67	505.2 (High Value Targets / Admin Compromise)
+password policy - no passwords	68	505.2 (High Value Targets / Admin Compromise)
+password length vs. complexity	69	505.2 (High Value Targets / Admin Compromise)
+"complexity, password vs. length"	69	505.2 (High Value Targets / Admin Compromise)
+passphrase advantages	70	505.2 (High Value Targets / Admin Compromise)
+passfilt.dll	71	505.2 (High Value Targets / Admin Compromise)
+password filters	71	505.2 (High Value Targets / Admin Compromise)
+password filter registry key	71	505.2 (High Value Targets / Admin Compromise)
+password filter - trojans	72	505.2 (High Value Targets / Admin Compromise)
+password lockout policies	73	505.2 (High Value Targets / Admin Compromise)
+passwords - custom policy management	74	505.2 (High Value Targets / Admin Compromise)
+msDS-PasswordSettings	76	505.2 (High Value Targets / Admin Compromise)
+ldf file - password settings	76	505.2 (High Value Targets / Admin Compromise)
+password settings - ldf file	76	505.2 (High Value Targets / Admin Compromise)
+ldifde.exe	76	505.2 (High Value Targets / Admin Compromise)
+password policy - adsi edit to change	78	505.2 (High Value Targets / Admin Compromise)
+picture password	"79, 82-84"	505.2 (High Value Targets / Admin Compromise)
+pin logins	79-81	505.2 (High Value Targets / Admin Compromise)
+credential manager	84	505.2 (High Value Targets / Admin Compromise)
+password managers	84	505.2 (High Value Targets / Admin Compromise)
+keepass	88	505.2 (High Value Targets / Admin Compromise)
+chml.exe - MIC label for keepass files	89	505.2 (High Value Targets / Admin Compromise)
+local admin accounts for helpdesk/it	90	505.2 (High Value Targets / Admin Compromise)
+gpo scripts - startup/shutdown/scheduled tasks	90	505.2 (High Value Targets / Admin Compromise)
+local admin accounts - inventory	91	505.2 (High Value Targets / Admin Compromise)
+local admin accounts - delete/disable	92	505.2 (High Value Targets / Admin Compromise)
+local admin group - remove members	92	505.2 (High Value Targets / Admin Compromise)
+local accounts - block login with blank password	92	505.2 (High Value Targets / Admin Compromise)
+gpo - manage local passwords	92-93	505.2 (High Value Targets / Admin Compromise)
+scheduled tasks - manage local passwords	93-94	505.2 (High Value Targets / Admin Compromise)
+password management - 3rd party tools	94-95	505.2 (High Value Targets / Admin Compromise)
+ad - metro tools	97	505.2 (High Value Targets / Admin Compromise)
+schema management add in (regsrvr32.exe schmmgmt.dll)	97	505.2 (High Value Targets / Admin Compromise)
+ad - desktop tools	98	505.2 (High Value Targets / Admin Compromise)
+ad - powershell cmdlets	99	505.2 (High Value Targets / Admin Compromise)
+ad - rsat (remote server admin tools)	99	505.2 (High Value Targets / Admin Compromise)
+acldiag.exe	99	505.2 (High Value Targets / Admin Compromise)
+dsacls.exe	99	505.2 (High Value Targets / Admin Compromise)
+dsrevoke.exe	99	505.2 (High Value Targets / Admin Compromise)
+enumprop.exe	99	505.2 (High Value Targets / Admin Compromise)
+sdcheck.exe	99	505.2 (High Value Targets / Admin Compromise)
+netdom.exe	99	505.2 (High Value Targets / Admin Compromise)
+nltest.exe	99	505.2 (High Value Targets / Admin Compromise)
+csvde.exe	100	505.2 (High Value Targets / Admin Compromise)
+ldifde.exe	100	505.2 (High Value Targets / Admin Compromise)
+movetree.exe	100	505.2 (High Value Targets / Admin Compromise)
+dsadd.exe	100	505.2 (High Value Targets / Admin Compromise)
+dsget.exe	100	505.2 (High Value Targets / Admin Compromise)
+dsmod.exe	100	505.2 (High Value Targets / Admin Compromise)
+dsmove.exe	100	505.2 (High Value Targets / Admin Compromise)
+dsquery.exe	100	505.2 (High Value Targets / Admin Compromise)
+dsrm.exe	100	505.2 (High Value Targets / Admin Compromise)
+ad - import/export & bulk mgt (CLI tools)	100	505.2 (High Value Targets / Admin Compromise)
+ad - replication & troubleshooting (CLI tools)	100	505.2 (High Value Targets / Admin Compromise)
+ad - permissions & trusts (CLI tools)	99	505.2 (High Value Targets / Admin Compromise)
+dcdiag.exe	100	505.2 (High Value Targets / Admin Compromise)
+dnscmd.exe	100	505.2 (High Value Targets / Admin Compromise)
+dsastat.exe	100	505.2 (High Value Targets / Admin Compromise)
+dsmgmt.exe	100	505.2 (High Value Targets / Admin Compromise)
+netdiag.exe	100	505.2 (High Value Targets / Admin Compromise)
+ntdsutil.exe	100	505.2 (High Value Targets / Admin Compromise)
+repadmin.exe	100	505.2 (High Value Targets / Admin Compromise)
+ad - joeware tools	100-101	505.2 (High Value Targets / Admin Compromise)
+adfind.exe	101	505.2 (High Value Targets / Admin Compromise)
+admod.exe	101	505.2 (High Value Targets / Admin Compromise)
+atsn.exe	101	505.2 (High Value Targets / Admin Compromise)
+oldcmdp.exe	101	505.2 (High Value Targets / Admin Compromise)
+secdata.exe	101	505.2 (High Value Targets / Admin Compromise)
+unlock.exe	101	505.2 (High Value Targets / Admin Compromise)
+adrestore.exe	101	505.2 (High Value Targets / Admin Compromise)
+ad - adsi scripting support	101	505.2 (High Value Targets / Admin Compromise)
+"ad - powershell ""System.DirectoryServices"" .NET classes"	101	505.2 (High Value Targets / Admin Compromise)
+ldap	102	505.2 (High Value Targets / Admin Compromise)
+ldap - secure traffic	102	505.2 (High Value Targets / Admin Compromise)
+tcp/ip ports - ad traffic	102	505.2 (High Value Targets / Admin Compromise)
+ad traffic - tcp/ip ports	102	505.2 (High Value Targets / Admin Compromise)
+ad - permissions  	103	505.2 (High Value Targets / Admin Compromise)
+ad - inheritance of dacl and sacl ace's	105	505.2 (High Value Targets / Admin Compromise)
+access control entries (ACE)	105	505.2 (High Value Targets / Admin Compromise)
+discretionary access control lists (dacl)	105	505.2 (High Value Targets / Admin Compromise)
+system access control lists (sacl)	105	505.2 (High Value Targets / Admin Compromise)
+ACE -  access control entries 	105	505.2 (High Value Targets / Admin Compromise)
+dacl - discretionary access control lists	105	505.2 (High Value Targets / Admin Compromise)
+sacl - system access control lists	105	505.2 (High Value Targets / Admin Compromise)
+permissions - conflicts - inherited vs. explicit	106	505.2 (High Value Targets / Admin Compromise)
+conflicts - inherited vs. explicit permissions	106	505.2 (High Value Targets / Admin Compromise)
+inherited permissions vs. explicit - conflicts	106	505.2 (High Value Targets / Admin Compromise)
+explicit permissions vs. inherited - conflicts	106	505.2 (High Value Targets / Admin Compromise)
+ad - object ownership	107	505.2 (High Value Targets / Admin Compromise)
+dssec.dat (%systemroot%\system32\) [snap-in view control]	107	505.2 (High Value Targets / Admin Compromise)
+ad snap-in view control - see dssec.dat	107	505.2 (High Value Targets / Admin Compromise)
+ad - default permission source	108	505.2 (High Value Targets / Admin Compromise)
+ad - change schema to affect default permissions	108-109	505.2 (High Value Targets / Admin Compromise)
+ad - acl tools	110	505.2 (High Value Targets / Admin Compromise)
+dsacls.exe	110	505.2 (High Value Targets / Admin Compromise)
+acldiag.exe	111	505.2 (High Value Targets / Admin Compromise)
+sdcheck.exe	112	505.2 (High Value Targets / Admin Compromise)
+dsrevoke.exe	112	505.2 (High Value Targets / Admin Compromise)
+adsi 2.5 scripting ad permissions	113	505.2 (High Value Targets / Admin Compromise)
+delegation of control	114	505.2 (High Value Targets / Admin Compromise)
+delegation of authority over shared folder	115	505.2 (High Value Targets / Admin Compromise)
+delegation of authority - best practices	116	505.2 (High Value Targets / Admin Compromise)
+delgation of authority - reset password example	118-120	505.2 (High Value Targets / Admin Compromise)
+delgation of authority - edit selected properties example	121-123	505.2 (High Value Targets / Admin Compromise)
+delegation of authority - prevent edits in one OU only	124	505.2 (High Value Targets / Admin Compromise)
+delegation of auhtority - join computers to domain	125	505.2 (High Value Targets / Admin Compromise)
+join computer to domain	125	505.2 (High Value Targets / Admin Compromise)
+delegation of auhtority - full control over an OU	129	505.2 (High Value Targets / Admin Compromise)
+delegation of authority - IT authority via Ous	131	505.2 (High Value Targets / Admin Compromise)
+high value targets - separate OU	131	505.2 (High Value Targets / Admin Compromise)
+OU - separate for high value targets	131	505.2 (High Value Targets / Admin Compromise)
+OU admins group	131-132	505.2 (High Value Targets / Admin Compromise)
+high value targets - separate OU -- audit all access	132	505.2 (High Value Targets / Admin Compromise)
+ad - audit access	133	505.2 (High Value Targets / Admin Compromise)
+ad - enable sacl auditing	133	505.2 (High Value Targets / Admin Compromise)
+ad - customizing ad object and container sacl's	134	505.2 (High Value Targets / Admin Compromise)
+ad - enable generic ad auditing	134	505.2 (High Value Targets / Admin Compromise)
+audit account logon events	135	505.2 (High Value Targets / Admin Compromise)
+audit account management	135	505.2 (High Value Targets / Admin Compromise)
+audit directory service access	135	505.2 (High Value Targets / Admin Compromise)
+audit logon events	135	505.2 (High Value Targets / Admin Compromise)
+audit object access	135	505.2 (High Value Targets / Admin Compromise)
+audit policy change	135	505.2 (High Value Targets / Admin Compromise)
+audit privilege use	136	505.2 (High Value Targets / Admin Compromise)
+audit process tracking	136	505.2 (High Value Targets / Admin Compromise)
+audit system events	136	505.2 (High Value Targets / Admin Compromise)
+ad - directory service change auditing	137	505.2 (High Value Targets / Admin Compromise)
+auditpol.exe /get /category:*	137	505.2 (High Value Targets / Admin Compromise)
+auditing best practices	139	505.2 (High Value Targets / Admin Compromise)
+patching - critical importance of	142	505.2 (High Value Targets / Admin Compromise)
+patching - update cycle	143	505.2 (High Value Targets / Admin Compromise)
+test lab	145	505.2 (High Value Targets / Admin Compromise)
+bulletins - e-mail & newsfeed	147	505.2 (High Value Targets / Admin Compromise)
+alets / news / email / etc.	147	505.2 (High Value Targets / Admin Compromise)
+patching - before OS is installed	149	505.2 (High Value Targets / Admin Compromise)
+hardware selection	149	505.2 (High Value Targets / Admin Compromise)
+flashing the BIOS	149	505.2 (High Value Targets / Admin Compromise)
+BIOS updates / flashing	149	505.2 (High Value Targets / Admin Compromise)
+firmware updates	149	505.2 (High Value Targets / Admin Compromise)
+"updates - firmware, BIOS, etc."	149	505.2 (High Value Targets / Admin Compromise)
+"updating binary install disk images (ghost, acronis, wds, etc.)"	150	505.2 (High Value Targets / Admin Compromise)
+MDT (microsoft deployment toolkit)	150	505.2 (High Value Targets / Admin Compromise)
+Windows automated installation (AIK)	150	505.2 (High Value Targets / Admin Compromise)
+aik - windows automated installation	150	505.2 (High Value Targets / Admin Compromise)
+windows deployment services	150	505.2 (High Value Targets / Admin Compromise)
+wds - windows deployment services	150	505.2 (High Value Targets / Admin Compromise)
+deployment services - wds	150	505.2 (High Value Targets / Admin Compromise)
+wsus - windws server update services	152-157	505.2 (High Value Targets / Admin Compromise)
+windows server update services - wsus	152-157	505.2 (High Value Targets / Admin Compromise)
+wsus console	158-159	505.2 (High Value Targets / Admin Compromise)
+wsus - client admin	160	505.2 (High Value Targets / Admin Compromise)
+"wsus tools - client & server side (wuauclt, wsusutil, etc.)"	161	505.2 (High Value Targets / Admin Compromise)
+wuauclt.exe	161	505.2 (High Value Targets / Admin Compromise)
+wsusutil.exe	161	505.2 (High Value Targets / Admin Compromise)
+wsus - scripting admin	161	505.2 (High Value Targets / Admin Compromise)
+wsus - disappointments	163	505.2 (High Value Targets / Admin Compromise)
+wsus - custom msi packages	164-165	505.2 (High Value Targets / Admin Compromise)
+patching -- offsite computers	167	505.2 (High Value Targets / Admin Compromise)
+updates - patching offsite computers	167	505.2 (High Value Targets / Admin Compromise)
+secunia psi	169	505.2 (High Value Targets / Admin Compromise)
+psi - secunia personal software inspector	169	505.2 (High Value Targets / Admin Compromise)
+patching - scan for missing updates	171	505.2 (High Value Targets / Admin Compromise)
+updates - scan for missing patches	171	505.2 (High Value Targets / Admin Compromise)
+msba - ms baseline security analyzer	171	505.2 (High Value Targets / Admin Compromise)
+mbsacli.exe	171	505.2 (High Value Targets / Admin Compromise)
+msba - xml and powershell	172	505.2 (High Value Targets / Admin Compromise)
+msba - wsus integration	173	505.2 (High Value Targets / Admin Compromise)
+wsus - msba integration	173	505.2 (High Value Targets / Admin Compromise)
+wsus - patching 3rd party software 	173	505.2 (High Value Targets / Admin Compromise)
+scanning for rogue computers	175	505.2 (High Value Targets / Admin Compromise)
+rogue computers - scanning for	175	505.2 (High Value Targets / Admin Compromise)
+nac	177-178	505.2 (High Value Targets / Admin Compromise)
+network access control	177-178	505.2 (High Value Targets / Admin Compromise)
+802.1x	177-178	505.2 (High Value Targets / Admin Compromise)
+radius	177-178	505.2 (High Value Targets / Admin Compromise)
+nap	177-178	505.2 (High Value Targets / Admin Compromise)
