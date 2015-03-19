@@ -1,1 +1,975 @@
-item	page(s)	bookSecurity templates (INF)	8	505.1 (OS / App Hardening)INF	8	505.1 (OS / App Hardening)Local policies described	10	505.1 (OS / App Hardening)Security templates from others	13	505.1 (OS / App Hardening)SCM	14	505.1 (OS / App Hardening)Security Compliance Manager	14	505.1 (OS / App Hardening)localgpo.wsf	14	505.1 (OS / App Hardening)SCA database	17	505.1 (OS / App Hardening)Audit against template (SCA tool)	19	505.1 (OS / App Hardening)Analyze your computer (audit against template - SCA)	19	505.1 (OS / App Hardening)secedit.exe	22	505.1 (OS / App Hardening)sca command line (secedit.exe)	22	505.1 (OS / App Hardening)group policy tools	24-31	505.1 (OS / App Hardening)gpupdate.exe	28	505.1 (OS / App Hardening)gpotool.exe	29	505.1 (OS / App Hardening)secedit.exe	29	505.1 (OS / App Hardening)gpresult.exe	29	505.1 (OS / App Hardening)addiag.exe	29	505.1 (OS / App Hardening)dcgopfix.exe	29	505.1 (OS / App Hardening)admx migrator	29	505.1 (OS / App Hardening)3rd party gpo enhancements	29-30	505.1 (OS / App Hardening)create gpo	33	505.1 (OS / App Hardening)gpo - computer vs. user	34	505.1 (OS / App Hardening)group policy links	35	505.1 (OS / App Hardening)gpo - order of precedence (LSD OU)	37-39	505.1 (OS / App Hardening)gpo - block inheritance	38	505.1 (OS / App Hardening)gpo - enforced	39	505.1 (OS / App Hardening)gpo - access lists	40	505.1 (OS / App Hardening)gpo - delegation of control	41	505.1 (OS / App Hardening)gpo - refresh interval	43	505.1 (OS / App Hardening)gpo - slow link detection	42	505.1 (OS / App Hardening)gpo - loopback processing mode	44-45	505.1 (OS / App Hardening)gpo - WMI filtering	46	505.1 (OS / App Hardening)gpo - disabling	46-47	505.1 (OS / App Hardening)Enterprise scale registry editor	48	505.1 (OS / App Hardening)Administrative templates - explained	48	505.1 (OS / App Hardening)Administrative templates - importing	50-51	505.1 (OS / App Hardening)tattoos	51	505.1 (OS / App Hardening)gpo -- tattoos	51	505.1 (OS / App Hardening)admx templates / central store	51	505.1 (OS / App Hardening)gpo - admx templates / central store	51-53	505.1 (OS / App Hardening)gpo - classic ADM templates	53	505.1 (OS / App Hardening)admx migrator	54	505.1 (OS / App Hardening)admx - convert from adm (admx migrator)	54	505.1 (OS / App Hardening)admx - create your own	54	505.1 (OS / App Hardening)gpo - preferences (see also gpp)	56-61	505.1 (OS / App Hardening)gpp	56-61	505.1 (OS / App Hardening)gpp - capabilities	57	505.1 (OS / App Hardening)"gpp - manage users, groups, passwords"	57	505.1 (OS / App Hardening)gpp - remote command execution	57	505.1 (OS / App Hardening)gpp - manage scheduled tasks	57	505.1 (OS / App Hardening)gpp - manage files & folders	57	505.1 (OS / App Hardening)gpp - manage ini file settings	58	505.1 (OS / App Hardening)gpp - manage registry keys and values	58	505.1 (OS / App Hardening)gpp - configure service settings	58	505.1 (OS / App Hardening)gpp - password management	58	505.1 (OS / App Hardening)password management via gpp	58	505.1 (OS / App Hardening)gpp - red & green lines	59	505.1 (OS / App Hardening)gpp - item-level targeting	59-61	505.1 (OS / App Hardening)gpo - push out scripts	62-64	505.1 (OS / App Hardening)gpo - logon/logoff script	63	505.1 (OS / App Hardening)gpo - startup/shutdown script	63	505.1 (OS / App Hardening)gpo - scripts	63	505.1 (OS / App Hardening)gpo - scripts - userver vs. system context	64	505.1 (OS / App Hardening)gpo - scripts - visible vs. hidden	64	505.1 (OS / App Hardening)cscript.exe	65	505.1 (OS / App Hardening)PopUp method	64	505.1 (OS / App Hardening)Synchronous vs. Async Execution - logon/logoff scripts	65	505.1 (OS / App Hardening)Synchronous vs. Async Execution - startup/shutdown scripts	66	505.1 (OS / App Hardening)script timeout	66	505.1 (OS / App Hardening)scripts - best practices	66-67	505.1 (OS / App Hardening)malware	69-71	505.1 (OS / App Hardening)antivirus can fail you	72-74	505.1 (OS / App Hardening)application whitelisting (generic)	75	505.1 (OS / App Hardening)whitelisting	75	505.1 (OS / App Hardening)desktops like appliances	76-81	505.1 (OS / App Hardening)local administrators	76	505.1 (OS / App Hardening)applocker	82	505.1 (OS / App Hardening)application whitelisting - applocker	82	505.1 (OS / App Hardening)whitelisting - applocker	82	505.1 (OS / App Hardening)application identity service	82	505.1 (OS / App Hardening)applocker rules	84-86	505.1 (OS / App Hardening)applocker path rules	87	505.1 (OS / App Hardening)applocker environment variables	87	505.1 (OS / App Hardening)environment variables - applocker / whitelisting	87	505.1 (OS / App Hardening)applocker - powershell	88	505.1 (OS / App Hardening)block unsigned scripts	89-91	505.1 (OS / App Hardening)bit9 parity	92	505.1 (OS / App Hardening)autoplay	94	505.1 (OS / App Hardening)autorun	94	505.1 (OS / App Hardening)anti-malware training	95	505.1 (OS / App Hardening)malware training	95	505.1 (OS / App Hardening)training - anti-malware	95	505.1 (OS / App Hardening)gpo - removable devices	97	505.1 (OS / App Hardening)gpo - usb drives	97	505.1 (OS / App Hardening)removable drives - bitlocker	99	505.1 (OS / App Hardening)usb drives - bitlocker	99	505.1 (OS / App Hardening)hardware identifier strings	98	505.1 (OS / App Hardening)removable drives / devices - 3rd party control	100	505.1 (OS / App Hardening)usb drives / devices - 3rd party control	100	505.1 (OS / App Hardening)restore pristine drive	102	505.1 (OS / App Hardening)reverse changes at logoff	103	505.1 (OS / App Hardening)PC Reset	103	505.1 (OS / App Hardening)PC Refresh	103	505.1 (OS / App Hardening)Windows 8 reset/refresh features	103	505.1 (OS / App Hardening)Apply drive image at reboot or logoff	102	505.1 (OS / App Hardening)Recimg.exe	104	505.1 (OS / App Hardening)customize PC refresh image (recimg.exe)	104	505.1 (OS / App Hardening)windows to go	104	505.1 (OS / App Hardening)boot from usb flash drive	104	505.1 (OS / App Hardening)steadystate and App-V	105	505.1 (OS / App Hardening)App-V and steadystate	105	505.1 (OS / App Hardening)Softgrid	105	505.1 (OS / App Hardening)VDI	107	505.1 (OS / App Hardening)thin client	107	505.1 (OS / App Hardening)ICA/RDP	107	505.1 (OS / App Hardening)VDI - not a panacea	108	505.1 (OS / App Hardening)VDI - Advantages	110	505.1 (OS / App Hardening)VDI on windows 2012	111	505.1 (OS / App Hardening)Personal VM vs. Pooled VM	111	505.1 (OS / App Hardening)Pooled VM vs. Personal VM	111	505.1 (OS / App Hardening)User profile disks	111-112	505.1 (OS / App Hardening)inventory	114	505.1 (OS / App Hardening)high-risk applications	115	505.1 (OS / App Hardening)Data execution prevension (DEP)	116	505.1 (OS / App Hardening)DEP - Data execution prevention	116	505.1 (OS / App Hardening)Address space layout randomization (ASLR)	118	505.1 (OS / App Hardening)ASLR - Address space layout randomization 	118	505.1 (OS / App Hardening)EMET	"117,119,121"	505.1 (OS / App Hardening)DisableNXShowUI	117	505.1 (OS / App Hardening)SEHOP - Structured Exception Handler Overwrite Protection	120	505.1 (OS / App Hardening)Structured Exception Handler Overwrite Protection - SEHOP	120	505.1 (OS / App Hardening)EMET Toolkit	122-126	505.1 (OS / App Hardening)EMET_GUI.EXE	124	505.1 (OS / App Hardening)gpo - EMET	125	505.1 (OS / App Hardening)Internet Explorer (Hardening)	127	505.1 (OS / App Hardening)Internet Explorer - Desktop vs. Metro	129	505.1 (OS / App Hardening)IE - Enhanced protected mode	129	505.1 (OS / App Hardening)Enhanced protected mode (Internet Explorer)	129	505.1 (OS / App Hardening)EPM (Enhanced protected mode - IE)	130	505.1 (OS / App Hardening)Enhanced protected mode (EPM)	130	505.1 (OS / App Hardening)IE - protected mode	131	505.1 (OS / App Hardening)Protected mode (IE)	131	505.1 (OS / App Hardening)Zones - Internet Zone (IE)	133-134	505.1 (OS / App Hardening)Internet Zone (IE)	133-134	505.1 (OS / App Hardening)Zones Trusted sites & Restricted sites	136-137	505.1 (OS / App Hardening)Trusted sites zone (IE)	136-137	505.1 (OS / App Hardening)Restricted sites zone (IE)	136-137	505.1 (OS / App Hardening)IE - filters	138	505.1 (OS / App Hardening)IE - SmartScreen Filter	138	505.1 (OS / App Hardening)IE - XSS Filter	139	505.1 (OS / App Hardening)IE - InPrivate Filter	139	505.1 (OS / App Hardening)IE - ActiveX Kill-Bits	140	505.1 (OS / App Hardening)Filters (IE)	138	505.1 (OS / App Hardening)SmartScreen Filter (IE)	138	505.1 (OS / App Hardening)XSS Filter (IE)	139	505.1 (OS / App Hardening)InPrivate Filter (IE)	139	505.1 (OS / App Hardening)ActiveX Kill-Bits (IE)	140	505.1 (OS / App Hardening)Web proxy auto-discovery	142	505.1 (OS / App Hardening)WPAD	142	505.1 (OS / App Hardening)IE - Web proxy auto-discovery (WPAD)	142	505.1 (OS / App Hardening)IE - WPAD	142	505.1 (OS / App Hardening)WPAD - DHCP method	143	505.1 (OS / App Hardening)WPAD - DNS method	143	505.1 (OS / App Hardening)WPAD - NetBIOS method	143	505.1 (OS / App Hardening)WPAD - Vulnerabilities	144	505.1 (OS / App Hardening)WPAD - Hardening	145	505.1 (OS / App Hardening)WPAD - Blocking	145-146	505.1 (OS / App Hardening)WPAD - Allowing	147	505.1 (OS / App Hardening)Chrome Browser	148	505.1 (OS / App Hardening)Google Chrome Browser	148	505.1 (OS / App Hardening)GPO - chrome browser	150	505.1 (OS / App Hardening)Chrome browser - GPO	150	505.1 (OS / App Hardening)Chrome sandbox processes	151	505.1 (OS / App Hardening)Adobe reader & Acrobat	152	505.1 (OS / App Hardening)Acrobat / Adobe reader	152	505.1 (OS / App Hardening)Adobe customization wizard	152	505.1 (OS / App Hardening)Adobe hardening	154-155	505.1 (OS / App Hardening)Adobe reader protected mode	156	505.1 (OS / App Hardening)Adobe reader alternatives	157	505.1 (OS / App Hardening)Java	159	505.1 (OS / App Hardening)Java platform editions	160	505.1 (OS / App Hardening)Java SE applications - standalone	160	505.1 (OS / App Hardening)Java SE applications - browser plugin	160	505.1 (OS / App Hardening)javaws.exe	160	505.1 (OS / App Hardening)jnlp files	160	505.1 (OS / App Hardening)Java - jnlp files	160	505.1 (OS / App Hardening)Java control panel (javacpl.exe)	161	505.1 (OS / App Hardening)Java version	161	505.1 (OS / App Hardening)IE - Metro - Java	162	505.1 (OS / App Hardening)IE - disable <APPLET> element support (JAVA)	162	505.1 (OS / App Hardening)Java - disable in any browser	163	505.1 (OS / App Hardening)Java - config files	164	505.1 (OS / App Hardening)Java - centrally manage config files	165	505.1 (OS / App Hardening)Java - deployment rule sets (whitelists)	166	505.1 (OS / App Hardening)Java - whitelists - deployment rule sets	166	505.1 (OS / App Hardening)Java - security recommendations	166-167	505.1 (OS / App Hardening)Office - Hardening	168	505.1 (OS / App Hardening)Office - XML format	168	505.1 (OS / App Hardening)Office - Protected view	168	505.1 (OS / App Hardening)Office - File blocking	169	505.1 (OS / App Hardening)"Office - Macros, ActiveX, Add-Ins"	169	505.1 (OS / App Hardening)Office - Trusted Locations	169	505.1 (OS / App Hardening)Office - Social network / skype integration	169	505.1 (OS / App Hardening)Skype	170	505.1 (OS / App Hardening)Appendix - Becoming a domain controller	173-180	505.1 (OS / App Hardening)Appendix - Social engineering	181-186	505.1 (OS / App Hardening)Appenxix  - Edit security templates by hand	187-192	505.1 (OS / App Hardening)SIDS - Well known	191-192	505.1 (OS / App Hardening)Well known SIDS	191-192	505.1 (OS / App Hardening)Appendix - Custom ADM/ADMX Templates	193-198	505.1 (OS / App Hardening)Appendix - Start with malware resistant software	199-209	505.1 (OS / App Hardening)				High value - definition	8	505.2 (High Value Targets / Admin Compromise)ultimate goals of attacker	"8, 9"	505.2 (High Value Targets / Admin Compromise)initial soft target	"8, 10-11"	505.2 (High Value Targets / Admin Compromise)soft target	"8, 10-11"	505.2 (High Value Targets / Admin Compromise)target	"8, 10-11"	505.2 (High Value Targets / Admin Compromise)power to achieve goals	12	505.2 (High Value Targets / Admin Compromise)power in windows kernel	14	505.2 (High Value Targets / Admin Compromise)gpo - manage user rights	15	505.2 (High Value Targets / Admin Compromise)rights vs. privileges vs. permissions	14	505.2 (High Value Targets / Admin Compromise)privileges vs. rights vs. permissions	14	505.2 (High Value Targets / Admin Compromise)permissions vs. rights vs. privileges	14	505.2 (High Value Targets / Admin Compromise)Local logon allow/deny	15	505.2 (High Value Targets / Admin Compromise)access from network allow/deny	15	505.2 (High Value Targets / Admin Compromise)remote logon allow/deny	15	505.2 (High Value Targets / Admin Compromise)gpo - user rights assignment	16	505.2 (High Value Targets / Admin Compromise)logon restrictions - radius policy	18	505.2 (High Value Targets / Admin Compromise)logon restrictions - ipsec port permissions	18	505.2 (High Value Targets / Admin Compromise)logon restrictions - workstation permissions	18	505.2 (High Value Targets / Admin Compromise)logon restrictions - logon hours	19	505.2 (High Value Targets / Admin Compromise)logon restrictions - require smartcard	20	505.2 (High Value Targets / Admin Compromise)gpo - manage privileges	21	505.2 (High Value Targets / Admin Compromise)whoami.exe /priv	21	505.2 (High Value Targets / Admin Compromise)see what privileges a process has	21	505.2 (High Value Targets / Admin Compromise)security access token (SAT)	21	505.2 (High Value Targets / Admin Compromise)SAT - security access token	21	505.2 (High Value Targets / Admin Compromise)privileges - complete list of	22	505.2 (High Value Targets / Admin Compromise)debug programs	22	505.2 (High Value Targets / Admin Compromise)act as part of operating system	22	505.2 (High Value Targets / Admin Compromise)create a token object	22	505.2 (High Value Targets / Admin Compromise)impersonate a client after authentication	22	505.2 (High Value Targets / Admin Compromise)load and unload device drivers	22	505.2 (High Value Targets / Admin Compromise)modify an object label	22	505.2 (High Value Targets / Admin Compromise)restore files and directories	22	505.2 (High Value Targets / Admin Compromise)take ownership of files or other objects	22	505.2 (High Value Targets / Admin Compromise)maleficent seven	24	505.2 (High Value Targets / Admin Compromise)SeTcbPrivilege - act as part of operating system	24	505.2 (High Value Targets / Admin Compromise)act as part of operating system - SeTcbPrivilege	24	505.2 (High Value Targets / Admin Compromise)create a token object - SeCreateTokenPrivilege	24	505.2 (High Value Targets / Admin Compromise)SeCreateTokenPrivilege - create a token object	24	505.2 (High Value Targets / Admin Compromise)debug programs - SeDebugPrivilege	"24, 30"	505.2 (High Value Targets / Admin Compromise)SeDebugPrivilege - debug programs	"24, 30"	505.2 (High Value Targets / Admin Compromise)load and unload device drivers - SeLoadDriverPrivilege	25	505.2 (High Value Targets / Admin Compromise)SeLoadDriverPrivilege - load and unload device drivers	25	505.2 (High Value Targets / Admin Compromise)restore files and directories - SeRestorePrivilege	"25, 40"	505.2 (High Value Targets / Admin Compromise)SeRestorePrivilege - restore files and directories	25	505.2 (High Value Targets / Admin Compromise)take ownership - SeTakeOwnershipPrivilege	"25, 39"	505.2 (High Value Targets / Admin Compromise)SeTakeOwnershipPrivilege - take ownership	25	505.2 (High Value Targets / Admin Compromise)impersonate a client after authentication - SeImpersonatePrivilege	"25, 28"	505.2 (High Value Targets / Admin Compromise)SeImpersonatePrivilege - impersonate a client after authentication	"25, 28"	505.2 (High Value Targets / Admin Compromise)impersonation tokens	26	505.2 (High Value Targets / Admin Compromise)SAT - primary security access token	26	505.2 (High Value Targets / Admin Compromise)primary security access token (SAT)	26	505.2 (High Value Targets / Admin Compromise)impersonation SAT	27	505.2 (High Value Targets / Admin Compromise)SAT impersonation	27	505.2 (High Value Targets / Admin Compromise)delegation SAT	27	505.2 (High Value Targets / Admin Compromise)SAT delegation	27	505.2 (High Value Targets / Admin Compromise)token stealing	28	505.2 (High Value Targets / Admin Compromise)malware - waiting for admin logon for token steal	29	505.2 (High Value Targets / Admin Compromise)pass-the-hash attack	31	505.2 (High Value Targets / Admin Compromise)token abuse - mitigating	32	505.2 (High Value Targets / Admin Compromise)mitigating token abuse	32	505.2 (High Value Targets / Admin Compromise)pass-the-hash attack - mitigating	32	505.2 (High Value Targets / Admin Compromise)mitigating pass-the-hash attack	32	505.2 (High Value Targets / Admin Compromise)"avoid login with remote protocols (rdp, vnc, ilo, kvm, etc.)"	34	505.2 (High Value Targets / Admin Compromise)rdp restricted mode (mstsc.exe /restrictedadmin)	35	505.2 (High Value Targets / Admin Compromise)schtasks.exe (schedule tasks)	34	505.2 (High Value Targets / Admin Compromise)schedule tasks (schtasks.exe)	34	505.2 (High Value Targets / Admin Compromise)account is sensitive and cannot be delegated	35	505.2 (High Value Targets / Admin Compromise)kerbtray.exe (kerberos info)	36	505.2 (High Value Targets / Admin Compromise)tgt - ticket granting ticket (kerberos)	35	505.2 (High Value Targets / Admin Compromise)kerberos - tgt	35	505.2 (High Value Targets / Admin Compromise)previous logons to cache	37	505.2 (High Value Targets / Admin Compromise)backup/restore privilege 	40	505.2 (High Value Targets / Admin Compromise)gpo - manage group membership	42	505.2 (High Value Targets / Admin Compromise)gpo - restricted groups	42	505.2 (High Value Targets / Admin Compromise)gpo - manage global groups	42	505.2 (High Value Targets / Admin Compromise)gpo - manage local groups	42	505.2 (High Value Targets / Admin Compromise)gpp - manage local groups	42	505.2 (High Value Targets / Admin Compromise)local admin group	46	505.2 (High Value Targets / Admin Compromise)analyze application failures	47	505.2 (High Value Targets / Admin Compromise)application compatibility toolkit - ACT	47	505.2 (High Value Targets / Admin Compromise)ACT - application compatibility toolkit	47	505.2 (High Value Targets / Admin Compromise)two account strategy	48	505.2 (High Value Targets / Admin Compromise)admin users should have two user accounts	48	505.2 (High Value Targets / Admin Compromise)runas.exe	49	505.2 (High Value Targets / Admin Compromise)psexec.exe	49	505.2 (High Value Targets / Admin Compromise)cpau.exe	49	505.2 (High Value Targets / Admin Compromise)autoit.exe	49	505.2 (High Value Targets / Admin Compromise)aut2exe.exe	49	505.2 (High Value Targets / Admin Compromise)epal.exe	49	505.2 (High Value Targets / Admin Compromise)tqrunas.exe	49	505.2 (High Value Targets / Admin Compromise)UAC as sudo	49	505.2 (High Value Targets / Admin Compromise)admin users should have two computer accounts	50	505.2 (High Value Targets / Admin Compromise)UAC  	51	505.2 (High Value Targets / Admin Compromise)UAC stripped privileges	52	505.2 (High Value Targets / Admin Compromise)UAC - used for deny only	52	505.2 (High Value Targets / Admin Compromise)UAC - MIC level	52	505.2 (High Value Targets / Admin Compromise)UAC group policy	53	505.2 (High Value Targets / Admin Compromise)gpo - UAC	53	505.2 (High Value Targets / Admin Compromise)mandatory integrity control levels (MIC)	55	505.2 (High Value Targets / Admin Compromise)MIC - mandatory integrity control levels	55	505.2 (High Value Targets / Admin Compromise)"MIC labels (Installer, system, high, medium, low, untrusted)"	55	505.2 (High Value Targets / Admin Compromise)SAT labels - viewing	56	505.2 (High Value Targets / Admin Compromise)MIC tools	57	505.2 (High Value Targets / Admin Compromise)integrity control tools	57	505.2 (High Value Targets / Admin Compromise)icacls.exe (MIC)	57	505.2 (High Value Targets / Admin Compromise)chml.exe (MIC)	57	505.2 (High Value Targets / Admin Compromise)regil.exe (MIC)	57	505.2 (High Value Targets / Admin Compromise)runasil.exe (MIC)	57	505.2 (High Value Targets / Admin Compromise)process hacker (MIC)	57	505.2 (High Value Targets / Admin Compromise)change MIC labels	57	505.2 (High Value Targets / Admin Compromise)MIC - change labels	57	505.2 (High Value Targets / Admin Compromise)integrity levels vs. NTFS permissions	57	505.2 (High Value Targets / Admin Compromise)MIC - integrity levels vs. NTFS permissions	57	505.2 (High Value Targets / Admin Compromise)NTFS permissions vs. MIC integrity levels	57	505.2 (High Value Targets / Admin Compromise)user interface privilege isolation (UIPI)	58	505.2 (High Value Targets / Admin Compromise)UIPI - user interface privilege isolation	58	505.2 (High Value Targets / Admin Compromise)MIC lab experiment (shows some commands)	59-61	505.2 (High Value Targets / Admin Compromise)password policy	62-64	505.2 (High Value Targets / Admin Compromise)MIC authentication	62	505.2 (High Value Targets / Admin Compromise)SAT groups and claims	62	505.2 (High Value Targets / Admin Compromise)disable guest account	64	505.2 (High Value Targets / Admin Compromise)guest account - disable	64	505.2 (High Value Targets / Admin Compromise)password policy - reversible encryption	64	505.2 (High Value Targets / Admin Compromise)password policy - complexity requirements	63-64	505.2 (High Value Targets / Admin Compromise)password policy - limit blank passwords to local only	64	505.2 (High Value Targets / Admin Compromise)account lockout policy	65	505.2 (High Value Targets / Admin Compromise)banner -- display logon banner	66	505.2 (High Value Targets / Admin Compromise)screensaver with password	67	505.2 (High Value Targets / Admin Compromise)lock workstation	67	505.2 (High Value Targets / Admin Compromise)proximity device to lock workstation	67	505.2 (High Value Targets / Admin Compromise)smart card removal behavior	67	505.2 (High Value Targets / Admin Compromise)account pruning	67	505.2 (High Value Targets / Admin Compromise)social engineering - education	67	505.2 (High Value Targets / Admin Compromise)password policy - no passwords	68	505.2 (High Value Targets / Admin Compromise)password length vs. complexity	69	505.2 (High Value Targets / Admin Compromise)"complexity, password vs. length"	69	505.2 (High Value Targets / Admin Compromise)passphrase advantages	70	505.2 (High Value Targets / Admin Compromise)passfilt.dll	71	505.2 (High Value Targets / Admin Compromise)password filters	71	505.2 (High Value Targets / Admin Compromise)password filter registry key	71	505.2 (High Value Targets / Admin Compromise)password filter - trojans	72	505.2 (High Value Targets / Admin Compromise)password lockout policies	73	505.2 (High Value Targets / Admin Compromise)passwords - custom policy management	74	505.2 (High Value Targets / Admin Compromise)msDS-PasswordSettings	76	505.2 (High Value Targets / Admin Compromise)ldf file - password settings	76	505.2 (High Value Targets / Admin Compromise)password settings - ldf file	76	505.2 (High Value Targets / Admin Compromise)ldifde.exe	76	505.2 (High Value Targets / Admin Compromise)password policy - adsi edit to change	78	505.2 (High Value Targets / Admin Compromise)picture password	"79, 82-84"	505.2 (High Value Targets / Admin Compromise)pin logins	79-81	505.2 (High Value Targets / Admin Compromise)credential manager	84	505.2 (High Value Targets / Admin Compromise)password managers	84	505.2 (High Value Targets / Admin Compromise)keepass	88	505.2 (High Value Targets / Admin Compromise)chml.exe - MIC label for keepass files	89	505.2 (High Value Targets / Admin Compromise)local admin accounts for helpdesk/it	90	505.2 (High Value Targets / Admin Compromise)gpo scripts - startup/shutdown/scheduled tasks	90	505.2 (High Value Targets / Admin Compromise)local admin accounts - inventory	91	505.2 (High Value Targets / Admin Compromise)local admin accounts - delete/disable	92	505.2 (High Value Targets / Admin Compromise)local admin group - remove members	92	505.2 (High Value Targets / Admin Compromise)local accounts - block login with blank password	92	505.2 (High Value Targets / Admin Compromise)gpo - manage local passwords	92-93	505.2 (High Value Targets / Admin Compromise)scheduled tasks - manage local passwords	93-94	505.2 (High Value Targets / Admin Compromise)password management - 3rd party tools	94-95	505.2 (High Value Targets / Admin Compromise)ad - metro tools	97	505.2 (High Value Targets / Admin Compromise)schema management add in (regsrvr32.exe schmmgmt.dll)	97	505.2 (High Value Targets / Admin Compromise)ad - desktop tools	98	505.2 (High Value Targets / Admin Compromise)ad - powershell cmdlets	99	505.2 (High Value Targets / Admin Compromise)ad - rsat (remote server admin tools)	99	505.2 (High Value Targets / Admin Compromise)acldiag.exe	99	505.2 (High Value Targets / Admin Compromise)dsacls.exe	99	505.2 (High Value Targets / Admin Compromise)dsrevoke.exe	99	505.2 (High Value Targets / Admin Compromise)enumprop.exe	99	505.2 (High Value Targets / Admin Compromise)sdcheck.exe	99	505.2 (High Value Targets / Admin Compromise)netdom.exe	99	505.2 (High Value Targets / Admin Compromise)nltest.exe	99	505.2 (High Value Targets / Admin Compromise)csvde.exe	100	505.2 (High Value Targets / Admin Compromise)ldifde.exe	100	505.2 (High Value Targets / Admin Compromise)movetree.exe	100	505.2 (High Value Targets / Admin Compromise)dsadd.exe	100	505.2 (High Value Targets / Admin Compromise)dsget.exe	100	505.2 (High Value Targets / Admin Compromise)dsmod.exe	100	505.2 (High Value Targets / Admin Compromise)dsmove.exe	100	505.2 (High Value Targets / Admin Compromise)dsquery.exe	100	505.2 (High Value Targets / Admin Compromise)dsrm.exe	100	505.2 (High Value Targets / Admin Compromise)ad - import/export & bulk mgt (CLI tools)	100	505.2 (High Value Targets / Admin Compromise)ad - replication & troubleshooting (CLI tools)	100	505.2 (High Value Targets / Admin Compromise)ad - permissions & trusts (CLI tools)	99	505.2 (High Value Targets / Admin Compromise)dcdiag.exe	100	505.2 (High Value Targets / Admin Compromise)dnscmd.exe	100	505.2 (High Value Targets / Admin Compromise)dsastat.exe	100	505.2 (High Value Targets / Admin Compromise)dsmgmt.exe	100	505.2 (High Value Targets / Admin Compromise)netdiag.exe	100	505.2 (High Value Targets / Admin Compromise)ntdsutil.exe	100	505.2 (High Value Targets / Admin Compromise)repadmin.exe	100	505.2 (High Value Targets / Admin Compromise)ad - joeware tools	100-101	505.2 (High Value Targets / Admin Compromise)adfind.exe	101	505.2 (High Value Targets / Admin Compromise)admod.exe	101	505.2 (High Value Targets / Admin Compromise)atsn.exe	101	505.2 (High Value Targets / Admin Compromise)oldcmdp.exe	101	505.2 (High Value Targets / Admin Compromise)secdata.exe	101	505.2 (High Value Targets / Admin Compromise)unlock.exe	101	505.2 (High Value Targets / Admin Compromise)adrestore.exe	101	505.2 (High Value Targets / Admin Compromise)ad - adsi scripting support	101	505.2 (High Value Targets / Admin Compromise)"ad - powershell ""System.DirectoryServices"" .NET classes"	101	505.2 (High Value Targets / Admin Compromise)ldap	102	505.2 (High Value Targets / Admin Compromise)ldap - secure traffic	102	505.2 (High Value Targets / Admin Compromise)tcp/ip ports - ad traffic	102	505.2 (High Value Targets / Admin Compromise)ad traffic - tcp/ip ports	102	505.2 (High Value Targets / Admin Compromise)ad - permissions  	103	505.2 (High Value Targets / Admin Compromise)ad - inheritance of dacl and sacl ace's	105	505.2 (High Value Targets / Admin Compromise)access control entries (ACE)	105	505.2 (High Value Targets / Admin Compromise)discretionary access control lists (dacl)	105	505.2 (High Value Targets / Admin Compromise)system access control lists (sacl)	105	505.2 (High Value Targets / Admin Compromise)ACE -  access control entries 	105	505.2 (High Value Targets / Admin Compromise)dacl - discretionary access control lists	105	505.2 (High Value Targets / Admin Compromise)sacl - system access control lists	105	505.2 (High Value Targets / Admin Compromise)permissions - conflicts - inherited vs. explicit	106	505.2 (High Value Targets / Admin Compromise)conflicts - inherited vs. explicit permissions	106	505.2 (High Value Targets / Admin Compromise)inherited permissions vs. explicit - conflicts	106	505.2 (High Value Targets / Admin Compromise)explicit permissions vs. inherited - conflicts	106	505.2 (High Value Targets / Admin Compromise)ad - object ownership	107	505.2 (High Value Targets / Admin Compromise)dssec.dat (%systemroot%\system32\) [snap-in view control]	107	505.2 (High Value Targets / Admin Compromise)ad snap-in view control - see dssec.dat	107	505.2 (High Value Targets / Admin Compromise)ad - default permission source	108	505.2 (High Value Targets / Admin Compromise)ad - change schema to affect default permissions	108-109	505.2 (High Value Targets / Admin Compromise)ad - acl tools	110	505.2 (High Value Targets / Admin Compromise)dsacls.exe	110	505.2 (High Value Targets / Admin Compromise)acldiag.exe	111	505.2 (High Value Targets / Admin Compromise)sdcheck.exe	112	505.2 (High Value Targets / Admin Compromise)dsrevoke.exe	112	505.2 (High Value Targets / Admin Compromise)adsi 2.5 scripting ad permissions	113	505.2 (High Value Targets / Admin Compromise)delegation of control	114	505.2 (High Value Targets / Admin Compromise)delegation of authority over shared folder	115	505.2 (High Value Targets / Admin Compromise)delegation of authority - best practices	116	505.2 (High Value Targets / Admin Compromise)delgation of authority - reset password example	118-120	505.2 (High Value Targets / Admin Compromise)delgation of authority - edit selected properties example	121-123	505.2 (High Value Targets / Admin Compromise)delegation of authority - prevent edits in one OU only	124	505.2 (High Value Targets / Admin Compromise)delegation of auhtority - join computers to domain	125	505.2 (High Value Targets / Admin Compromise)join computer to domain	125	505.2 (High Value Targets / Admin Compromise)delegation of auhtority - full control over an OU	129	505.2 (High Value Targets / Admin Compromise)delegation of authority - IT authority via Ous	131	505.2 (High Value Targets / Admin Compromise)high value targets - separate OU	131	505.2 (High Value Targets / Admin Compromise)OU - separate for high value targets	131	505.2 (High Value Targets / Admin Compromise)OU admins group	131-132	505.2 (High Value Targets / Admin Compromise)high value targets - separate OU -- audit all access	132	505.2 (High Value Targets / Admin Compromise)ad - audit access	133	505.2 (High Value Targets / Admin Compromise)ad - enable sacl auditing	133	505.2 (High Value Targets / Admin Compromise)ad - customizing ad object and container sacl's	134	505.2 (High Value Targets / Admin Compromise)ad - enable generic ad auditing	134	505.2 (High Value Targets / Admin Compromise)audit account logon events	135	505.2 (High Value Targets / Admin Compromise)audit account management	135	505.2 (High Value Targets / Admin Compromise)audit directory service access	135	505.2 (High Value Targets / Admin Compromise)audit logon events	135	505.2 (High Value Targets / Admin Compromise)audit object access	135	505.2 (High Value Targets / Admin Compromise)audit policy change	135	505.2 (High Value Targets / Admin Compromise)audit privilege use	136	505.2 (High Value Targets / Admin Compromise)audit process tracking	136	505.2 (High Value Targets / Admin Compromise)audit system events	136	505.2 (High Value Targets / Admin Compromise)ad - directory service change auditing	137	505.2 (High Value Targets / Admin Compromise)auditpol.exe /get /category:*	137	505.2 (High Value Targets / Admin Compromise)auditing best practices	139	505.2 (High Value Targets / Admin Compromise)patching - critical importance of	142	505.2 (High Value Targets / Admin Compromise)patching - update cycle	143	505.2 (High Value Targets / Admin Compromise)test lab	145	505.2 (High Value Targets / Admin Compromise)bulletins - e-mail & newsfeed	147	505.2 (High Value Targets / Admin Compromise)alets / news / email / etc.	147	505.2 (High Value Targets / Admin Compromise)patching - before OS is installed	149	505.2 (High Value Targets / Admin Compromise)hardware selection	149	505.2 (High Value Targets / Admin Compromise)flashing the BIOS	149	505.2 (High Value Targets / Admin Compromise)BIOS updates / flashing	149	505.2 (High Value Targets / Admin Compromise)firmware updates	149	505.2 (High Value Targets / Admin Compromise)"updates - firmware, BIOS, etc."	149	505.2 (High Value Targets / Admin Compromise)"updating binary install disk images (ghost, acronis, wds, etc.)"	150	505.2 (High Value Targets / Admin Compromise)MDT (microsoft deployment toolkit)	150	505.2 (High Value Targets / Admin Compromise)Windows automated installation (AIK)	150	505.2 (High Value Targets / Admin Compromise)aik - windows automated installation	150	505.2 (High Value Targets / Admin Compromise)windows deployment services	150	505.2 (High Value Targets / Admin Compromise)wds - windows deployment services	150	505.2 (High Value Targets / Admin Compromise)deployment services - wds	150	505.2 (High Value Targets / Admin Compromise)wsus - windws server update services	152-157	505.2 (High Value Targets / Admin Compromise)windows server update services - wsus	152-157	505.2 (High Value Targets / Admin Compromise)wsus console	158-159	505.2 (High Value Targets / Admin Compromise)wsus - client admin	160	505.2 (High Value Targets / Admin Compromise)"wsus tools - client & server side (wuauclt, wsusutil, etc.)"	161	505.2 (High Value Targets / Admin Compromise)wuauclt.exe	161	505.2 (High Value Targets / Admin Compromise)wsusutil.exe	161	505.2 (High Value Targets / Admin Compromise)wsus - scripting admin	161	505.2 (High Value Targets / Admin Compromise)wsus - disappointments	163	505.2 (High Value Targets / Admin Compromise)wsus - custom msi packages	164-165	505.2 (High Value Targets / Admin Compromise)patching -- offsite computers	167	505.2 (High Value Targets / Admin Compromise)updates - patching offsite computers	167	505.2 (High Value Targets / Admin Compromise)secunia psi	169	505.2 (High Value Targets / Admin Compromise)psi - secunia personal software inspector	169	505.2 (High Value Targets / Admin Compromise)patching - scan for missing updates	171	505.2 (High Value Targets / Admin Compromise)updates - scan for missing patches	171	505.2 (High Value Targets / Admin Compromise)msba - ms baseline security analyzer	171	505.2 (High Value Targets / Admin Compromise)mbsacli.exe	171	505.2 (High Value Targets / Admin Compromise)msba - xml and powershell	172	505.2 (High Value Targets / Admin Compromise)msba - wsus integration	173	505.2 (High Value Targets / Admin Compromise)wsus - msba integration	173	505.2 (High Value Targets / Admin Compromise)wsus - patching 3rd party software 	173	505.2 (High Value Targets / Admin Compromise)scanning for rogue computers	175	505.2 (High Value Targets / Admin Compromise)rogue computers - scanning for	175	505.2 (High Value Targets / Admin Compromise)nac	177-178	505.2 (High Value Targets / Admin Compromise)network access control	177-178	505.2 (High Value Targets / Admin Compromise)802.1x	177-178	505.2 (High Value Targets / Admin Compromise)radius	177-178	505.2 (High Value Targets / Admin Compromise)nap	177-178	505.2 (High Value Targets / Admin Compromise)		pki - why	6	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pki - what is	8	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pki - standards	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"x.509v3	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"PKIX	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"CRLv2	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"S/MIME	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"TLS	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"SSLv3	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"SGC	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"IPSec	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"PKINIT	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"PKCS	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"PC/SC	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"CryptoAPI	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"CryptoNG	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"SSPI (security support provider interface)	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"security support provider interface (SSPI)	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pki - benefits (lists various things that use pki)	12-Oct	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ipsec	10	"505.3 (Windows PKI, Bitlocker and Secure Boot)"secure e-mail	10	"505.3 (Windows PKI, Bitlocker and Secure Boot)"s/mime	10	"505.3 (Windows PKI, Bitlocker and Secure Boot)"smart card support	10	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificate auth to iis	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"iis certificate auth	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"vpn certificate auth	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificat auth to vpn	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"wireless 802.1x eap-tls and peap auth	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)""802.1x auth (eap-tls, peap)"	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"eap-tls	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"peap	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"encrypting file system	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"lync server	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"tls/ssl encryption for IIS (http and ftp)	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"IIS encryption 	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ftp encryption - IIS	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"tls/ssl encryption to ad controllers (LDAP)	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ldap tls/ssl	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"tcp/636 (ldaps)	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"tcp/3269 (ldaps)	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"smtp ad replication	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ad replication - smtp	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"tls/ssl encryption to sql server	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"sql server - tls/ssl encryption	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"smart phones	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"script and macro signatures	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)""signatures - script, macro, document"	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"document signatures	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"cisco router SCEP support	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"scep support (cisco router)	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"cepsetup.exe	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"cryptoAPI	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)""custom applications with pki (cryptoAPI, CryptoNG, CAPICOM)"	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"cryptoNG	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"CAPICOM	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificates - mmc snapin	13-14	"505.3 (Windows PKI, Bitlocker and Secure Boot)"mmc snapin - certificates	13-14	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certutil.exe	13	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certreq.exe	13	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pki - tools to manage	13	"505.3 (Windows PKI, Bitlocker and Secure Boot)"mmc snapin - enterprise PKI	14	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pki - enterprise mmc snapin	14	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pki - powershell certificates provider	15	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pki - certificate services website (certsrv)	15	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv	"15, 28"	"505.3 (Windows PKI, Bitlocker and Secure Boot)"cert:\ directory	15	"505.3 (Windows PKI, Bitlocker and Secure Boot)"key recovery tool	16	"505.3 (Windows PKI, Bitlocker and Secure Boot)"krt.exe	16	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certutil.exe	16	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pki - certificate templates mmc snap-in	16	"505.3 (Windows PKI, Bitlocker and Secure Boot)"mmc snapin - certificate templates	16	"505.3 (Windows PKI, Bitlocker and Secure Boot)"gpo - pki settings	17	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pki - gpo settings	17	"505.3 (Windows PKI, Bitlocker and Secure Boot)"dsstore.exe (detailed)	17	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certutil.exe (detailed)	17-18	"505.3 (Windows PKI, Bitlocker and Secure Boot)"winhttpcertcfg.exe	18	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv.exe	18	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certreq.exe	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificate enrollment - adsi	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificate enrollment - capicom.dll	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificate enrollment - com+	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"com+ certificate enrollment	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"capicom.dll - certificate enrollment	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"adsi - certificate enrollment	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pkcs#10 - pki certificate request	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pkcs#7 - pki renewal request	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"mscep.dll (simple cert enrollment protocol - scep)	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"scep (simple cert enrollment protocol - mscep.dll)	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"connection manager certificate deployment tool cmgetcer.dll	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"cmgetcer.dll - connection manager certificate deployment tool	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"cryptpAPI tools (list)	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"msdn cryptoAPI tools (list)	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"cert2spc.exe	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certmgr.exe	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"chktrust.exe	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"makecert.exe	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"makectl.exe	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"setreg.exe	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"signcode.exe	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"makecat.exe	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pki - how windows implements it	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificates - how windows implements pki	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pki - cryptographic service providers (CSPs)	21	"505.3 (Windows PKI, Bitlocker and Secure Boot)"cryptographic service providers (CSPs)	21	"505.3 (Windows PKI, Bitlocker and Secure Boot)"CSPs (cryptographic service providers)	21	"505.3 (Windows PKI, Bitlocker and Secure Boot)"FIPS140-1 Level 1	21	"505.3 (Windows PKI, Bitlocker and Secure Boot)"AES 256 bit & AES hashing - vista and later	21	"505.3 (Windows PKI, Bitlocker and Secure Boot)"tpm chip	21	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificate services (certsrv.exe) - explained	22	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv.exe (certificate services) - explained	22	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificate stores	22	"505.3 (Windows PKI, Bitlocker and Secure Boot)"CRLs (certificate revocation lists)	22	"505.3 (Windows PKI, Bitlocker and Secure Boot)"modules - certificate services dll plugins	22	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificate stores	22	"505.3 (Windows PKI, Bitlocker and Secure Boot)"CTLs (certificate trust lists)	22	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificate stores seen in mmc snap-in	22-23	"505.3 (Windows PKI, Bitlocker and Secure Boot)"protected stores	23	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificates - protected stores	23	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pki - protected stores	23	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificate operations - request/delete/renew/import/export	25	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificate export	26-27	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificate renewals	28	"505.3 (Windows PKI, Bitlocker and Secure Boot)""crypto - basic terms (auth, integrity, repudiation, confidentiality)"	29	"505.3 (Windows PKI, Bitlocker and Secure Boot)"keys - encryption	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"encryption keys	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ciphertext	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"cleartext	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"key length	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"key strength	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"bit-length	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"key bit-length	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"encryption - keys	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"brute-force key attacks & time calculations	31-32	"505.3 (Windows PKI, Bitlocker and Secure Boot)"keys - two-way / symmetric / secret / bulk / session	32	"505.3 (Windows PKI, Bitlocker and Secure Boot)"keys - one-way / asymmetric / public/private / key-exchange keys	33	"505.3 (Windows PKI, Bitlocker and Secure Boot)"keys - secure exchange	34	"505.3 (Windows PKI, Bitlocker and Secure Boot)"keys - encrypting a key to encrypt a key	34	"505.3 (Windows PKI, Bitlocker and Secure Boot)"keys - hashes / message digests / fingerprints	35	"505.3 (Windows PKI, Bitlocker and Secure Boot)"hashing	35	"505.3 (Windows PKI, Bitlocker and Secure Boot)"message digest	35	"505.3 (Windows PKI, Bitlocker and Secure Boot)"fingerprints	35	"505.3 (Windows PKI, Bitlocker and Secure Boot)"digital signatures	36	"505.3 (Windows PKI, Bitlocker and Secure Boot)"crypto - reading	37	"505.3 (Windows PKI, Bitlocker and Secure Boot)"crypto - acronyms and abbreviations	38-39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"3des - triple-des	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ad - active directory	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ntds.dit	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"aia - authority info access	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"aki - authority key id	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"bdc - backup domain controller	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ca - cert auth	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"cdp - crl distribution point	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"csp - crypto service provider	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ctl - certificate trust list	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"cryptoAPI - menu of crypto svcs provided by windows	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"dacl - discretionary access control list (permissions on an object)	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"dc - domain controller	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"dcpromo.exe	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ddf - data decryption field (EFS file attributed with encrypted FEK)	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ddns - dynamic dns	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"des - 56 bit symentric block cipher developed by nsa	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"dfs - distributed file system	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)""ds - directory service (AD, novell nds, unix NIS)"	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"drf - data recovery field (EFS file attribute with encrypted FEK)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"efs - encrypting file system - ntfs	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"fek - fiel encryption key (efs key used to encrypt a file)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"gc - global catalog (AD)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"gpo - group policy object	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"hsm - hardware security module (CA private key protection)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ietf - internet engineering task force (publishes rfc's)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"iis - internet information server	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ipsec - ip security protocol - encrypting and signing network traffic	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)""isa - internet sec & accel server (MS firewall, nat, proxy)"	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"itu - international telecom union (standards)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"kdc - key distribution center (kerberos)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"member server - non-DC w/computer account on domain	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"mmc - microsoft management console	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ms - microsoft	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"nc - naming context - AD partition	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"native - native mode operation on pure windows networks	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)""netlogon - folder shared as netlogon, part of sysvol"	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"nt - ms win NT 4.0	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ntfs - nt file system	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"oid - object identifier - number to uniquely id an object type in ds	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ou - organizational unit	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pdc - primary domain controller	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pgp - pretty good privacy	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pk - public key	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"kcs - defacto pk standards from RSA (PKCS#7)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pki - public key infrastructure	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pkix - ietf working group to define interoperable pki	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"rfc - request for comments	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"rras - routing and remote access server (ms dial-up/vpn router)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"rsa - rivest-Shamir-Adleman (popular algorithm for pk's)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"s/mime - pk-based encryption and signing of e-mail (outlook)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"sam - security accounts manager (NT 4 SAM database)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"sacl - systam access control list (list of audit settings on an object)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"sgc - server gated crypto (ssl for banks; non-issue now)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"snap-in - mmc snap-in tool.	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)""ssl - secure sockets layer - PK-based enryption, sig, auth"	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)""stand alone computer - non-DC, not a member of any domain"	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"stand alone CA - windows CA not using AD or templates	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"sysvol - folder shared as sysvol with scripts and gpos	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"tls - transport layer security (next version of ssl)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"vpn - virtual private network	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"x.500 - itu standard for a ds (like AD)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"x.509v3 - itu standard for digital certificate format (RFC 2459)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"RFC 2459	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pcks message types	40	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pkcs#5 - derive priv key from password	40	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pkcs#7 - format to store certs but not private keys	40	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pkcs#10 - format for cert reqs to be sent to ca	40	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pkcs#12 - format for securing storing certs and priv keys (pfx files)	40	"505.3 (Windows PKI, Bitlocker and Secure Boot)"pfx files - pkcs#12 format file with cert and priv key	40	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ca - certificate authority described	41	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ca - verify cert not forged or altered	42	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ca - verify actual ca public key	42	"505.3 (Windows PKI, Bitlocker and Secure Boot)"ca - why trust?	43	"505.3 (Windows PKI, Bitlocker and Secure Boot)"x.509 certificate - described	43	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificate extensions (x.509v3 extra fields also bound by hash)	44	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificates - multiple per user	46	"505.3 (Windows PKI, Bitlocker and Secure Boot)"multiple certificates per user	46	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificates - validity checking	46	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - before install	49	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - capolicy.inf file	50	"505.3 (Windows PKI, Bitlocker and Secure Boot)"capolicy.inf file (certsrv configuration)	50	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certificate policy and practices statements	51	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - email address naming scheme	51	"505.3 (Windows PKI, Bitlocker and Secure Boot)"email addresses and certificate servers	51	"505.3 (Windows PKI, Bitlocker and Secure Boot)"time sync - certsrv	51	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - time sync	51	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - ad size & replication	52	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - failover clustering	52	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - pki hierarchy	53	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - root ca	54	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - intermediate ca	54	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - issuing ca	54	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - single root hierarchy	54	"505.3 (Windows PKI, Bitlocker and Secure Boot)"web of trust - pgp	54	"505.3 (Windows PKI, Bitlocker and Secure Boot)"cross-certified network of ca's	54	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - 3-tier pki hierachy necessary? (no)	54	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - ca hierarchy benefits	56	"505.3 (Windows PKI, Bitlocker and Secure Boot)""certsrv - minimize problems (policies, contain damage, clustering, politics)"	56	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - multiple hierarchies?	56	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - separate hierarchy for secure e-mail outside organization	57	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - hierarchy design - summary & best practices	57	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - install	59-65	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - policy module (enterprise vs. stand-alone)	65	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - on-line issuing CAs	66	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - off-line root or intermediate CAs	67	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - on-line vs off-line operation	68	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - off-line templates <- not the same as offline CA	68	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - after install steps	69	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - cdp and aia extensions	71	"505.3 (Windows PKI, Bitlocker and Secure Boot)"cdp extensions - certsrv	71	"505.3 (Windows PKI, Bitlocker and Secure Boot)"aia extensions - certsrv	71	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - publishers group in multi-domain forest	73	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - common criteria role separation	74	"505.3 (Windows PKI, Bitlocker and Secure Boot)"common criteria role separation (certsrv)	74	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - configure enhanced auditing	75	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - configure alerting (camonitor.vbs)	75	"505.3 (Windows PKI, Bitlocker and Secure Boot)"capicom.dll - certsrv alerting	75	"505.3 (Windows PKI, Bitlocker and Secure Boot)"camonitor.vbs	75	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - run best practice analyzer	76	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - copy and edit certificate templates	77	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv template - copy template	78	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv template - require private key archival	78	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv template - enable certificat auto-enroll	79	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv template - do not auto re-enroll for duplicates	79	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv template - force re-enrollement from updated template	79	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv template - do not store certs and requests in ca database	80	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv template - cross-forest replication of templates	80	"505.3 (Windows PKI, Bitlocker and Secure Boot)"cross-forest replication of certsrv templates	80	"505.3 (Windows PKI, Bitlocker and Secure Boot)"replication of of certsrv templates cross-forest	80	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - control certificate enrollement	81	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - permissions on ca to request cert	81	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - permissions on templates for ca to issue	82-83	"505.3 (Windows PKI, Bitlocker and Secure Boot)"certsrv - best practices for templates	84	"505.3 (Windows PKI, Bitlocker and Secure Boot)"private keys - where stored	87	private keys - how encrypted	"89,90"	"dpapi, dpapi-ng"	90	session key - how derived	91	master key	91	syskey.exe	91	lsass.exe - master key in LSA in RAM	91	master key protection (mkpk)	91	mkpk (master key protection)	91	
+item	page(s)	book
+Security templates (INF)	8	505.1 (OS / App Hardening)
+INF	8	505.1 (OS / App Hardening)
+Local policies described	10	505.1 (OS / App Hardening)
+Security templates from others	13	505.1 (OS / App Hardening)
+SCM	14	505.1 (OS / App Hardening)
+Security Compliance Manager	14	505.1 (OS / App Hardening)
+localgpo.wsf	14	505.1 (OS / App Hardening)
+SCA database	17	505.1 (OS / App Hardening)
+Audit against template (SCA tool)	19	505.1 (OS / App Hardening)
+Analyze your computer (audit against template - SCA)	19	505.1 (OS / App Hardening)
+secedit.exe	22	505.1 (OS / App Hardening)
+sca command line (secedit.exe)	22	505.1 (OS / App Hardening)
+group policy tools	24-31	505.1 (OS / App Hardening)
+gpupdate.exe	28	505.1 (OS / App Hardening)
+gpotool.exe	29	505.1 (OS / App Hardening)
+secedit.exe	29	505.1 (OS / App Hardening)
+gpresult.exe	29	505.1 (OS / App Hardening)
+addiag.exe	29	505.1 (OS / App Hardening)
+dcgopfix.exe	29	505.1 (OS / App Hardening)
+admx migrator	29	505.1 (OS / App Hardening)
+3rd party gpo enhancements	29-30	505.1 (OS / App Hardening)
+create gpo	33	505.1 (OS / App Hardening)
+gpo - computer vs. user	34	505.1 (OS / App Hardening)
+group policy links	35	505.1 (OS / App Hardening)
+gpo - order of precedence (LSD OU)	37-39	505.1 (OS / App Hardening)
+gpo - block inheritance	38	505.1 (OS / App Hardening)
+gpo - enforced	39	505.1 (OS / App Hardening)
+gpo - access lists	40	505.1 (OS / App Hardening)
+gpo - delegation of control	41	505.1 (OS / App Hardening)
+gpo - refresh interval	43	505.1 (OS / App Hardening)
+gpo - slow link detection	42	505.1 (OS / App Hardening)
+gpo - loopback processing mode	44-45	505.1 (OS / App Hardening)
+gpo - WMI filtering	46	505.1 (OS / App Hardening)
+gpo - disabling	46-47	505.1 (OS / App Hardening)
+Enterprise scale registry editor	48	505.1 (OS / App Hardening)
+Administrative templates - explained	48	505.1 (OS / App Hardening)
+Administrative templates - importing	50-51	505.1 (OS / App Hardening)
+tattoos	51	505.1 (OS / App Hardening)
+gpo -- tattoos	51	505.1 (OS / App Hardening)
+admx templates / central store	51	505.1 (OS / App Hardening)
+gpo - admx templates / central store	51-53	505.1 (OS / App Hardening)
+gpo - classic ADM templates	53	505.1 (OS / App Hardening)
+admx migrator	54	505.1 (OS / App Hardening)
+admx - convert from adm (admx migrator)	54	505.1 (OS / App Hardening)
+admx - create your own	54	505.1 (OS / App Hardening)
+gpo - preferences (see also gpp)	56-61	505.1 (OS / App Hardening)
+gpp	56-61	505.1 (OS / App Hardening)
+gpp - capabilities	57	505.1 (OS / App Hardening)
+"gpp - manage users, groups, passwords"	57	505.1 (OS / App Hardening)
+gpp - remote command execution	57	505.1 (OS / App Hardening)
+gpp - manage scheduled tasks	57	505.1 (OS / App Hardening)
+gpp - manage files & folders	57	505.1 (OS / App Hardening)
+gpp - manage ini file settings	58	505.1 (OS / App Hardening)
+gpp - manage registry keys and values	58	505.1 (OS / App Hardening)
+gpp - configure service settings	58	505.1 (OS / App Hardening)
+gpp - password management	58	505.1 (OS / App Hardening)
+password management via gpp	58	505.1 (OS / App Hardening)
+gpp - red & green lines	59	505.1 (OS / App Hardening)
+gpp - item-level targeting	59-61	505.1 (OS / App Hardening)
+gpo - push out scripts	62-64	505.1 (OS / App Hardening)
+gpo - logon/logoff script	63	505.1 (OS / App Hardening)
+gpo - startup/shutdown script	63	505.1 (OS / App Hardening)
+gpo - scripts	63	505.1 (OS / App Hardening)
+gpo - scripts - userver vs. system context	64	505.1 (OS / App Hardening)
+gpo - scripts - visible vs. hidden	64	505.1 (OS / App Hardening)
+cscript.exe	65	505.1 (OS / App Hardening)
+PopUp method	64	505.1 (OS / App Hardening)
+Synchronous vs. Async Execution - logon/logoff scripts	65	505.1 (OS / App Hardening)
+Synchronous vs. Async Execution - startup/shutdown scripts	66	505.1 (OS / App Hardening)
+script timeout	66	505.1 (OS / App Hardening)
+scripts - best practices	66-67	505.1 (OS / App Hardening)
+malware	69-71	505.1 (OS / App Hardening)
+antivirus can fail you	72-74	505.1 (OS / App Hardening)
+application whitelisting (generic)	75	505.1 (OS / App Hardening)
+whitelisting	75	505.1 (OS / App Hardening)
+desktops like appliances	76-81	505.1 (OS / App Hardening)
+local administrators	76	505.1 (OS / App Hardening)
+applocker	82	505.1 (OS / App Hardening)
+application whitelisting - applocker	82	505.1 (OS / App Hardening)
+whitelisting - applocker	82	505.1 (OS / App Hardening)
+application identity service	82	505.1 (OS / App Hardening)
+applocker rules	84-86	505.1 (OS / App Hardening)
+applocker path rules	87	505.1 (OS / App Hardening)
+applocker environment variables	87	505.1 (OS / App Hardening)
+environment variables - applocker / whitelisting	87	505.1 (OS / App Hardening)
+applocker - powershell	88	505.1 (OS / App Hardening)
+block unsigned scripts	89-91	505.1 (OS / App Hardening)
+bit9 parity	92	505.1 (OS / App Hardening)
+autoplay	94	505.1 (OS / App Hardening)
+autorun	94	505.1 (OS / App Hardening)
+anti-malware training	95	505.1 (OS / App Hardening)
+malware training	95	505.1 (OS / App Hardening)
+training - anti-malware	95	505.1 (OS / App Hardening)
+gpo - removable devices	97	505.1 (OS / App Hardening)
+gpo - usb drives	97	505.1 (OS / App Hardening)
+removable drives - bitlocker	99	505.1 (OS / App Hardening)
+usb drives - bitlocker	99	505.1 (OS / App Hardening)
+hardware identifier strings	98	505.1 (OS / App Hardening)
+removable drives / devices - 3rd party control	100	505.1 (OS / App Hardening)
+usb drives / devices - 3rd party control	100	505.1 (OS / App Hardening)
+restore pristine drive	102	505.1 (OS / App Hardening)
+reverse changes at logoff	103	505.1 (OS / App Hardening)
+PC Reset	103	505.1 (OS / App Hardening)
+PC Refresh	103	505.1 (OS / App Hardening)
+Windows 8 reset/refresh features	103	505.1 (OS / App Hardening)
+Apply drive image at reboot or logoff	102	505.1 (OS / App Hardening)
+Recimg.exe	104	505.1 (OS / App Hardening)
+customize PC refresh image (recimg.exe)	104	505.1 (OS / App Hardening)
+windows to go	104	505.1 (OS / App Hardening)
+boot from usb flash drive	104	505.1 (OS / App Hardening)
+steadystate and App-V	105	505.1 (OS / App Hardening)
+App-V and steadystate	105	505.1 (OS / App Hardening)
+Softgrid	105	505.1 (OS / App Hardening)
+VDI	107	505.1 (OS / App Hardening)
+thin client	107	505.1 (OS / App Hardening)
+ICA/RDP	107	505.1 (OS / App Hardening)
+VDI - not a panacea	108	505.1 (OS / App Hardening)
+VDI - Advantages	110	505.1 (OS / App Hardening)
+VDI on windows 2012	111	505.1 (OS / App Hardening)
+Personal VM vs. Pooled VM	111	505.1 (OS / App Hardening)
+Pooled VM vs. Personal VM	111	505.1 (OS / App Hardening)
+User profile disks	111-112	505.1 (OS / App Hardening)
+inventory	114	505.1 (OS / App Hardening)
+high-risk applications	115	505.1 (OS / App Hardening)
+Data execution prevension (DEP)	116	505.1 (OS / App Hardening)
+DEP - Data execution prevention	116	505.1 (OS / App Hardening)
+Address space layout randomization (ASLR)	118	505.1 (OS / App Hardening)
+ASLR - Address space layout randomization 	118	505.1 (OS / App Hardening)
+EMET	"117,119,121"	505.1 (OS / App Hardening)
+DisableNXShowUI	117	505.1 (OS / App Hardening)
+SEHOP - Structured Exception Handler Overwrite Protection	120	505.1 (OS / App Hardening)
+Structured Exception Handler Overwrite Protection - SEHOP	120	505.1 (OS / App Hardening)
+EMET Toolkit	122-126	505.1 (OS / App Hardening)
+EMET_GUI.EXE	124	505.1 (OS / App Hardening)
+gpo - EMET	125	505.1 (OS / App Hardening)
+Internet Explorer (Hardening)	127	505.1 (OS / App Hardening)
+Internet Explorer - Desktop vs. Metro	129	505.1 (OS / App Hardening)
+IE - Enhanced protected mode	129	505.1 (OS / App Hardening)
+Enhanced protected mode (Internet Explorer)	129	505.1 (OS / App Hardening)
+EPM (Enhanced protected mode - IE)	130	505.1 (OS / App Hardening)
+Enhanced protected mode (EPM)	130	505.1 (OS / App Hardening)
+IE - protected mode	131	505.1 (OS / App Hardening)
+Protected mode (IE)	131	505.1 (OS / App Hardening)
+Zones - Internet Zone (IE)	133-134	505.1 (OS / App Hardening)
+Internet Zone (IE)	133-134	505.1 (OS / App Hardening)
+Zones Trusted sites & Restricted sites	136-137	505.1 (OS / App Hardening)
+Trusted sites zone (IE)	136-137	505.1 (OS / App Hardening)
+Restricted sites zone (IE)	136-137	505.1 (OS / App Hardening)
+IE - filters	138	505.1 (OS / App Hardening)
+IE - SmartScreen Filter	138	505.1 (OS / App Hardening)
+IE - XSS Filter	139	505.1 (OS / App Hardening)
+IE - InPrivate Filter	139	505.1 (OS / App Hardening)
+IE - ActiveX Kill-Bits	140	505.1 (OS / App Hardening)
+Filters (IE)	138	505.1 (OS / App Hardening)
+SmartScreen Filter (IE)	138	505.1 (OS / App Hardening)
+XSS Filter (IE)	139	505.1 (OS / App Hardening)
+InPrivate Filter (IE)	139	505.1 (OS / App Hardening)
+ActiveX Kill-Bits (IE)	140	505.1 (OS / App Hardening)
+Web proxy auto-discovery	142	505.1 (OS / App Hardening)
+WPAD	142	505.1 (OS / App Hardening)
+IE - Web proxy auto-discovery (WPAD)	142	505.1 (OS / App Hardening)
+IE - WPAD	142	505.1 (OS / App Hardening)
+WPAD - DHCP method	143	505.1 (OS / App Hardening)
+WPAD - DNS method	143	505.1 (OS / App Hardening)
+WPAD - NetBIOS method	143	505.1 (OS / App Hardening)
+WPAD - Vulnerabilities	144	505.1 (OS / App Hardening)
+WPAD - Hardening	145	505.1 (OS / App Hardening)
+WPAD - Blocking	145-146	505.1 (OS / App Hardening)
+WPAD - Allowing	147	505.1 (OS / App Hardening)
+Chrome Browser	148	505.1 (OS / App Hardening)
+Google Chrome Browser	148	505.1 (OS / App Hardening)
+GPO - chrome browser	150	505.1 (OS / App Hardening)
+Chrome browser - GPO	150	505.1 (OS / App Hardening)
+Chrome sandbox processes	151	505.1 (OS / App Hardening)
+Adobe reader & Acrobat	152	505.1 (OS / App Hardening)
+Acrobat / Adobe reader	152	505.1 (OS / App Hardening)
+Adobe customization wizard	152	505.1 (OS / App Hardening)
+Adobe hardening	154-155	505.1 (OS / App Hardening)
+Adobe reader protected mode	156	505.1 (OS / App Hardening)
+Adobe reader alternatives	157	505.1 (OS / App Hardening)
+Java	159	505.1 (OS / App Hardening)
+Java platform editions	160	505.1 (OS / App Hardening)
+Java SE applications - standalone	160	505.1 (OS / App Hardening)
+Java SE applications - browser plugin	160	505.1 (OS / App Hardening)
+javaws.exe	160	505.1 (OS / App Hardening)
+jnlp files	160	505.1 (OS / App Hardening)
+Java - jnlp files	160	505.1 (OS / App Hardening)
+Java control panel (javacpl.exe)	161	505.1 (OS / App Hardening)
+Java version	161	505.1 (OS / App Hardening)
+IE - Metro - Java	162	505.1 (OS / App Hardening)
+IE - disable <APPLET> element support (JAVA)	162	505.1 (OS / App Hardening)
+Java - disable in any browser	163	505.1 (OS / App Hardening)
+Java - config files	164	505.1 (OS / App Hardening)
+Java - centrally manage config files	165	505.1 (OS / App Hardening)
+Java - deployment rule sets (whitelists)	166	505.1 (OS / App Hardening)
+Java - whitelists - deployment rule sets	166	505.1 (OS / App Hardening)
+Java - security recommendations	166-167	505.1 (OS / App Hardening)
+Office - Hardening	168	505.1 (OS / App Hardening)
+Office - XML format	168	505.1 (OS / App Hardening)
+Office - Protected view	168	505.1 (OS / App Hardening)
+Office - File blocking	169	505.1 (OS / App Hardening)
+"Office - Macros, ActiveX, Add-Ins"	169	505.1 (OS / App Hardening)
+Office - Trusted Locations	169	505.1 (OS / App Hardening)
+Office - Social network / skype integration	169	505.1 (OS / App Hardening)
+Skype	170	505.1 (OS / App Hardening)
+Appendix - Becoming a domain controller	173-180	505.1 (OS / App Hardening)
+Appendix - Social engineering	181-186	505.1 (OS / App Hardening)
+Appenxix  - Edit security templates by hand	187-192	505.1 (OS / App Hardening)
+SIDS - Well known	191-192	505.1 (OS / App Hardening)
+Well known SIDS	191-192	505.1 (OS / App Hardening)
+Appendix - Custom ADM/ADMX Templates	193-198	505.1 (OS / App Hardening)
+Appendix - Start with malware resistant software	199-209	505.1 (OS / App Hardening)
+		
+		
+High value - definition	8	505.2 (High Value Targets / Admin Compromise)
+ultimate goals of attacker	"8, 9"	505.2 (High Value Targets / Admin Compromise)
+initial soft target	"8, 10-11"	505.2 (High Value Targets / Admin Compromise)
+soft target	"8, 10-11"	505.2 (High Value Targets / Admin Compromise)
+target	"8, 10-11"	505.2 (High Value Targets / Admin Compromise)
+power to achieve goals	12	505.2 (High Value Targets / Admin Compromise)
+power in windows kernel	14	505.2 (High Value Targets / Admin Compromise)
+gpo - manage user rights	15	505.2 (High Value Targets / Admin Compromise)
+rights vs. privileges vs. permissions	14	505.2 (High Value Targets / Admin Compromise)
+privileges vs. rights vs. permissions	14	505.2 (High Value Targets / Admin Compromise)
+permissions vs. rights vs. privileges	14	505.2 (High Value Targets / Admin Compromise)
+Local logon allow/deny	15	505.2 (High Value Targets / Admin Compromise)
+access from network allow/deny	15	505.2 (High Value Targets / Admin Compromise)
+remote logon allow/deny	15	505.2 (High Value Targets / Admin Compromise)
+gpo - user rights assignment	16	505.2 (High Value Targets / Admin Compromise)
+logon restrictions - radius policy	18	505.2 (High Value Targets / Admin Compromise)
+logon restrictions - ipsec port permissions	18	505.2 (High Value Targets / Admin Compromise)
+logon restrictions - workstation permissions	18	505.2 (High Value Targets / Admin Compromise)
+logon restrictions - logon hours	19	505.2 (High Value Targets / Admin Compromise)
+logon restrictions - require smartcard	20	505.2 (High Value Targets / Admin Compromise)
+gpo - manage privileges	21	505.2 (High Value Targets / Admin Compromise)
+whoami.exe /priv	21	505.2 (High Value Targets / Admin Compromise)
+see what privileges a process has	21	505.2 (High Value Targets / Admin Compromise)
+security access token (SAT)	21	505.2 (High Value Targets / Admin Compromise)
+SAT - security access token	21	505.2 (High Value Targets / Admin Compromise)
+privileges - complete list of	22	505.2 (High Value Targets / Admin Compromise)
+debug programs	22	505.2 (High Value Targets / Admin Compromise)
+act as part of operating system	22	505.2 (High Value Targets / Admin Compromise)
+create a token object	22	505.2 (High Value Targets / Admin Compromise)
+impersonate a client after authentication	22	505.2 (High Value Targets / Admin Compromise)
+load and unload device drivers	22	505.2 (High Value Targets / Admin Compromise)
+modify an object label	22	505.2 (High Value Targets / Admin Compromise)
+restore files and directories	22	505.2 (High Value Targets / Admin Compromise)
+take ownership of files or other objects	22	505.2 (High Value Targets / Admin Compromise)
+maleficent seven	24	505.2 (High Value Targets / Admin Compromise)
+SeTcbPrivilege - act as part of operating system	24	505.2 (High Value Targets / Admin Compromise)
+act as part of operating system - SeTcbPrivilege	24	505.2 (High Value Targets / Admin Compromise)
+create a token object - SeCreateTokenPrivilege	24	505.2 (High Value Targets / Admin Compromise)
+SeCreateTokenPrivilege - create a token object	24	505.2 (High Value Targets / Admin Compromise)
+debug programs - SeDebugPrivilege	"24, 30"	505.2 (High Value Targets / Admin Compromise)
+SeDebugPrivilege - debug programs	"24, 30"	505.2 (High Value Targets / Admin Compromise)
+load and unload device drivers - SeLoadDriverPrivilege	25	505.2 (High Value Targets / Admin Compromise)
+SeLoadDriverPrivilege - load and unload device drivers	25	505.2 (High Value Targets / Admin Compromise)
+restore files and directories - SeRestorePrivilege	"25, 40"	505.2 (High Value Targets / Admin Compromise)
+SeRestorePrivilege - restore files and directories	25	505.2 (High Value Targets / Admin Compromise)
+take ownership - SeTakeOwnershipPrivilege	"25, 39"	505.2 (High Value Targets / Admin Compromise)
+SeTakeOwnershipPrivilege - take ownership	25	505.2 (High Value Targets / Admin Compromise)
+impersonate a client after authentication - SeImpersonatePrivilege	"25, 28"	505.2 (High Value Targets / Admin Compromise)
+SeImpersonatePrivilege - impersonate a client after authentication	"25, 28"	505.2 (High Value Targets / Admin Compromise)
+impersonation tokens	26	505.2 (High Value Targets / Admin Compromise)
+SAT - primary security access token	26	505.2 (High Value Targets / Admin Compromise)
+primary security access token (SAT)	26	505.2 (High Value Targets / Admin Compromise)
+impersonation SAT	27	505.2 (High Value Targets / Admin Compromise)
+SAT impersonation	27	505.2 (High Value Targets / Admin Compromise)
+delegation SAT	27	505.2 (High Value Targets / Admin Compromise)
+SAT delegation	27	505.2 (High Value Targets / Admin Compromise)
+token stealing	28	505.2 (High Value Targets / Admin Compromise)
+malware - waiting for admin logon for token steal	29	505.2 (High Value Targets / Admin Compromise)
+pass-the-hash attack	31	505.2 (High Value Targets / Admin Compromise)
+token abuse - mitigating	32	505.2 (High Value Targets / Admin Compromise)
+mitigating token abuse	32	505.2 (High Value Targets / Admin Compromise)
+pass-the-hash attack - mitigating	32	505.2 (High Value Targets / Admin Compromise)
+mitigating pass-the-hash attack	32	505.2 (High Value Targets / Admin Compromise)
+"avoid login with remote protocols (rdp, vnc, ilo, kvm, etc.)"	34	505.2 (High Value Targets / Admin Compromise)
+rdp restricted mode (mstsc.exe /restrictedadmin)	35	505.2 (High Value Targets / Admin Compromise)
+schtasks.exe (schedule tasks)	34	505.2 (High Value Targets / Admin Compromise)
+schedule tasks (schtasks.exe)	34	505.2 (High Value Targets / Admin Compromise)
+account is sensitive and cannot be delegated	35	505.2 (High Value Targets / Admin Compromise)
+kerbtray.exe (kerberos info)	36	505.2 (High Value Targets / Admin Compromise)
+tgt - ticket granting ticket (kerberos)	35	505.2 (High Value Targets / Admin Compromise)
+kerberos - tgt	35	505.2 (High Value Targets / Admin Compromise)
+previous logons to cache	37	505.2 (High Value Targets / Admin Compromise)
+backup/restore privilege 	40	505.2 (High Value Targets / Admin Compromise)
+gpo - manage group membership	42	505.2 (High Value Targets / Admin Compromise)
+gpo - restricted groups	42	505.2 (High Value Targets / Admin Compromise)
+gpo - manage global groups	42	505.2 (High Value Targets / Admin Compromise)
+gpo - manage local groups	42	505.2 (High Value Targets / Admin Compromise)
+gpp - manage local groups	42	505.2 (High Value Targets / Admin Compromise)
+local admin group	46	505.2 (High Value Targets / Admin Compromise)
+analyze application failures	47	505.2 (High Value Targets / Admin Compromise)
+application compatibility toolkit - ACT	47	505.2 (High Value Targets / Admin Compromise)
+ACT - application compatibility toolkit	47	505.2 (High Value Targets / Admin Compromise)
+two account strategy	48	505.2 (High Value Targets / Admin Compromise)
+admin users should have two user accounts	48	505.2 (High Value Targets / Admin Compromise)
+runas.exe	49	505.2 (High Value Targets / Admin Compromise)
+psexec.exe	49	505.2 (High Value Targets / Admin Compromise)
+cpau.exe	49	505.2 (High Value Targets / Admin Compromise)
+autoit.exe	49	505.2 (High Value Targets / Admin Compromise)
+aut2exe.exe	49	505.2 (High Value Targets / Admin Compromise)
+epal.exe	49	505.2 (High Value Targets / Admin Compromise)
+tqrunas.exe	49	505.2 (High Value Targets / Admin Compromise)
+UAC as sudo	49	505.2 (High Value Targets / Admin Compromise)
+admin users should have two computer accounts	50	505.2 (High Value Targets / Admin Compromise)
+UAC  	51	505.2 (High Value Targets / Admin Compromise)
+UAC stripped privileges	52	505.2 (High Value Targets / Admin Compromise)
+UAC - used for deny only	52	505.2 (High Value Targets / Admin Compromise)
+UAC - MIC level	52	505.2 (High Value Targets / Admin Compromise)
+UAC group policy	53	505.2 (High Value Targets / Admin Compromise)
+gpo - UAC	53	505.2 (High Value Targets / Admin Compromise)
+mandatory integrity control levels (MIC)	55	505.2 (High Value Targets / Admin Compromise)
+MIC - mandatory integrity control levels	55	505.2 (High Value Targets / Admin Compromise)
+"MIC labels (Installer, system, high, medium, low, untrusted)"	55	505.2 (High Value Targets / Admin Compromise)
+SAT labels - viewing	56	505.2 (High Value Targets / Admin Compromise)
+MIC tools	57	505.2 (High Value Targets / Admin Compromise)
+integrity control tools	57	505.2 (High Value Targets / Admin Compromise)
+icacls.exe (MIC)	57	505.2 (High Value Targets / Admin Compromise)
+chml.exe (MIC)	57	505.2 (High Value Targets / Admin Compromise)
+regil.exe (MIC)	57	505.2 (High Value Targets / Admin Compromise)
+runasil.exe (MIC)	57	505.2 (High Value Targets / Admin Compromise)
+process hacker (MIC)	57	505.2 (High Value Targets / Admin Compromise)
+change MIC labels	57	505.2 (High Value Targets / Admin Compromise)
+MIC - change labels	57	505.2 (High Value Targets / Admin Compromise)
+integrity levels vs. NTFS permissions	57	505.2 (High Value Targets / Admin Compromise)
+MIC - integrity levels vs. NTFS permissions	57	505.2 (High Value Targets / Admin Compromise)
+NTFS permissions vs. MIC integrity levels	57	505.2 (High Value Targets / Admin Compromise)
+user interface privilege isolation (UIPI)	58	505.2 (High Value Targets / Admin Compromise)
+UIPI - user interface privilege isolation	58	505.2 (High Value Targets / Admin Compromise)
+MIC lab experiment (shows some commands)	59-61	505.2 (High Value Targets / Admin Compromise)
+password policy	62-64	505.2 (High Value Targets / Admin Compromise)
+MIC authentication	62	505.2 (High Value Targets / Admin Compromise)
+SAT groups and claims	62	505.2 (High Value Targets / Admin Compromise)
+disable guest account	64	505.2 (High Value Targets / Admin Compromise)
+guest account - disable	64	505.2 (High Value Targets / Admin Compromise)
+password policy - reversible encryption	64	505.2 (High Value Targets / Admin Compromise)
+password policy - complexity requirements	63-64	505.2 (High Value Targets / Admin Compromise)
+password policy - limit blank passwords to local only	64	505.2 (High Value Targets / Admin Compromise)
+account lockout policy	65	505.2 (High Value Targets / Admin Compromise)
+banner -- display logon banner	66	505.2 (High Value Targets / Admin Compromise)
+screensaver with password	67	505.2 (High Value Targets / Admin Compromise)
+lock workstation	67	505.2 (High Value Targets / Admin Compromise)
+proximity device to lock workstation	67	505.2 (High Value Targets / Admin Compromise)
+smart card removal behavior	67	505.2 (High Value Targets / Admin Compromise)
+account pruning	67	505.2 (High Value Targets / Admin Compromise)
+social engineering - education	67	505.2 (High Value Targets / Admin Compromise)
+password policy - no passwords	68	505.2 (High Value Targets / Admin Compromise)
+password length vs. complexity	69	505.2 (High Value Targets / Admin Compromise)
+"complexity, password vs. length"	69	505.2 (High Value Targets / Admin Compromise)
+passphrase advantages	70	505.2 (High Value Targets / Admin Compromise)
+passfilt.dll	71	505.2 (High Value Targets / Admin Compromise)
+password filters	71	505.2 (High Value Targets / Admin Compromise)
+password filter registry key	71	505.2 (High Value Targets / Admin Compromise)
+password filter - trojans	72	505.2 (High Value Targets / Admin Compromise)
+password lockout policies	73	505.2 (High Value Targets / Admin Compromise)
+passwords - custom policy management	74	505.2 (High Value Targets / Admin Compromise)
+msDS-PasswordSettings	76	505.2 (High Value Targets / Admin Compromise)
+ldf file - password settings	76	505.2 (High Value Targets / Admin Compromise)
+password settings - ldf file	76	505.2 (High Value Targets / Admin Compromise)
+ldifde.exe	76	505.2 (High Value Targets / Admin Compromise)
+password policy - adsi edit to change	78	505.2 (High Value Targets / Admin Compromise)
+picture password	"79, 82-84"	505.2 (High Value Targets / Admin Compromise)
+pin logins	79-81	505.2 (High Value Targets / Admin Compromise)
+credential manager	84	505.2 (High Value Targets / Admin Compromise)
+password managers	84	505.2 (High Value Targets / Admin Compromise)
+keepass	88	505.2 (High Value Targets / Admin Compromise)
+chml.exe - MIC label for keepass files	89	505.2 (High Value Targets / Admin Compromise)
+local admin accounts for helpdesk/it	90	505.2 (High Value Targets / Admin Compromise)
+gpo scripts - startup/shutdown/scheduled tasks	90	505.2 (High Value Targets / Admin Compromise)
+local admin accounts - inventory	91	505.2 (High Value Targets / Admin Compromise)
+local admin accounts - delete/disable	92	505.2 (High Value Targets / Admin Compromise)
+local admin group - remove members	92	505.2 (High Value Targets / Admin Compromise)
+local accounts - block login with blank password	92	505.2 (High Value Targets / Admin Compromise)
+gpo - manage local passwords	92-93	505.2 (High Value Targets / Admin Compromise)
+scheduled tasks - manage local passwords	93-94	505.2 (High Value Targets / Admin Compromise)
+password management - 3rd party tools	94-95	505.2 (High Value Targets / Admin Compromise)
+ad - metro tools	97	505.2 (High Value Targets / Admin Compromise)
+schema management add in (regsrvr32.exe schmmgmt.dll)	97	505.2 (High Value Targets / Admin Compromise)
+ad - desktop tools	98	505.2 (High Value Targets / Admin Compromise)
+ad - powershell cmdlets	99	505.2 (High Value Targets / Admin Compromise)
+ad - rsat (remote server admin tools)	99	505.2 (High Value Targets / Admin Compromise)
+acldiag.exe	99	505.2 (High Value Targets / Admin Compromise)
+dsacls.exe	99	505.2 (High Value Targets / Admin Compromise)
+dsrevoke.exe	99	505.2 (High Value Targets / Admin Compromise)
+enumprop.exe	99	505.2 (High Value Targets / Admin Compromise)
+sdcheck.exe	99	505.2 (High Value Targets / Admin Compromise)
+netdom.exe	99	505.2 (High Value Targets / Admin Compromise)
+nltest.exe	99	505.2 (High Value Targets / Admin Compromise)
+csvde.exe	100	505.2 (High Value Targets / Admin Compromise)
+ldifde.exe	100	505.2 (High Value Targets / Admin Compromise)
+movetree.exe	100	505.2 (High Value Targets / Admin Compromise)
+dsadd.exe	100	505.2 (High Value Targets / Admin Compromise)
+dsget.exe	100	505.2 (High Value Targets / Admin Compromise)
+dsmod.exe	100	505.2 (High Value Targets / Admin Compromise)
+dsmove.exe	100	505.2 (High Value Targets / Admin Compromise)
+dsquery.exe	100	505.2 (High Value Targets / Admin Compromise)
+dsrm.exe	100	505.2 (High Value Targets / Admin Compromise)
+ad - import/export & bulk mgt (CLI tools)	100	505.2 (High Value Targets / Admin Compromise)
+ad - replication & troubleshooting (CLI tools)	100	505.2 (High Value Targets / Admin Compromise)
+ad - permissions & trusts (CLI tools)	99	505.2 (High Value Targets / Admin Compromise)
+dcdiag.exe	100	505.2 (High Value Targets / Admin Compromise)
+dnscmd.exe	100	505.2 (High Value Targets / Admin Compromise)
+dsastat.exe	100	505.2 (High Value Targets / Admin Compromise)
+dsmgmt.exe	100	505.2 (High Value Targets / Admin Compromise)
+netdiag.exe	100	505.2 (High Value Targets / Admin Compromise)
+ntdsutil.exe	100	505.2 (High Value Targets / Admin Compromise)
+repadmin.exe	100	505.2 (High Value Targets / Admin Compromise)
+ad - joeware tools	100-101	505.2 (High Value Targets / Admin Compromise)
+adfind.exe	101	505.2 (High Value Targets / Admin Compromise)
+admod.exe	101	505.2 (High Value Targets / Admin Compromise)
+atsn.exe	101	505.2 (High Value Targets / Admin Compromise)
+oldcmdp.exe	101	505.2 (High Value Targets / Admin Compromise)
+secdata.exe	101	505.2 (High Value Targets / Admin Compromise)
+unlock.exe	101	505.2 (High Value Targets / Admin Compromise)
+adrestore.exe	101	505.2 (High Value Targets / Admin Compromise)
+ad - adsi scripting support	101	505.2 (High Value Targets / Admin Compromise)
+"ad - powershell ""System.DirectoryServices"" .NET classes"	101	505.2 (High Value Targets / Admin Compromise)
+ldap	102	505.2 (High Value Targets / Admin Compromise)
+ldap - secure traffic	102	505.2 (High Value Targets / Admin Compromise)
+tcp/ip ports - ad traffic	102	505.2 (High Value Targets / Admin Compromise)
+ad traffic - tcp/ip ports	102	505.2 (High Value Targets / Admin Compromise)
+ad - permissions  	103	505.2 (High Value Targets / Admin Compromise)
+ad - inheritance of dacl and sacl ace's	105	505.2 (High Value Targets / Admin Compromise)
+access control entries (ACE)	105	505.2 (High Value Targets / Admin Compromise)
+discretionary access control lists (dacl)	105	505.2 (High Value Targets / Admin Compromise)
+system access control lists (sacl)	105	505.2 (High Value Targets / Admin Compromise)
+ACE -  access control entries 	105	505.2 (High Value Targets / Admin Compromise)
+dacl - discretionary access control lists	105	505.2 (High Value Targets / Admin Compromise)
+sacl - system access control lists	105	505.2 (High Value Targets / Admin Compromise)
+permissions - conflicts - inherited vs. explicit	106	505.2 (High Value Targets / Admin Compromise)
+conflicts - inherited vs. explicit permissions	106	505.2 (High Value Targets / Admin Compromise)
+inherited permissions vs. explicit - conflicts	106	505.2 (High Value Targets / Admin Compromise)
+explicit permissions vs. inherited - conflicts	106	505.2 (High Value Targets / Admin Compromise)
+ad - object ownership	107	505.2 (High Value Targets / Admin Compromise)
+dssec.dat (%systemroot%\system32\) [snap-in view control]	107	505.2 (High Value Targets / Admin Compromise)
+ad snap-in view control - see dssec.dat	107	505.2 (High Value Targets / Admin Compromise)
+ad - default permission source	108	505.2 (High Value Targets / Admin Compromise)
+ad - change schema to affect default permissions	108-109	505.2 (High Value Targets / Admin Compromise)
+ad - acl tools	110	505.2 (High Value Targets / Admin Compromise)
+dsacls.exe	110	505.2 (High Value Targets / Admin Compromise)
+acldiag.exe	111	505.2 (High Value Targets / Admin Compromise)
+sdcheck.exe	112	505.2 (High Value Targets / Admin Compromise)
+dsrevoke.exe	112	505.2 (High Value Targets / Admin Compromise)
+adsi 2.5 scripting ad permissions	113	505.2 (High Value Targets / Admin Compromise)
+delegation of control	114	505.2 (High Value Targets / Admin Compromise)
+delegation of authority over shared folder	115	505.2 (High Value Targets / Admin Compromise)
+delegation of authority - best practices	116	505.2 (High Value Targets / Admin Compromise)
+delgation of authority - reset password example	118-120	505.2 (High Value Targets / Admin Compromise)
+delgation of authority - edit selected properties example	121-123	505.2 (High Value Targets / Admin Compromise)
+delegation of authority - prevent edits in one OU only	124	505.2 (High Value Targets / Admin Compromise)
+delegation of auhtority - join computers to domain	125	505.2 (High Value Targets / Admin Compromise)
+join computer to domain	125	505.2 (High Value Targets / Admin Compromise)
+delegation of auhtority - full control over an OU	129	505.2 (High Value Targets / Admin Compromise)
+delegation of authority - IT authority via Ous	131	505.2 (High Value Targets / Admin Compromise)
+high value targets - separate OU	131	505.2 (High Value Targets / Admin Compromise)
+OU - separate for high value targets	131	505.2 (High Value Targets / Admin Compromise)
+OU admins group	131-132	505.2 (High Value Targets / Admin Compromise)
+high value targets - separate OU -- audit all access	132	505.2 (High Value Targets / Admin Compromise)
+ad - audit access	133	505.2 (High Value Targets / Admin Compromise)
+ad - enable sacl auditing	133	505.2 (High Value Targets / Admin Compromise)
+ad - customizing ad object and container sacl's	134	505.2 (High Value Targets / Admin Compromise)
+ad - enable generic ad auditing	134	505.2 (High Value Targets / Admin Compromise)
+audit account logon events	135	505.2 (High Value Targets / Admin Compromise)
+audit account management	135	505.2 (High Value Targets / Admin Compromise)
+audit directory service access	135	505.2 (High Value Targets / Admin Compromise)
+audit logon events	135	505.2 (High Value Targets / Admin Compromise)
+audit object access	135	505.2 (High Value Targets / Admin Compromise)
+audit policy change	135	505.2 (High Value Targets / Admin Compromise)
+audit privilege use	136	505.2 (High Value Targets / Admin Compromise)
+audit process tracking	136	505.2 (High Value Targets / Admin Compromise)
+audit system events	136	505.2 (High Value Targets / Admin Compromise)
+ad - directory service change auditing	137	505.2 (High Value Targets / Admin Compromise)
+auditpol.exe /get /category:*	137	505.2 (High Value Targets / Admin Compromise)
+auditing best practices	139	505.2 (High Value Targets / Admin Compromise)
+patching - critical importance of	142	505.2 (High Value Targets / Admin Compromise)
+patching - update cycle	143	505.2 (High Value Targets / Admin Compromise)
+test lab	145	505.2 (High Value Targets / Admin Compromise)
+bulletins - e-mail & newsfeed	147	505.2 (High Value Targets / Admin Compromise)
+alets / news / email / etc.	147	505.2 (High Value Targets / Admin Compromise)
+patching - before OS is installed	149	505.2 (High Value Targets / Admin Compromise)
+hardware selection	149	505.2 (High Value Targets / Admin Compromise)
+flashing the BIOS	149	505.2 (High Value Targets / Admin Compromise)
+BIOS updates / flashing	149	505.2 (High Value Targets / Admin Compromise)
+firmware updates	149	505.2 (High Value Targets / Admin Compromise)
+"updates - firmware, BIOS, etc."	149	505.2 (High Value Targets / Admin Compromise)
+"updating binary install disk images (ghost, acronis, wds, etc.)"	150	505.2 (High Value Targets / Admin Compromise)
+MDT (microsoft deployment toolkit)	150	505.2 (High Value Targets / Admin Compromise)
+Windows automated installation (AIK)	150	505.2 (High Value Targets / Admin Compromise)
+aik - windows automated installation	150	505.2 (High Value Targets / Admin Compromise)
+windows deployment services	150	505.2 (High Value Targets / Admin Compromise)
+wds - windows deployment services	150	505.2 (High Value Targets / Admin Compromise)
+deployment services - wds	150	505.2 (High Value Targets / Admin Compromise)
+wsus - windws server update services	152-157	505.2 (High Value Targets / Admin Compromise)
+windows server update services - wsus	152-157	505.2 (High Value Targets / Admin Compromise)
+wsus console	158-159	505.2 (High Value Targets / Admin Compromise)
+wsus - client admin	160	505.2 (High Value Targets / Admin Compromise)
+"wsus tools - client & server side (wuauclt, wsusutil, etc.)"	161	505.2 (High Value Targets / Admin Compromise)
+wuauclt.exe	161	505.2 (High Value Targets / Admin Compromise)
+wsusutil.exe	161	505.2 (High Value Targets / Admin Compromise)
+wsus - scripting admin	161	505.2 (High Value Targets / Admin Compromise)
+wsus - disappointments	163	505.2 (High Value Targets / Admin Compromise)
+wsus - custom msi packages	164-165	505.2 (High Value Targets / Admin Compromise)
+patching -- offsite computers	167	505.2 (High Value Targets / Admin Compromise)
+updates - patching offsite computers	167	505.2 (High Value Targets / Admin Compromise)
+secunia psi	169	505.2 (High Value Targets / Admin Compromise)
+psi - secunia personal software inspector	169	505.2 (High Value Targets / Admin Compromise)
+patching - scan for missing updates	171	505.2 (High Value Targets / Admin Compromise)
+updates - scan for missing patches	171	505.2 (High Value Targets / Admin Compromise)
+msba - ms baseline security analyzer	171	505.2 (High Value Targets / Admin Compromise)
+mbsacli.exe	171	505.2 (High Value Targets / Admin Compromise)
+msba - xml and powershell	172	505.2 (High Value Targets / Admin Compromise)
+msba - wsus integration	173	505.2 (High Value Targets / Admin Compromise)
+wsus - msba integration	173	505.2 (High Value Targets / Admin Compromise)
+wsus - patching 3rd party software 	173	505.2 (High Value Targets / Admin Compromise)
+scanning for rogue computers	175	505.2 (High Value Targets / Admin Compromise)
+rogue computers - scanning for	175	505.2 (High Value Targets / Admin Compromise)
+nac	177-178	505.2 (High Value Targets / Admin Compromise)
+network access control	177-178	505.2 (High Value Targets / Admin Compromise)
+802.1x	177-178	505.2 (High Value Targets / Admin Compromise)
+radius	177-178	505.2 (High Value Targets / Admin Compromise)
+nap	177-178	505.2 (High Value Targets / Admin Compromise)
+		
+pki - why	6	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pki - what is	8	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pki - standards	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+x.509v3	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+PKIX	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+CRLv2	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+S/MIME	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+TLS	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+SSLv3	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+SGC	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+IPSec	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+PKINIT	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+PKCS	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+PC/SC	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+CryptoAPI	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+CryptoNG	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+SSPI (security support provider interface)	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+security support provider interface (SSPI)	9	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pki - benefits (lists various things that use pki)	12-Oct	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ipsec	10	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+secure e-mail	10	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+s/mime	10	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+smart card support	10	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificate auth to iis	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+iis certificate auth	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+vpn certificate auth	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificat auth to vpn	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+wireless 802.1x eap-tls and peap auth	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"802.1x auth (eap-tls, peap)"	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+eap-tls	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+peap	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+encrypting file system	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+lync server	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tls/ssl encryption for IIS (http and ftp)	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+IIS encryption 	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ftp encryption - IIS	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tls/ssl encryption to ad controllers (LDAP)	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ldap tls/ssl	11	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tcp/636 (ldaps)	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tcp/3269 (ldaps)	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+smtp ad replication	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ad replication - smtp	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tls/ssl encryption to sql server	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+sql server - tls/ssl encryption	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+smart phones	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+script and macro signatures	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"signatures - script, macro, document"	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+document signatures	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+cisco router SCEP support	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+scep support (cisco router)	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+cepsetup.exe	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+cryptoAPI	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"custom applications with pki (cryptoAPI, CryptoNG, CAPICOM)"	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+cryptoNG	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+CAPICOM	12	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificates - mmc snapin	13-14	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+mmc snapin - certificates	13-14	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certutil.exe	13	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certreq.exe	13	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pki - tools to manage	13	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+mmc snapin - enterprise PKI	14	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pki - enterprise mmc snapin	14	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pki - powershell certificates provider	15	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pki - certificate services website (certsrv)	15	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv	"15, 28"	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+cert:\ directory	15	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+key recovery tool	16	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+krt.exe	16	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certutil.exe	16	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pki - certificate templates mmc snap-in	16	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+mmc snapin - certificate templates	16	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+gpo - pki settings	17	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pki - gpo settings	17	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+dsstore.exe (detailed)	17	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certutil.exe (detailed)	17-18	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+winhttpcertcfg.exe	18	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv.exe	18	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certreq.exe	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificate enrollment - adsi	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificate enrollment - capicom.dll	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificate enrollment - com+	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+com+ certificate enrollment	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+capicom.dll - certificate enrollment	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+adsi - certificate enrollment	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pkcs#10 - pki certificate request	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pkcs#7 - pki renewal request	19	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+mscep.dll (simple cert enrollment protocol - scep)	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+scep (simple cert enrollment protocol - mscep.dll)	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+connection manager certificate deployment tool cmgetcer.dll	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+cmgetcer.dll - connection manager certificate deployment tool	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+cryptpAPI tools (list)	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+msdn cryptoAPI tools (list)	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+cert2spc.exe	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certmgr.exe	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+chktrust.exe	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+makecert.exe	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+makectl.exe	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+setreg.exe	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+signcode.exe	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+makecat.exe	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pki - how windows implements it	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificates - how windows implements pki	20	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pki - cryptographic service providers (CSPs)	21	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+cryptographic service providers (CSPs)	21	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+CSPs (cryptographic service providers)	21	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+FIPS140-1 Level 1	21	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+AES 256 bit & AES hashing - vista and later	21	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tpm chip	21	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificate services (certsrv.exe) - explained	22	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv.exe (certificate services) - explained	22	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificate stores	22	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+CRLs (certificate revocation lists)	22	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+modules - certificate services dll plugins	22	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificate stores	22	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+CTLs (certificate trust lists)	22	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificate stores seen in mmc snap-in	22-23	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+protected stores	23	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificates - protected stores	23	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pki - protected stores	23	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificate operations - request/delete/renew/import/export	25	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificate export	26-27	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificate renewals	28	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"crypto - basic terms (auth, integrity, repudiation, confidentiality)"	29	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+keys - encryption	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+encryption keys	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ciphertext	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+cleartext	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+key length	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+key strength	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bit-length	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+key bit-length	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+encryption - keys	31	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+brute-force key attacks & time calculations	31-32	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+keys - two-way / symmetric / secret / bulk / session	32	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+keys - one-way / asymmetric / public/private / key-exchange keys	33	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+keys - secure exchange	34	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+keys - encrypting a key to encrypt a key	34	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+keys - hashes / message digests / fingerprints	35	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+hashing	35	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+message digest	35	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+fingerprints	35	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+digital signatures	36	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+crypto - reading	37	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+crypto - acronyms and abbreviations	38-39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+3des - triple-des	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ad - active directory	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ntds.dit	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+aia - authority info access	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+aki - authority key id	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bdc - backup domain controller	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ca - cert auth	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+cdp - crl distribution point	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+csp - crypto service provider	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ctl - certificate trust list	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+cryptoAPI - menu of crypto svcs provided by windows	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+dacl - discretionary access control list (permissions on an object)	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+dc - domain controller	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+dcpromo.exe	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ddf - data decryption field (EFS file attributed with encrypted FEK)	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ddns - dynamic dns	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+des - 56 bit symentric block cipher developed by nsa	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+dfs - distributed file system	38	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"ds - directory service (AD, novell nds, unix NIS)"	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+drf - data recovery field (EFS file attribute with encrypted FEK)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+efs - encrypting file system - ntfs	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+fek - fiel encryption key (efs key used to encrypt a file)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+gc - global catalog (AD)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+gpo - group policy object	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+hsm - hardware security module (CA private key protection)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ietf - internet engineering task force (publishes rfc's)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+iis - internet information server	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ipsec - ip security protocol - encrypting and signing network traffic	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"isa - internet sec & accel server (MS firewall, nat, proxy)"	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+itu - international telecom union (standards)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+kdc - key distribution center (kerberos)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+member server - non-DC w/computer account on domain	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+mmc - microsoft management console	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ms - microsoft	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+nc - naming context - AD partition	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+native - native mode operation on pure windows networks	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"netlogon - folder shared as netlogon, part of sysvol"	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+nt - ms win NT 4.0	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ntfs - nt file system	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+oid - object identifier - number to uniquely id an object type in ds	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ou - organizational unit	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pdc - primary domain controller	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pgp - pretty good privacy	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pk - public key	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+kcs - defacto pk standards from RSA (PKCS#7)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pki - public key infrastructure	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pkix - ietf working group to define interoperable pki	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+rfc - request for comments	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+rras - routing and remote access server (ms dial-up/vpn router)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+rsa - rivest-Shamir-Adleman (popular algorithm for pk's)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+s/mime - pk-based encryption and signing of e-mail (outlook)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+sam - security accounts manager (NT 4 SAM database)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+sacl - systam access control list (list of audit settings on an object)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+sgc - server gated crypto (ssl for banks; non-issue now)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+snap-in - mmc snap-in tool.	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"ssl - secure sockets layer - PK-based enryption, sig, auth"	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"stand alone computer - non-DC, not a member of any domain"	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+stand alone CA - windows CA not using AD or templates	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+sysvol - folder shared as sysvol with scripts and gpos	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tls - transport layer security (next version of ssl)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+vpn - virtual private network	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+x.500 - itu standard for a ds (like AD)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+x.509v3 - itu standard for digital certificate format (RFC 2459)	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+RFC 2459	39	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pcks message types	40	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pkcs#5 - derive priv key from password	40	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pkcs#7 - format to store certs but not private keys	40	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pkcs#10 - format for cert reqs to be sent to ca	40	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pkcs#12 - format for securing storing certs and priv keys (pfx files)	40	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pfx files - pkcs#12 format file with cert and priv key	40	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ca - certificate authority described	41	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ca - verify cert not forged or altered	42	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ca - verify actual ca public key	42	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ca - why trust?	43	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+x.509 certificate - described	43	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificate extensions (x.509v3 extra fields also bound by hash)	44	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificates - multiple per user	46	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+multiple certificates per user	46	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificates - validity checking	46	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - before install	49	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - capolicy.inf file	50	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+capolicy.inf file (certsrv configuration)	50	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificate policy and practices statements	51	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - email address naming scheme	51	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+email addresses and certificate servers	51	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+time sync - certsrv	51	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - time sync	51	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - ad size & replication	52	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - failover clustering	52	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - pki hierarchy	53	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - root ca	54	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - intermediate ca	54	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - issuing ca	54	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - single root hierarchy	54	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+web of trust - pgp	54	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+cross-certified network of ca's	54	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - 3-tier pki hierachy necessary? (no)	54	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - ca hierarchy benefits	56	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"certsrv - minimize problems (policies, contain damage, clustering, politics)"	56	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - multiple hierarchies?	56	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - separate hierarchy for secure e-mail outside organization	57	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - hierarchy design - summary & best practices	57	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - install	59-65	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - policy module (enterprise vs. stand-alone)	65	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - on-line issuing CAs	66	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - off-line root or intermediate CAs	67	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - on-line vs off-line operation	68	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - off-line templates <- not the same as offline CA	68	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - after install steps	69	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - cdp and aia extensions	71	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+cdp extensions - certsrv	71	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+aia extensions - certsrv	71	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - publishers group in multi-domain forest	73	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - common criteria role separation	74	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+common criteria role separation (certsrv)	74	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - configure enhanced auditing	75	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - configure alerting (camonitor.vbs)	75	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+capicom.dll - certsrv alerting	75	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+camonitor.vbs	75	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - run best practice analyzer	76	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - copy and edit certificate templates	77	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv template - copy template	78	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv template - require private key archival	78	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv template - enable certificat auto-enroll	79	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv template - do not auto re-enroll for duplicates	79	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv template - force re-enrollement from updated template	79	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv template - do not store certs and requests in ca database	80	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv template - cross-forest replication of templates	80	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+cross-forest replication of certsrv templates	80	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+replication of of certsrv templates cross-forest	80	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - control certificate enrollement	81	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - permissions on ca to request cert	81	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - permissions on templates for ca to issue	82-83	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - best practices for templates	84	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+private keys - where stored	87	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+private keys - how encrypted	"89,90"	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"dpapi, dpapi-ng"	90	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+session key - how derived	91	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+master key	91	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+syskey.exe	91	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+lsass.exe - master key in LSA in RAM	91	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+master key protection (mkpk)	91	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+mkpk (master key protection)	91	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"smart card logon - how hashes work, random password in AD"	92	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+masterKeyIterationCount	92	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+mkpk (master key protection) - pkcs#5 function to derive it	92	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+master key protection (mkpk) - pkcs#5 function to derive it	92	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+master key changes every 3 months -- older session keys?	92	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+master key - what happens when user changes password	92	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+password change - what happens with master key	92	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+roaming profile - user without one changes password	93	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+password change - without roaming profile -- issues	93	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+dpapi private key replicated among DC -- ramifications of loss/compromise	93	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+password recovery usb drive for local accounts	93	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+usb drive - password recovery for local user	93	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+credhist file	93	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+private keys of CAs stored where 	94	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+private keys of CAs - how encrypted	95	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+LSA secret information - master key	94-96	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+master key - LSA secret information	94-96	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+private key - protection methods	98	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tpm chip	98	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+UEFI secure boot (also comment about antivirus compatibility)	98	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+antivirus - UEFI secure boot	98	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+syskey.exe	99	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+hsm - hardware security module (CA private key protection)	99	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+hardware security module (HSM) -- ca private key protection	99	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+smart cards / smart tokens	99	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+master key encryption - users password & SID number	99	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+TPM security for private keys (windows 8 / RT & later)	100	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+store private key with strong protection	"100, 102"	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+private key - store with strong protection	"100, 102"	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+syskey.exe (detailed)	101-102	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+Data protection API	104	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certsrv - autoenrollment	107	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+gpo - autoenrollement for certs	107	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+smart card cert autoenrollment	109	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+private key archival	111	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+archival - private keys	111	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+key escrow	111	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+escrow - keys - private key archival	111	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+key recovery - from archived private key - certutil.exe	112	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certutil.exe - key recovery from archived private key	112	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+credential roaming	114	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ms-PKI-DPAPIMasterKey	114	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+trust - user CAs 	117	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+trusted root certification authorities	117	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+trust - trusted roots updated from windows update	118	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+enterprise trust container and CTLs	119-120	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+trust - enterprise trust container and CTLs	119-120	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+CTLs (certificate trust lists)	119-120	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificate purposes - control via CTL	120	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificate path validation settings	121	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificate revocation - how to	122	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+revoke certificate - how to	122	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"CRL source - CDP ""CRL Distribution point"""	123	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"CDP ""CRL distribution point"""	123	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+CRL frequency - changing update schedule	124	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+CRLs - Delta	125	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+Delta CRL	125	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+OCSP - Online certificate status protocol	127	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+Online certificate status protocol	127	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+certificates - OCSP (online cert status protocol)	127	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ocsp responder -- IIS 7 or later	127	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ocsp - auditing & delegation	132	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+auditing & delegation - ocsp	132	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+delegation & auditing - ocsp	132	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+smart cards / smart tokens	133	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+smart tokens / smart cards (see smart cards)	133	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+smart cards - advantages	134	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+smart cards - disadvantages	135	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+smart cards + kerberos - how combined	136	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+kerberos + smart cards - how combined	136	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pkinit authentication described	136-137	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+kdc  	136	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+UPN	137	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+TGT (ticket granting ticket - kerberos)	137	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+TGS (ticket granting service)	137	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+GINA 	137	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+PIN management	138	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+Hardware vendors - smart cards	140	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+smart cards - hardware vendors	140	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+Hardware vendors - private key storage & accelerrators	140	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tpm virtual smart card	141	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tpm - advantages	141	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tpm - disadvantages	142	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tpm - virtual smart card management	142-143	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tpm - use standard smart card in place of	143	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+smart cards - how to deploy	144	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+smart cards - user self-enrollment	144-145	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+smart cards - proxy enrollement	146	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+smart cards - restricting enrollment agents	146	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+smart cards - proxy enrollement with certsrv website (2003 only)	147	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+enrollment agents - limiting their power	148-149	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+smart cards - enrollment agents - limiting their power	148-149	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker overview	151	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker tools	152-153	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+manage-bde	152	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker - powershell cmdlets	153	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker - manage-bde tool	152	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+mbam - ms bitlocker admin and monitoring	153	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker admin and monitoring (MBAM)	153	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker drive prep tool	153	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker repair tool	153	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker recovery password viewer	153	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker - integrity checking details	153	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tpm - bitlocker	153	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pcr - platform config register (tpm)	153	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tpm - pcr (platform config register)	153	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pcr - list of use in tpm/bitlocker	153-154	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+vmk - volume master key	154	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+fvek - full volume encryption key	154	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+vmk -stored in ntfs metadata encrypted with protector key (pk)	154	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+pk - protector key for bitlocker vmk 	154	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"pk - protector key for bitlocker vmk  - source (list of tpm, tpm + pin, etc.)"	155	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ewk - external wrapping key - bitlocker	156	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+external wrapping key (ewk) - bitlocker	156	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ bitlocker - tpm	153	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ bitlocker - pcr - platform config register (tpm)	153	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ bitlocker - tpm - pcr (platform config register)	153	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ bitlocker - pcr - list of use in tpm/bitlocker	153-154	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ bitlocker - vmk - volume master key	154	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ bitlocker - fvek - full volume encryption key	154	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ bitlocker - vmk -stored in ntfs metadata encrypted with protector key (pk)	154	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ bitlocker - pk - protector key for bitlocker vmk 	154	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+" bitlocker - pk - protector key for bitlocker vmk  - source (list of tpm, tpm + pin, etc.)"	155	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ bitlocker - ewk - external wrapping key - bitlocker	156	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+ bitlocker - external wrapping key (ewk) - bitlocker	156	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tpm (main topic)	158	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tpm - turn on & initialize	158	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+tpm - physical presence required	159	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+secure boot - uefi	161	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+uefi secure boot  	161	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+boot - uefi secure	161	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker - secure boot + tpm	162	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"bitlocker - tpm options (lists options - tpm + usb drive, tpm + pin, etc.)"	163	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker - passphrase instead ofpin	164-165	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+gpo - bitlocker passphrase instead of pin	164-165	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker - disable vs. turning off	165	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker - usb drives	167	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker to go (usb drives)	167-168	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker to go - auto-unlock	169	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+windows to go bootable usb flash drives (win8 & later)	170	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"usb - bootable ""windows to go"" flash drive (win8 & later)"	170	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlockertogo.exe - windows xp/vista reader	171	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker to go - recovery options	171	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker - network unlock	172	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+network unlock (bitlocker)	172	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+windows deployment server (wds) - bitlocker network unlock	172	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+wds - windows deployment server - bitlocker network unlock	172	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+gpo - network unlock	174	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+gpo - bitlocker wds network unlock	174	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker - emergency recovery	175	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker tpm missing/damaged - recovery procedures	177	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker - force backup to AD	178	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+manage-bde - bitlocker - force backup to AD	178	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+fvek - backed up to AD	178	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+bitlocker data recovery agent - dra	178-179	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+data recovery agent - dra	178-179	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+dra - data recovery agent	178-179	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"bitlocker, tpm, secure boot / uefi best practices"	180-184	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"tpm, bitlocker, secure boot / uefi best practices"	180-184	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"secure boot / uefi, bitlocker, tpm best practices"	180-184	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+"uefi / secure boot, bitlocker, tpm best practices"	180-184	"505.3 (Windows PKI, Bitlocker and Secure Boot)"
+		
+Enclave networks	8	"505.4 (IPSec, Firewall, DNS, Wireless)"
