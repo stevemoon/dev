@@ -14,7 +14,12 @@ end
 p37 = fn
   n -> fb?.({rem(n,3), rem(n,5), n})
 end
+Enum.map((10..16), &(p37.(&1)))
 
 #From page 39
 prefix = fn a -> (fn b -> "#{a} #{b}" end) end
+
+#From page 42
+Enum.map [1,2,3,4], &(&1 + 2)
+Enum.map [1,2,3,4], &(IO.inspect &1)
 
