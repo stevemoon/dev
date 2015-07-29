@@ -1,5 +1,6 @@
 *
 !*.*
+!euler
 .eunit
 deps
 *.o
