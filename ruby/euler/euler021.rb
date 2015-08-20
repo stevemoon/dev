@@ -15,11 +15,30 @@
 #
 #Evaluate the sum of all the amicable numbers under 10000.
 
+# ./euler021.rb
+# ---
+#[220, 284, 1184, 1210, 2620, 2924, 5020, 5564, 6232, 6368]
+#---
+#31626 <--- The answer!
+#
 def divisors_of(num)
 	upper = num / 2 + 1
 	(1..upper.to_i).select { |n| num % n == 0 }
 end
 
-puts divisors_of(220)
+def d(num)
+	sum = 0
+	divisors_of(num).each { |n| sum += n }
+	return sum
+end
+
+$amicable_list = []
+1.upto(10000-1) { |a|
+	b = d(a)
+	$amicable_list << a if ((d(b) == a) and (a != b))
+}
+
 puts "---"
-puts divisors_of(284)
+p $amicable_list
+puts "---"
+puts $amicable_list.inject(0, :+)
