@@ -23,12 +23,21 @@
 #as the sum of two abundant numbers.
 
 # Answer is 4179871
-# Run time is pretty slow (15 minute range) -- I must be missing some 
-# obvious optimizations.
+# Revised to speed up runtime from ~15 minutes to ~6 seconds:
+# Speedup #1 -- only check for divisors up to the square root
+# Speedup #2 -- pre-calculate all sums up-front, with a hash lookup table
 #
 def divisors_of(num)
-	upper = num / 2 + 1
-	(1..upper.to_i).select { |n| num % n == 0 }
+	divisors = []
+	upper = Math.sqrt(num).floor
+	1.upto(upper) { |n| 
+		if (num % n == 0) 
+			divisors << n
+			temp = num/n
+			divisors << temp unless (n == temp || temp == num)
+		end
+	}
+	return divisors
 end
 
 def is_abundant?(num)
@@ -36,28 +45,31 @@ def is_abundant?(num)
 	false
 end
 
-$amicable_list = []
+p "Calculating abundant numbers..."
+$abundant_list = []
 12.upto(28123) { |a|
-	$amicable_list << a if is_abundant?(a)
+	$abundant_list << a if is_abundant?(a)
 }
+puts "Done."
 
-def no_am_sum(num) # true if num is not the sum of 2 amicable numbers
-	$amicable_list.each { |a1|
-		break if a1 > num
-		diff = num - a1
-		return false if $amicable_list.include?(diff)
+p "Calculating all sums of abundant numbers..."
+$abundant_sums = Hash.new
+$abundant_list.each { |ab|
+	$abundant_list.each { |ab2|
+		my_sum = ab + ab2
+		break if my_sum > 28123
+		$abundant_sums[my_sum] = my_sum
 	}
-	true
-end
+}
+puts "Done."
 
+p "Summing it all up..."
 $n_a_sums = 0
 1.upto(23) { |n|
 	$n_a_sums += n
 }
 24.upto(28123) { |n|
-	puts "." if ((n % 500) == 0)
-	puts "++ 5,000" if ((n % 5000) == 0)
-	$n_a_sums += n if no_am_sum(n)
+	$n_a_sums += n unless $abundant_sums.has_key?(n)
 }
-
+puts "Done."
 puts $n_a_sums
