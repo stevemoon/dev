@@ -1,0 +1,25 @@
+call pathogen#infect()
+call pathogen#helptags()
+filetype plugin indent on
+syntax on
+set laststatus=2
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
+"Set Color Scheme and Font Options
+colorscheme vividchalk
+set guifont=Consolas:h12
+"set line no, buffer, search, highlight, autoindent and more.
+set nu
+set hidden
+set ignorecase
+set incsearch
+set smartcase
+set showmatch
+set autoindent
+set ruler
+set vb
+set viminfo+=n$VIM/_viminfo
+set noerrorbells
+set showcmd
+set mouse=a
+set history=1000
+set undolevels=1000
