@@ -14,19 +14,30 @@
 -export([go/1]).
 
 go(Seed) ->
-    find_non_increasing_prefix(Seed).
+    RevSeed = lists:reverse(Seed),
+    {ok, Suffix, Pivot, Prefix} = find_non_increasing_prefix(RevSeed),
+    io:format("~p ~p ~p", [Suffix, Pivot, Prefix]),
+    {ok, A, B, C} = find_non_increasing_prefix(lists:reverse(Suffix)).
 
-find_non_increasing_prefix(A) -> % Use reverse first for suffix
-    fnip([hd(A)], tl(A)).
-fnip([A | B], [C | D]) when A > C ->
+find_non_increasing_prefix(Seed) -> % Use reverse first for suffix
+    fnip([hd(Seed)], tl(Seed)).
+fnip([A | B], [C | D]) when A =< C ->
     X = lists:flatten([[C],[A],[B]]),
     fnip(X, D);
-fnip([A | B], [C | D]) when A < C -> % We've arrived!
+fnip([A | B], [C | D]) when A > C -> % We've arrived!
     X = lists:flatten([[A], [B]]),
-    {ok, lists:reverse(X), C, D };
+    {ok, X, C, D };
 fnip(A, []) -> % We've hit the end
     {error, no_more_permutations, A}.
 
+find_correct_swap_element(Suffix, Pivot) ->
+    fcse(hd(Suffix), tl(Suffix), Pivot).
+fcse(Pivot, Tested, [Test | Remaining]) when Pivot >= Test ->
+    X = lists:flatten([Tested],[Test]),
+    fcse(Pivot, X, Remaining);
+fcse(Pivot, Tested, [Test | Remaining]) when Pivot < Test ->
+    %logic to build swapped suffix here
+    ok. 
 
 
 %% next_lexicographic(X) ->
