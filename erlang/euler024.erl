@@ -16,8 +16,8 @@
 go(Seed) ->
     RevSeed = lists:reverse(Seed),
     {ok, Suffix, Pivot, Prefix} = find_non_increasing_prefix(RevSeed),
-    io:format("~p ~p ~p", [Suffix, Pivot, Prefix]),
-    {ok, A, B, C} = find_non_increasing_prefix(lists:reverse(Suffix)).
+    io:format("~p ~p ~p ~n~n", [Suffix, Pivot, Prefix]),
+    find_correct_swap_element(Suffix, Pivot).
 
 find_non_increasing_prefix(Seed) -> % Use reverse first for suffix
     fnip([hd(Seed)], tl(Seed)).
@@ -31,32 +31,14 @@ fnip(A, []) -> % We've hit the end
     {error, no_more_permutations, A}.
 
 find_correct_swap_element(Suffix, Pivot) ->
-    fcse(hd(Suffix), tl(Suffix), Pivot).
+    fcse(Pivot, hd(Suffix), tl(Suffix)).
 fcse(Pivot, Tested, [Test | Remaining]) when Pivot >= Test ->
+    io:format("tested: ~p~n", [Tested]),
     X = lists:flatten([Tested],[Test]),
     fcse(Pivot, X, Remaining);
 fcse(Pivot, Tested, [Test | Remaining]) when Pivot < Test ->
-    %logic to build swapped suffix here
-    ok. 
+    NewSuffix = lists:flatten([[Test],[Tested], [Pivot], [Remaining]]),
+    io:format("~p ~p ~p ~p ~n", [Pivot, Tested, Test, Remaining]),
+    NewSuffix.
 
-
-%% next_lexicographic(X) ->
-%%     Y = lists:reverse(X),
-%%     {Suffix, Pivot, Prefix} = id_pivot(Y,[]).
-
-%% id_pivot([Trial | RevSuffix], [
-%% %% id_pivot([Head, Pivot | Tail],Accum) when Head > Pivot ->
-%% %%     NewAccum = lists:flatten([Accum] ++ [Head]),
-%% %%     NewHead = lists:flatten([Pivot] ++ [Tail]),
-%% %%     id_pivot(NewHead, NewAccum);
-%% %% id_pivot([Head, Pivot | Tail],Accum) when Head < Pivot ->
-%% %%     NewHead = lists:flatten([Accum] ++ [Head]),
-%% %%     {NewHead, Pivot, Tail};
-%% %% id_pivot([], Accum) ->
-%% %%     {[],[],Accum}.
-
-
-
-%% %id_pivot_successor(Front, Pivot, End) ->
-%% %    ok.
 
