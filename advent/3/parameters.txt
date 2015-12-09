@@ -1,0 +1,11 @@
+C:\dev\advent\3>grep -o "<" input.txt | wc -l
+2038
+
+C:\dev\advent\3>grep -o ">" input.txt | wc -l
+2079
+
+C:\dev\advent\3>grep -o "\^" input.txt | wc -l
+1990
+
+C:\dev\advent\3>grep -o "v" input.txt | wc -l
+2085
