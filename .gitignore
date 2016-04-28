@@ -15,6 +15,7 @@ SyncToy*
 *.exe
 Erlang-and-OTP-in-Action/
 javascript-koans/
+go/src/gopl.io
 # =========================
 # Operating System Files
 # =========================
