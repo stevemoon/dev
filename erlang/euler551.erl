@@ -25,7 +25,7 @@ a(Cur, Num, Prev) when Cur == Num ->
 a(0,Num,_Prev) ->
     a(1,Num,1); 
 a(Cur,Num,Prev) ->
-    io:format("~p   ~p ~n", [Cur, Prev]),
+    io:format("~p,~p~n", [Cur, Prev]),
     a(Cur + 1, Num, Prev + sum_digits(Prev)).
 %% a(0) -> 1;
 %% a(1) -> 1;
