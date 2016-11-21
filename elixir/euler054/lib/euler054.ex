@@ -1,5 +1,5 @@
 defmodule Euler054 do
-  @chunksize 5
+  @chunksize 1
   @cardval %{'1' => 1,  '2' => 2,  '3' => 3,  '4' => 4, '5' => 5,
              '6' => 6,  '7' => 7,  '8' => 8,  '9' => 9, 'T' => 10,
              'J' => 11, 'Q' => 12, 'K' => 13, 'A' => 14}
@@ -8,9 +8,9 @@ defmodule Euler054 do
     File.stream!(filename)
     |> Stream.chunk(@chunksize, @chunksize, [])
     # |> Enum.each(&IO.inspect(extract_hands(&1) |> IO.inspect))
-    |> Enum.each(&IO.inspect(extract_hands(&1) ))
+    # |> Enum.each(&IO.inspect(extract_hands(&1) ))
     #|> Enum.each(&IO.inspect(extract_hands(&1) |> decode_hands([])))
-    # |> Enum.each(&IO.inspect(extract_hands(&1) |> process_hands))
+    |> Enum.each(&IO.inspect(extract_hands(&1) |> process_hands))
     #probably replace Enum.each with Enum.map then pipe the resulting list to a reduce
 
     #Enum.each IO.stream(file, :line), &IO.inspect(extract_hands(&1))
@@ -73,25 +73,21 @@ def process_hand({p1hand, p2hand}) do
     p1score == p2score ->
       p1sorted = sort_cards(p1hand)
       p2sorted = sort_cards(p2hand)
-      IO.inspect(p1sorted)
       resolve_tie(p1sorted, p2sorted)
   end
 end
 
 def score_hand(_), do: 100
 
-def resolve_tie(_, _) do
-  :tie
+
+def resolve_tie([],[]), do: :tie
+def resolve_tie([p1max | _p1tail], [p2max | _p2tail]) when p1max > p2max, do: :p1
+def resolve_tie([p1max | _p1tail], [p2max | _p2tail]) when p1max < p2max, do: :p2
+def resolve_tie([p1max | p1tail], [p2max | p2tail]) when p1max == p2max do
+  resolve_tie(p1tail, p2tail)
 end
-#resolve_tie([P1Max | _P1Tail], [P2Max | _P2Tail]) when P1Max > P2Max ->
-#    player_one;
-#resolve_tie([P1Max | _P1Tail], [P2Max | _P2Tail]) when P1Max < P2Max ->
-#    player_two;
-#resolve_tie([P1Max | P1Tail], [P2Max | P2Tail]) when P1Max =:= P2Max ->
-#    resolve_tie(P1Tail, P2Tail);
-#resolve_tie([],[]) ->
-#    tie.
-#
+def resolve_tie(_, _), do: :error
+
 def sort_cards(cards) do
   IO.inspect(cards)
   {val, _} = Enum.unzip(cards)
