@@ -1,38 +1,29 @@
 defmodule Euler054 do
-  @chunksize 207
+  @chunksize 20
   @cardval %{'1' => 1,  '2' => 2,  '3' => 3,  '4' => 4, '5' => 5,
              '6' => 6,  '7' => 7,  '8' => 8,  '9' => 9, 'T' => 10,
              'J' => 11, 'Q' => 12, 'K' => 13, 'A' => 14}
   @cardsuit %{'C' => :clubs, 'D' => :diamands, 'H' => :hearts, 'S' => :spades}
-  def score_file(filename \\ './lib/poker.txt') do
+  def score_file_parallel(filename \\ './lib/poker.txt') do
     File.stream!(filename)
     |> Stream.chunk(@chunksize, @chunksize, [])
-    # |> Enum.each(&IO.inspect(extract_hands(&1) |> IO.inspect))
-    # |> Enum.each(&IO.inspect(extract_hands(&1) ))
-    #|> Enum.each(&IO.inspect(extract_hands(&1) |> decode_hands([])))
+    |> Stream.map(&Task.async(partask(&1)))
+    |> Enum.map(&Task.await/1)
+  end
+  def partask(chunk) do
+    chunk
     |> Enum.to_list
     |> List.flatten
     |> extract_hands
     |> process_hands
-
-    # |> Enum.each(&IO.inspect(extract_hands(&1) |> process_hands))
-    # |> Enum.each(&Enum.reduce({0, 0, 0}, fn({p1, p2, tie}, {accp1, accp2, acctie} -> ))
-    # IO.inspect(foo)
-    # |> Enum.into(&1, [])
-  #  (&extract_hands(&1) |> process_hands))
-    #|> Enum.reduce()
-    #probably replace Enum.each with Enum.map then pipe the resulting list to a reduce
-
-    #Enum.each IO.stream(file, :line), &IO.inspect(extract_hands(&1))
-    #    IO.read(file, :line)
-#    File.close(file)
-    #stream contents
-    #parallel map each line:
-    # Line |>
-    # Score hands |> <-- can be parallelized
-    # List of {p1win, p2win, tie} |>
-    # reduce list to one tuple with sums <-- could be messages sent to a process instead of building a giant in-memory list
-    #
+  end
+  def score_file(filename \\ './lib/poker.txt') do
+    File.stream!(filename)
+    |> Stream.chunk(@chunksize, @chunksize, [])
+    |> Enum.to_list
+    |> List.flatten
+    |> extract_hands
+    |> process_hands
   end
 
 #Answer is 376
@@ -53,12 +44,6 @@ defmodule Euler054 do
 #  4-of-a-kind         10,000,000 * sum of all cards
 #  Straight flush      1,000,000,000 * high card
 #  Royal flush         100,000,000,000
-#
-#
-#go(FileName) ->
-#    GameData = readlines(FileName),
-#    {P1Score, P2Score, Ties} = process_lines(GameData, 0, 0, 0),
-#    io:format("~w", [[P1Score, P2Score, Ties]]).
 #
 def process_hands(hands, accum \\ {0, 0, 0})
 def process_hands([], accum) do
@@ -81,8 +66,8 @@ def process_hand({p1hand, p2hand}) do
     p1score > p2score -> :p1
     p2score > p1score -> :p2
     p1score == p2score ->
-      p1sorted = sort_cards(p1hand)
-      p2sorted = sort_cards(p2hand)
+      p1sorted = sort_cards(p1hand) |> Enum.reverse
+      p2sorted = sort_cards(p2hand) |> Enum.reverse
       resolve_tie(p1sorted, p2sorted)
   end
 end
@@ -116,7 +101,7 @@ def score_hand(cards) do
     straight_flush?(cards, sc),
     royal_flush?(cards,sc)
   ]
-  #IO.inspect(scorelist)
+  # IO.inspect(scorelist)
   Enum.max(scorelist)
 end
 
@@ -206,7 +191,7 @@ def extract_hands([hand | rest], accum) do
     player2Hand = Enum.slice(bothHands, 5, 5)
     extract_hands(rest, [{player1Hand, player2Hand} | accum])
     end
-def decode_cards([], accum), do: accum
+def decode_cards([], accum), do: Enum.reverse(accum)
 def decode_cards([card | rest], accum) do
   card_val = @cardval[String.at(card,0) |> to_charlist]
   card_suit = @cardsuit[String.at(card,1) |> to_charlist]
