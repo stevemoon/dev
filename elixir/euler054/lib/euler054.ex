@@ -4,13 +4,20 @@ defmodule Euler054 do
              '6' => 6,  '7' => 7,  '8' => 8,  '9' => 9, 'T' => 10,
              'J' => 11, 'Q' => 12, 'K' => 13, 'A' => 14}
   @cardsuit %{'C' => :clubs, 'D' => :diamonds, 'H' => :hearts, 'S' => :spades}
+  def time(fun) do
+    {time, result} = :timer.tc(fun)
+    # {time, result} = :timer.tc(fn -> Euler054.score_file_parallel('./../../../poker/poker_1mil.txt') end )
+    IO.inspect(result)
+    IO.puts"Completed in #{time / 1_000_000} seconds."
+  end
   def score_file_parallel(filename \\ './lib/poker.txt') do
     File.stream!(filename)
     |> Stream.chunk(@chunksize, @chunksize, [])
     |> Enum.map(&(Task.async(fn -> partask(&1) end)))
     |> Enum.map(&Task.await/1)
     # |> sum_tuples({0, 0, 0})
-    |> Enum.reduce({0, 0, 0}, fn {r1, r2, r3}, {a1, a2, a3} -> {r1 + a1, r2 + a2, r3 + a3} end)
+    |> Enum.reduce(fn {r1, r2, r3}, {a1, a2, a3} -> {r1 + a1, r2 + a2, r3 + a3} end)
+    # |> Enum.reduce({0, 0, 0}, fn {r1, r2, r3}, {a1, a2, a3} -> {r1 + a1, r2 + a2, r3 + a3} end)
   end
   def sum_tuples([], accum), do: accum
   def sum_tuples([{x, y, z} | rest], {a, b, c}) do
